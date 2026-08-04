@@ -1,0 +1,29 @@
+package net.pafeuu.DruidicQuestMod.registries;
+
+import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.RegistryObject;
+import net.pafeuu.DruidicQuestMod.DruidicQuestMod;
+
+public class CreativeTabRegistry {
+    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TAB =
+            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, DruidicQuestMod.MODID);
+
+    public static final RegistryObject<CreativeModeTab> DRUIDIC_QUEST_TAB = CREATIVE_MODE_TAB.register("druidic_quest_tab",
+            ()-> CreativeModeTab.builder().icon(()-> new ItemStack(ItemRegistry.NATURE_ESSENCE.get()))
+                    .title(Component.translatable("creativetab.druidic_quest"))
+                    .displayItems((pParametersm,pOutput)->{
+                        pOutput.accept(ItemRegistry.NATURE_ESSENCE.get());
+                        pOutput.accept(BlockRegistry.PRIMITIVE_MACHINE.get());
+                    })
+            .build());
+    public static void register(IEventBus eventBus) {
+        CREATIVE_MODE_TAB.register(eventBus);
+    }
+
+}
