@@ -38,7 +38,7 @@ public class NatureMissileProjectile extends AbstractMagicProjectile {
 
     @Override
     public float getSpeed() {
-        return 1.75f;
+        return 1.25f;
     }
 
     @Override
@@ -62,7 +62,7 @@ public class NatureMissileProjectile extends AbstractMagicProjectile {
     protected void onHitEntity(@NotNull EntityHitResult entityHitResult) {
         super.onHitEntity(entityHitResult);
         var target = entityHitResult.getEntity();
-        DamageSources.applyDamage(target, getDamage(), SpellRegistry.FIREBOLT_SPELL.get().getDamageSource(this, getOwner()));
+        DamageSources.applyDamage(target, getDamage(), SpellRegistry.EARTHQUAKE_SPELL.get().getDamageSource(this, getOwner()));
         consumeEntityImpact(entityHitResult, true);
     }
 
