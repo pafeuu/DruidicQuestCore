@@ -18,6 +18,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.Level;
 import net.pafeuu.DruidicQuestMod.DruidicQuestMod;
 
+import net.pafeuu.DruidicQuestMod.entity.spells.nature_missile.NatureMissileProjectile;
 import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
@@ -62,11 +63,11 @@ public class NatureMissileSpell extends AbstractSpell {
 
     @Override
     public void onCast(Level world, int spellLevel, LivingEntity entity, CastSource castSource, MagicData playerMagicData) {
-        FireboltProjectile firebolt = new FireboltProjectile(world, entity);
-        firebolt.setPos(entity.position().add(0, entity.getEyeHeight() - firebolt.getBoundingBox().getYsize() * .5f, 0));
-        firebolt.shoot(entity.getLookAngle());
-        firebolt.setDamage(getDamage(spellLevel, entity));
-        world.addFreshEntity(firebolt);
+        NatureMissileProjectile missile = new NatureMissileProjectile(world, entity);
+        missile.setPos(entity.position().add(0, entity.getEyeHeight() - missile.getBoundingBox().getYsize() * .5f, 0));
+        missile.shoot(entity.getLookAngle());
+        missile.setDamage(getDamage(spellLevel, entity));
+        world.addFreshEntity(missile);
         super.onCast(world, spellLevel, entity, castSource, playerMagicData);
     }
 

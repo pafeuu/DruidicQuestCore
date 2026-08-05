@@ -47,6 +47,7 @@ public class DruidicQuestMod
         BlockRegistry.register(modEventBus);
         EntityRegistry.register(modEventBus);
         SpellRegistry.register(modEventBus);
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
