@@ -19,7 +19,16 @@ public class CreativeTabRegistry {
                     .title(Component.translatable("creativetab.druidic_quest"))
                     .displayItems((pParametersm,pOutput)->{
                         pOutput.accept(ItemRegistry.NATURE_ESSENCE.get());
+                        pOutput.accept(ItemRegistry.PHOENIX_BRUSH.get());
+                        pOutput.accept(ItemRegistry.STEEL_BRUSH.get());
                         pOutput.accept(BlockRegistry.PRIMITIVE_MACHINE.get());
+                        pOutput.accept(BlockRegistry.IVY_BLOCK.get());
+                        pOutput.accept(BlockRegistry.STURDY_DEEPSLATE.get());
+                        pOutput.accept(BlockRegistry.STURDY_DEEPSLATE_SLAB.get());
+                        pOutput.accept(BlockRegistry.GOLD_LEAF_BLOCK.get());
+                        pOutput.accept(BlockRegistry.SUSPICIOUS_SNOW.get());
+                        pOutput.accept(BlockRegistry.SUSPICIOUS_CLAY.get());
+                        pOutput.accept(BlockRegistry.SUSPICIOUS_MUD.get());
                     })
             .build());
     public static void register(IEventBus eventBus) {

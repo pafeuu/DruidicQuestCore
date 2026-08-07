@@ -1,10 +1,14 @@
 package net.pafeuu.DruidicQuestMod.registries;
 
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -20,6 +24,27 @@ public class BlockRegistry {
 
     public static final RegistryObject<Block> PRIMITIVE_MACHINE = registerBlock("primitive_machine",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE)));
+
+    public static final RegistryObject<Block> GOLD_LEAF_BLOCK = registerBlock("gold_leaf_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.MOSS_BLOCK)));
+
+    public static final RegistryObject<Block> IVY_BLOCK = registerBlock("ivy_block",
+            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.MOSS_BLOCK)));
+
+    public static final RegistryObject<Block> STURDY_DEEPSLATE = registerBlock("sturdy_deepslate",
+            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).pushReaction(PushReaction.BLOCK)));
+
+    public static final RegistryObject<Block> STURDY_DEEPSLATE_SLAB = registerBlock("sturdy_deepslate_slab",
+            ()-> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).pushReaction(PushReaction.BLOCK)));
+
+    public static final RegistryObject<Block> SUSPICIOUS_SNOW = registerBlock("suspicious_snow",
+            ()-> new BrushableBlock(Blocks.SNOW_BLOCK,BlockBehaviour.Properties.copy(Blocks.SUSPICIOUS_SAND).noLootTable(), SoundEvents.BRUSH_SAND, SoundEvents.BRUSH_SAND_COMPLETED));
+
+    public static final RegistryObject<Block> SUSPICIOUS_CLAY = registerBlock("suspicious_clay",
+            ()-> new BrushableBlock(Blocks.CLAY,BlockBehaviour.Properties.copy(Blocks.SUSPICIOUS_SAND).noLootTable(), SoundEvents.BRUSH_SAND, SoundEvents.BRUSH_SAND_COMPLETED));
+
+    public static final RegistryObject<Block> SUSPICIOUS_MUD = registerBlock("suspicious_mud",
+            ()-> new BrushableBlock(Blocks.MUD,BlockBehaviour.Properties.copy(Blocks.SUSPICIOUS_SAND).noLootTable(), SoundEvents.BRUSH_SAND, SoundEvents.BRUSH_SAND_COMPLETED));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "druidic_quest_core:block/primitive_machine"
-  }
-}

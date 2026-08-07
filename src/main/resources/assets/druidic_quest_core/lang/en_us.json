@@ -5,5 +5,9 @@
 
   "item.druidic_quest_core.nature_essence": "Nature Essence",
 
-  "block.druidic_quest_core.primitive_machine": "Primitive Machine Block"
+  "block.druidic_quest_core.primitive_machine": "Primitive Machine Block",
+  "block.druidic_quest_core.gold_leaf_block": "Gold Leaf Block",
+  "block.druidic_quest_core.sturdy_deepslate": "Sturdy Deepslate",
+  "block.druidic_quest_core.sturdy_deepslate_slab": "Sturdy Deepslate Slab",
+  "block.druidic_quest_core.ivy_block": "Ivy Block"
 }

@@ -75,9 +75,30 @@ public class DruidicQuestMod
     }
 
     // Add the example block item to the building blocks tab
-    private void addCreative(BuildCreativeModeTabContentsEvent event)
-    {
+    private void addCreative(BuildCreativeModeTabContentsEvent event) {
 
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ItemRegistry.NATURE_ESSENCE);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+            event.accept(BlockRegistry.SUSPICIOUS_SNOW);
+            event.accept(BlockRegistry.SUSPICIOUS_MUD);
+            event.accept(BlockRegistry.SUSPICIOUS_CLAY);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(ItemRegistry.PHOENIX_BRUSH);
+            event.accept(ItemRegistry.STEEL_BRUSH);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+            event.accept(BlockRegistry.IVY_BLOCK);
+            event.accept(BlockRegistry.GOLD_LEAF_BLOCK);
+            event.accept(BlockRegistry.STURDY_DEEPSLATE);
+            event.accept(BlockRegistry.STURDY_DEEPSLATE_SLAB);
+            event.accept(BlockRegistry.PRIMITIVE_MACHINE);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
