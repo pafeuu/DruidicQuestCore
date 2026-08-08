@@ -23,8 +23,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item)  {
         return withExistingParent(item.getId().getPath(),
-                new ResourceLocation("item/generated")).texture("layer0",
-                new ResourceLocation(DruidicQuestMod.MODID,"item/" + item.getId().getPath()));
+                new ResourceLocation("item/generated"))
+                .texture("layer0", new ResourceLocation(DruidicQuestMod.MODID,"item/" + item.getId().getPath()));
 
     }
 }

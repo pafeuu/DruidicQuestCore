@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "druidic_quest_core:block/suspicious_snow_2"
+  }
+}

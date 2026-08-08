@@ -29,6 +29,10 @@ public class CreativeTabRegistry {
                         pOutput.accept(BlockRegistry.SUSPICIOUS_SNOW.get());
                         pOutput.accept(BlockRegistry.SUSPICIOUS_CLAY.get());
                         pOutput.accept(BlockRegistry.SUSPICIOUS_MUD.get());
+                        pOutput.accept(BlockRegistry.ROTTEN_FLESH_BLOCK.get());
+                        pOutput.accept(BlockRegistry.STACKED_PLANKS.get());
+                        pOutput.accept(BlockRegistry.PACKED_PLANKS.get());
+                        pOutput.accept(BlockRegistry.POLISHED_PLANKS.get());
                     })
             .build());
     public static void register(IEventBus eventBus) {

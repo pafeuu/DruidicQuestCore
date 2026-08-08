@@ -4,10 +4,19 @@
   "creativetab.druidic_quest": "Druidic Quest",
 
   "item.druidic_quest_core.nature_essence": "Nature Essence",
+  "item.druidic_quest_core.phoenix_brush": "Phoenix Brush",
+  "item.druidic_quest_core.steel_brush": "Steel Brush",
 
   "block.druidic_quest_core.primitive_machine": "Primitive Machine Block",
   "block.druidic_quest_core.gold_leaf_block": "Gold Leaf Block",
+  "block.druidic_quest_core.stacked_planks": "Stacked Planks",
+  "block.druidic_quest_core.packed_planks": "Packed Planks",
+  "block.druidic_quest_core.polished_planks": "Polished Planks",
+  "block.druidic_quest_core.rotten_flesh_block": "Rotten Flesh Block",
   "block.druidic_quest_core.sturdy_deepslate": "Sturdy Deepslate",
   "block.druidic_quest_core.sturdy_deepslate_slab": "Sturdy Deepslate Slab",
+  "block.druidic_quest_core.suspicious_snow": "Suspicious Snow",
+  "block.druidic_quest_core.suspicious_mud": "Sturdy Mud",
+  "block.druidic_quest_core.suspicious_clay": "Sturdy Clay",
   "block.druidic_quest_core.ivy_block": "Ivy Block"
 }

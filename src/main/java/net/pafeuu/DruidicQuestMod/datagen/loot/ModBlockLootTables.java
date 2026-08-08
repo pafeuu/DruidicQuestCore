@@ -20,7 +20,11 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(BlockRegistry.GOLD_LEAF_BLOCK.get());
         this.dropSelf(BlockRegistry.PRIMITIVE_MACHINE.get());
         this.dropSelf(BlockRegistry.STURDY_DEEPSLATE.get());
+        this.dropSelf(BlockRegistry.ROTTEN_FLESH_BLOCK.get());
         this.dropSelf(BlockRegistry.STURDY_DEEPSLATE_SLAB.get());
+        this.dropSelf(BlockRegistry.PACKED_PLANKS.get());
+        this.dropSelf(BlockRegistry.STACKED_PLANKS.get());
+        this.dropSelf(BlockRegistry.POLISHED_PLANKS.get());
     }
 
     @Override

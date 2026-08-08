@@ -31,6 +31,18 @@ public class BlockRegistry {
     public static final RegistryObject<Block> IVY_BLOCK = registerBlock("ivy_block",
             ()-> new Block(BlockBehaviour.Properties.copy(Blocks.MOSS_BLOCK)));
 
+    public static final RegistryObject<Block> POLISHED_PLANKS = registerBlock("polished_planks",
+            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS)));
+
+    public static final RegistryObject<Block> PACKED_PLANKS = registerBlock("packed_planks",
+            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS)));
+
+    public static final RegistryObject<Block> STACKED_PLANKS = registerBlock("stacked_planks",
+            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS)));
+
+    public static final RegistryObject<Block> ROTTEN_FLESH_BLOCK = registerBlock("rotten_flesh_block",
+            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.MOSS_BLOCK).destroyTime(1.0F).sound(SoundType.HONEY_BLOCK)));
+
     public static final RegistryObject<Block> STURDY_DEEPSLATE = registerBlock("sturdy_deepslate",
             ()-> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).pushReaction(PushReaction.BLOCK)));
 
