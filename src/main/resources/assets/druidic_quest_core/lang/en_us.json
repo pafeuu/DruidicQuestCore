@@ -6,9 +6,15 @@
   "item.druidic_quest_core.nature_essence": "Nature Essence",
   "item.druidic_quest_core.phoenix_brush": "Phoenix Brush",
   "item.druidic_quest_core.steel_brush": "Steel Brush",
+  "item.druidic_quest_core.steel_ingot": "Steel Ingot",
+  "item.druidic_quest_core.steel_nugget": "Steel Nugget",
+  "item.druidic_quest_core.steel_gear": "Steel Gear",
+  "item.druidic_quest_core.steel_plate": "Steel Plate",
+  "item.druidic_quest_core.steel_rod": "Steel Rod",
 
   "block.druidic_quest_core.primitive_machine": "Primitive Machine Block",
   "block.druidic_quest_core.gold_leaf_block": "Gold Leaf Block",
+  "block.druidic_quest_core.steel_block": "Steel Block",
   "block.druidic_quest_core.stacked_planks": "Stacked Planks",
   "block.druidic_quest_core.packed_planks": "Packed Planks",
   "block.druidic_quest_core.polished_planks": "Polished Planks",
@@ -16,7 +22,7 @@
   "block.druidic_quest_core.sturdy_deepslate": "Sturdy Deepslate",
   "block.druidic_quest_core.sturdy_deepslate_slab": "Sturdy Deepslate Slab",
   "block.druidic_quest_core.suspicious_snow": "Suspicious Snow",
-  "block.druidic_quest_core.suspicious_mud": "Sturdy Mud",
-  "block.druidic_quest_core.suspicious_clay": "Sturdy Clay",
+  "block.druidic_quest_core.suspicious_mud": "Suspicious Mud",
+  "block.druidic_quest_core.suspicious_clay": "Suspicious Clay",
   "block.druidic_quest_core.ivy_block": "Ivy Block"
 }

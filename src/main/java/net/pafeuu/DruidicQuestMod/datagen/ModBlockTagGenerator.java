@@ -29,7 +29,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(BlockRegistry.STURDY_DEEPSLATE_SLAB.get(),
                         BlockRegistry.STURDY_DEEPSLATE.get());
 
-        this.tag(BlockTags.NEEDS_DIAMOND_TOOL);
+        this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
+                .add(BlockRegistry.STEEL_BLOCK.get());
 
         this.tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(BlockRegistry.PACKED_PLANKS.get(),
@@ -44,6 +45,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(BlockRegistry.PRIMITIVE_MACHINE.get(),
                         BlockRegistry.STURDY_DEEPSLATE.get(),
+                        BlockRegistry.STEEL_BLOCK.get(),
                         BlockRegistry.STURDY_DEEPSLATE_SLAB.get());
 
         this.tag(BlockTags.MINEABLE_WITH_HOE)

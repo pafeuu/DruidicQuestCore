@@ -79,6 +79,11 @@ public class DruidicQuestMod
 
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ItemRegistry.NATURE_ESSENCE);
+            event.accept(ItemRegistry.STEEL_INGOT);
+            event.accept(ItemRegistry.STEEL_GEAR);
+            event.accept(ItemRegistry.STEEL_NUGGET);
+            event.accept(ItemRegistry.STEEL_ROD);
+            event.accept(ItemRegistry.STEEL_PLATE);
         }
 
         if(event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
@@ -95,6 +100,7 @@ public class DruidicQuestMod
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(BlockRegistry.IVY_BLOCK);
             event.accept(BlockRegistry.GOLD_LEAF_BLOCK);
+            event.accept(BlockRegistry.STEEL_BLOCK);
             event.accept(BlockRegistry.STURDY_DEEPSLATE);
             event.accept(BlockRegistry.STURDY_DEEPSLATE_SLAB);
             event.accept(BlockRegistry.PRIMITIVE_MACHINE);

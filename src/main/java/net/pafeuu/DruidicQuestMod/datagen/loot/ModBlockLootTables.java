@@ -25,6 +25,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(BlockRegistry.PACKED_PLANKS.get());
         this.dropSelf(BlockRegistry.STACKED_PLANKS.get());
         this.dropSelf(BlockRegistry.POLISHED_PLANKS.get());
+        this.dropSelf(BlockRegistry.STEEL_BLOCK.get());
     }
 
     @Override

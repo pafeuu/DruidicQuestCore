@@ -21,6 +21,11 @@ public class CreativeTabRegistry {
                         pOutput.accept(ItemRegistry.NATURE_ESSENCE.get());
                         pOutput.accept(ItemRegistry.PHOENIX_BRUSH.get());
                         pOutput.accept(ItemRegistry.STEEL_BRUSH.get());
+                        pOutput.accept(ItemRegistry.STEEL_INGOT.get());
+                        pOutput.accept(ItemRegistry.STEEL_NUGGET.get());
+                        pOutput.accept(ItemRegistry.STEEL_GEAR.get());
+                        pOutput.accept(ItemRegistry.STEEL_ROD.get());
+                        pOutput.accept(ItemRegistry.STEEL_PLATE.get());
                         pOutput.accept(BlockRegistry.PRIMITIVE_MACHINE.get());
                         pOutput.accept(BlockRegistry.IVY_BLOCK.get());
                         pOutput.accept(BlockRegistry.STURDY_DEEPSLATE.get());
@@ -33,6 +38,7 @@ public class CreativeTabRegistry {
                         pOutput.accept(BlockRegistry.STACKED_PLANKS.get());
                         pOutput.accept(BlockRegistry.PACKED_PLANKS.get());
                         pOutput.accept(BlockRegistry.POLISHED_PLANKS.get());
+                        pOutput.accept(BlockRegistry.STEEL_BLOCK.get());
                     })
             .build());
     public static void register(IEventBus eventBus) {

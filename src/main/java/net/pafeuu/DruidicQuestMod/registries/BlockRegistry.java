@@ -46,6 +46,9 @@ public class BlockRegistry {
     public static final RegistryObject<Block> STURDY_DEEPSLATE = registerBlock("sturdy_deepslate",
             ()-> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).pushReaction(PushReaction.BLOCK)));
 
+    public static final RegistryObject<Block> STEEL_BLOCK = registerBlock("steel_block",
+            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK)));
+
     public static final RegistryObject<Block> STURDY_DEEPSLATE_SLAB = registerBlock("sturdy_deepslate_slab",
             ()-> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).pushReaction(PushReaction.BLOCK)));
 

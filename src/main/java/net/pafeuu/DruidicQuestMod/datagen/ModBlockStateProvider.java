@@ -20,6 +20,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(BlockRegistry.IVY_BLOCK);
         blockWithItem(BlockRegistry.PRIMITIVE_MACHINE);
         blockWithItem(BlockRegistry.ROTTEN_FLESH_BLOCK);
+        blockWithItem(BlockRegistry.STEEL_BLOCK);
         //blockWithItem(BlockRegistry.STURDY_DEEPSLATE);
     }
 
