@@ -8,6 +8,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 import net.pafeuu.DruidicQuestMod.DruidicQuestMod;
 import net.pafeuu.DruidicQuestMod.registries.BlockRegistry;
+import net.pafeuu.DruidicQuestMod.registries.ItemRegistry;
 
 import javax.annotation.Nullable;
 import java.util.function.Consumer;
@@ -23,6 +24,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         nineBlockStorageRecipesFixed(pWriter, RecipeCategory.BUILDING_BLOCKS, Blocks.DEEPSLATE, RecipeCategory.BUILDING_BLOCKS, BlockRegistry.STURDY_DEEPSLATE.get());
         nineBlockStorageRecipesFixed(pWriter, RecipeCategory.BUILDING_BLOCKS, Items.ROTTEN_FLESH, RecipeCategory.BUILDING_BLOCKS, BlockRegistry.ROTTEN_FLESH_BLOCK.get());
+        nineBlockStorageRecipesFixed(pWriter, RecipeCategory.BUILDING_BLOCKS, ItemRegistry.STEEL_INGOT.get(), RecipeCategory.BUILDING_BLOCKS, BlockRegistry.STEEL_BLOCK.get());
+        nineBlockStorageRecipesFixed(pWriter, RecipeCategory.BUILDING_BLOCKS, ItemRegistry.PLATINUM_INGOT.get(), RecipeCategory.BUILDING_BLOCKS, BlockRegistry.PLATINUM_BLOCK.get());
+        nineBlockStorageRecipesFixed(pWriter, RecipeCategory.BUILDING_BLOCKS, ItemRegistry.URANIUM_INGOT.get(), RecipeCategory.BUILDING_BLOCKS, BlockRegistry.URANIUM_BLOCK.get());
 
     }
 

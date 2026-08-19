@@ -84,6 +84,18 @@ public class DruidicQuestMod
             event.accept(ItemRegistry.STEEL_NUGGET);
             event.accept(ItemRegistry.STEEL_ROD);
             event.accept(ItemRegistry.STEEL_PLATE);
+            event.accept(ItemRegistry.RAW_PLATINUM);
+            event.accept(ItemRegistry.PLATINUM_INGOT);
+            event.accept(ItemRegistry.PLATINUM_GEAR);
+            event.accept(ItemRegistry.PLATINUM_NUGGET);
+            event.accept(ItemRegistry.PLATINUM_ROD);
+            event.accept(ItemRegistry.PLATINUM_PLATE);
+            event.accept(ItemRegistry.RAW_URANIUM);
+            event.accept(ItemRegistry.URANIUM_INGOT);
+            event.accept(ItemRegistry.URANIUM_GEAR);
+            event.accept(ItemRegistry.URANIUM_NUGGET);
+            event.accept(ItemRegistry.URANIUM_ROD);
+            event.accept(ItemRegistry.URANIUM_PLATE);
         }
 
         if(event.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
@@ -95,15 +107,37 @@ public class DruidicQuestMod
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(ItemRegistry.PHOENIX_BRUSH);
             event.accept(ItemRegistry.STEEL_BRUSH);
+            event.accept(ItemRegistry.STEEL_SHOVEL);
+            event.accept(ItemRegistry.STEEL_PICKAXE);
+            event.accept(ItemRegistry.STEEL_HOE);
+            event.accept(ItemRegistry.STEEL_AXE);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(BlockRegistry.IVY_BLOCK);
             event.accept(BlockRegistry.GOLD_LEAF_BLOCK);
             event.accept(BlockRegistry.STEEL_BLOCK);
+            event.accept(BlockRegistry.PLATINUM_BLOCK);
+            event.accept(BlockRegistry.URANIUM_BLOCK);
             event.accept(BlockRegistry.STURDY_DEEPSLATE);
             event.accept(BlockRegistry.STURDY_DEEPSLATE_SLAB);
             event.accept(BlockRegistry.PRIMITIVE_MACHINE);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.COMBAT) {
+            event.accept(ItemRegistry.LUSH_FLOWER_STAFF);
+            event.accept(ItemRegistry.PURE_FLOWER_STAFF);
+            event.accept(ItemRegistry.COBALT_FLOWER_STAFF);
+            event.accept(ItemRegistry.CRIMSON_FLOWER_STAFF);
+            event.accept(ItemRegistry.EBONY_FLOWER_STAFF);
+            event.accept(ItemRegistry.GOLDEN_FLOWER_STAFF);
+            event.accept(ItemRegistry.STEEL_AXE);
+            event.accept(ItemRegistry.STEEL_SWORD);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+            event.accept(BlockRegistry.PLATINUM_ORE);
+            event.accept(BlockRegistry.URANIUM_ORE);
         }
     }
 

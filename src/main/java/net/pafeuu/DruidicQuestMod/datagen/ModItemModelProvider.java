@@ -23,13 +23,45 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ItemRegistry.STEEL_NUGGET);
         simpleItem(ItemRegistry.STEEL_GEAR);
         simpleItem(ItemRegistry.STEEL_ROD);
+        simpleItem(ItemRegistry.PLATINUM_INGOT);
+        simpleItem(ItemRegistry.PLATINUM_NUGGET);
+        simpleItem(ItemRegistry.PLATINUM_GEAR);
+        simpleItem(ItemRegistry.PLATINUM_ROD);
+        simpleItem(ItemRegistry.RAW_PLATINUM);
+        simpleItem(ItemRegistry.URANIUM_INGOT);
+        simpleItem(ItemRegistry.URANIUM_NUGGET);
+        simpleItem(ItemRegistry.URANIUM_GEAR);
+        simpleItem(ItemRegistry.URANIUM_ROD);
+        simpleItem(ItemRegistry.RAW_URANIUM);
+        simpleItem(ItemRegistry.EBONY_FLOWER_STAFF);
+        simpleItem(ItemRegistry.COBALT_FLOWER_STAFF);
+        simpleItem(ItemRegistry.CRIMSON_FLOWER_STAFF);
+        simpleItem(ItemRegistry.LUSH_FLOWER_STAFF);
+        simpleItem(ItemRegistry.PURE_FLOWER_STAFF);
+        simpleItem(ItemRegistry.GOLDEN_FLOWER_STAFF);
+
         countedItem(ItemRegistry.STEEL_PLATE);
+        countedItem(ItemRegistry.URANIUM_PLATE);
+        countedItem(ItemRegistry.PLATINUM_PLATE);
+
+        handheldItem(ItemRegistry.STEEL_PICKAXE);
+        handheldItem(ItemRegistry.STEEL_AXE);
+        handheldItem(ItemRegistry.STEEL_SHOVEL);
+        handheldItem(ItemRegistry.STEEL_HOE);
+        handheldItem(ItemRegistry.STEEL_SWORD);
 
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item)  {
         return withExistingParent(item.getId().getPath(),
                 ResourceLocation.tryParse("item/generated"))
+                .texture("layer0", ResourceLocation.tryBuild(DruidicQuestMod.MODID,"item/" + item.getId().getPath()));
+
+    }
+
+    private ItemModelBuilder handheldItem(RegistryObject<Item> item)  {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.tryParse("item/handheld"))
                 .texture("layer0", ResourceLocation.tryBuild(DruidicQuestMod.MODID,"item/" + item.getId().getPath()));
 
     }

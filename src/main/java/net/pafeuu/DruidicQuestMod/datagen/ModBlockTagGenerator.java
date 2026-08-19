@@ -30,11 +30,20 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         BlockRegistry.STURDY_DEEPSLATE.get());
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(BlockRegistry.STEEL_BLOCK.get());
+                .add(BlockRegistry.STEEL_BLOCK.get(),
+                        BlockRegistry.URANIUM_BLOCK.get(),
+                        BlockRegistry.URANIUM_ORE.get(),
+                        BlockRegistry.PLATINUM_ORE.get(),
+                        BlockRegistry.PLATINUM_BLOCK.get());
 
         this.tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(BlockRegistry.PACKED_PLANKS.get(),
                         BlockRegistry.STACKED_PLANKS.get(),
+                        BlockRegistry.TREATED_PLANKS.get(),
+                        BlockRegistry.TREATED_LOG.get(),
+                        BlockRegistry.TREATED_WOOD.get(),
+                        BlockRegistry.STRIPPED_TREATED_LOG.get(),
+                        BlockRegistry.STRIPPED_TREATED_WOOD.get(),
                         BlockRegistry.POLISHED_PLANKS.get());
 
         this.tag(BlockTags.MINEABLE_WITH_SHOVEL)
@@ -46,12 +55,28 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(BlockRegistry.PRIMITIVE_MACHINE.get(),
                         BlockRegistry.STURDY_DEEPSLATE.get(),
                         BlockRegistry.STEEL_BLOCK.get(),
+                        BlockRegistry.URANIUM_BLOCK.get(),
+                        BlockRegistry.URANIUM_ORE.get(),
+                        BlockRegistry.PLATINUM_BLOCK.get(),
+                        BlockRegistry.PLATINUM_ORE.get(),
                         BlockRegistry.STURDY_DEEPSLATE_SLAB.get());
 
         this.tag(BlockTags.MINEABLE_WITH_HOE)
                 .add(BlockRegistry.IVY_BLOCK.get(),
                         BlockRegistry.ROTTEN_FLESH_BLOCK.get(),
                         BlockRegistry.GOLD_LEAF_BLOCK.get());
+
+        this.tag(BlockTags.PLANKS)
+                .add(BlockRegistry.TREATED_PLANKS.get(),
+                        BlockRegistry.POLISHED_PLANKS.get(),
+                        BlockRegistry.STACKED_PLANKS.get(),
+                        BlockRegistry.PACKED_PLANKS.get());
+
+        this.tag(BlockTags.LOGS)
+                .add(BlockRegistry.TREATED_LOG.get(),
+                        BlockRegistry.STRIPPED_TREATED_LOG.get(),
+                        BlockRegistry.TREATED_WOOD.get(),
+                        BlockRegistry.STRIPPED_TREATED_WOOD.get());
 
 
     }

@@ -4,8 +4,10 @@ import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraftforge.registries.RegistryObject;
 import net.pafeuu.DruidicQuestMod.registries.BlockRegistry;
+import net.pafeuu.DruidicQuestMod.registries.ItemRegistry;
 
 import java.util.Set;
 
@@ -26,6 +28,19 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(BlockRegistry.STACKED_PLANKS.get());
         this.dropSelf(BlockRegistry.POLISHED_PLANKS.get());
         this.dropSelf(BlockRegistry.STEEL_BLOCK.get());
+        this.dropSelf(BlockRegistry.URANIUM_BLOCK.get());
+        this.dropSelf(BlockRegistry.PLATINUM_BLOCK.get());
+        this.dropSelf(BlockRegistry.TREATED_WOOD.get());
+        this.dropSelf(BlockRegistry.TREATED_PLANKS.get());
+        this.dropSelf(BlockRegistry.TREATED_LOG.get());
+        this.dropSelf(BlockRegistry.STRIPPED_TREATED_LOG.get());
+        this.dropSelf(BlockRegistry.STRIPPED_TREATED_WOOD.get());
+
+        this.add(BlockRegistry.PLATINUM_ORE.get(),
+                block -> createOreDrop(BlockRegistry.PLATINUM_ORE.get(),ItemRegistry.RAW_PLATINUM.get()));
+
+        this.add(BlockRegistry.URANIUM_ORE.get(),
+                block -> createOreDrop(BlockRegistry.URANIUM_ORE.get(),ItemRegistry.RAW_URANIUM.get()));
     }
 
     @Override
