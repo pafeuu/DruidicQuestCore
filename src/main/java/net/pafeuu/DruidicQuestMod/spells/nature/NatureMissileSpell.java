@@ -35,15 +35,15 @@ public class NatureMissileSpell extends AbstractSpell {
             .setMinRarity(SpellRarity.COMMON)
             .setSchoolResource(SchoolRegistry.NATURE_RESOURCE)
             .setMaxLevel(10)
-            .setCooldownSeconds(0.5)
+            .setCooldownSeconds(1.5)
             .build();
 
     public NatureMissileSpell() {
-        this.manaCostPerLevel = 2;
-        this.baseSpellPower = 6;
+        this.manaCostPerLevel = 3;
+        this.baseSpellPower = 16;
         this.spellPowerPerLevel = 1;
         this.castTime = 0;
-        this.baseManaCost = 3;
+        this.baseManaCost = 15;
     }
 
     @Override

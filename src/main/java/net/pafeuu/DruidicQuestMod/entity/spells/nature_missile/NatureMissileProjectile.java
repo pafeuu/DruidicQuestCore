@@ -68,7 +68,7 @@ public class NatureMissileProjectile extends AbstractMagicProjectile {
 
     @Override
     public void impactParticles(double x, double y, double z) {
-        MagicManager.spawnParticles(level(), ParticleTypes.HAPPY_VILLAGER, x, y, z, 5, .1, .1, .1, .25, true);
+        MagicManager.spawnParticles(level(), ParticleTypes.HAPPY_VILLAGER, x, y, z, 10, .1, .1, .1, .25, true);
     }
 
     @Override
@@ -82,7 +82,7 @@ public class NatureMissileProjectile extends AbstractMagicProjectile {
         }
 
         float radius = 0.25f;
-        int steps = 4;
+        int steps = 20;
         Vec3 forward = vel.normalize();
         Vec3 worldUp = new Vec3(0, 1, 0);
         Vec3 axis1 = forward.cross(worldUp);
