@@ -19,10 +19,15 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         simpleItem(ItemRegistry.NATURE_ESSENCE);
+        simpleItem(ItemRegistry.TREATED_STICK);
         simpleItem(ItemRegistry.STEEL_INGOT);
         simpleItem(ItemRegistry.STEEL_NUGGET);
         simpleItem(ItemRegistry.STEEL_GEAR);
         simpleItem(ItemRegistry.STEEL_ROD);
+        simpleItem(ItemRegistry.STEEL_HELMET);
+        simpleItem(ItemRegistry.STEEL_CHESTPLATE);
+        simpleItem(ItemRegistry.STEEL_LEGGINGS);
+        simpleItem(ItemRegistry.STEEL_BOOTS);
         simpleItem(ItemRegistry.PLATINUM_INGOT);
         simpleItem(ItemRegistry.PLATINUM_NUGGET);
         simpleItem(ItemRegistry.PLATINUM_GEAR);
@@ -44,6 +49,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         countedItem(ItemRegistry.URANIUM_PLATE);
         countedItem(ItemRegistry.PLATINUM_PLATE);
 
+        handheldItem(ItemRegistry.ARCANIST_HAMMER);
         handheldItem(ItemRegistry.STEEL_PICKAXE);
         handheldItem(ItemRegistry.STEEL_AXE);
         handheldItem(ItemRegistry.STEEL_SHOVEL);

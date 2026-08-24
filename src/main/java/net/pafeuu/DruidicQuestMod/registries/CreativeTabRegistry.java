@@ -18,7 +18,9 @@ public class CreativeTabRegistry {
             ()-> CreativeModeTab.builder().icon(()-> new ItemStack(ItemRegistry.NATURE_ESSENCE.get()))
                     .title(Component.translatable("creativetab.druidic_quest"))
                     .displayItems((pParametersm,pOutput)->{
+                        pOutput.accept(ItemRegistry.ARCANIST_HAMMER.get());
                         pOutput.accept(ItemRegistry.NATURE_ESSENCE.get());
+                        pOutput.accept(ItemRegistry.TREATED_STICK.get());
                         pOutput.accept(ItemRegistry.PHOENIX_BRUSH.get());
                         pOutput.accept(ItemRegistry.STEEL_BRUSH.get());
                         pOutput.accept(ItemRegistry.STEEL_INGOT.get());
@@ -43,6 +45,10 @@ public class CreativeTabRegistry {
                         pOutput.accept(ItemRegistry.STEEL_SHOVEL.get());
                         pOutput.accept(ItemRegistry.STEEL_HOE.get());
                         pOutput.accept(ItemRegistry.STEEL_SWORD.get());
+                        pOutput.accept(ItemRegistry.STEEL_HELMET.get());
+                        pOutput.accept(ItemRegistry.STEEL_CHESTPLATE.get());
+                        pOutput.accept(ItemRegistry.STEEL_LEGGINGS.get());
+                        pOutput.accept(ItemRegistry.STEEL_BOOTS.get());
                         pOutput.accept(ItemRegistry.COBALT_FLOWER_STAFF.get());
                         pOutput.accept(ItemRegistry.EBONY_FLOWER_STAFF.get());
                         pOutput.accept(ItemRegistry.CRIMSON_FLOWER_STAFF.get());

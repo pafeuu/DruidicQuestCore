@@ -48,8 +48,10 @@ public class DruidicQuestMod
         EntityRegistry.register(modEventBus);
         SpellRegistry.register(modEventBus);
 
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
+        modEventBus.addListener(this::registerDispenserBehaviors);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -59,6 +61,11 @@ public class DruidicQuestMod
 
         // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
         context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+    }
+
+    private void registerDispenserBehaviors(final FMLCommonSetupEvent event)
+    {
+        //event.enqueueWork(DispenserBehaviourRegistry::registerDispenserBehaviour);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
@@ -79,6 +86,7 @@ public class DruidicQuestMod
 
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ItemRegistry.NATURE_ESSENCE);
+            event.accept(ItemRegistry.TREATED_STICK);
             event.accept(ItemRegistry.STEEL_INGOT);
             event.accept(ItemRegistry.STEEL_GEAR);
             event.accept(ItemRegistry.STEEL_NUGGET);
@@ -105,6 +113,7 @@ public class DruidicQuestMod
         }
 
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(ItemRegistry.ARCANIST_HAMMER);
             event.accept(ItemRegistry.PHOENIX_BRUSH);
             event.accept(ItemRegistry.STEEL_BRUSH);
             event.accept(ItemRegistry.STEEL_SHOVEL);
@@ -133,6 +142,10 @@ public class DruidicQuestMod
             event.accept(ItemRegistry.GOLDEN_FLOWER_STAFF);
             event.accept(ItemRegistry.STEEL_AXE);
             event.accept(ItemRegistry.STEEL_SWORD);
+            event.accept(ItemRegistry.STEEL_HELMET);
+            event.accept(ItemRegistry.STEEL_CHESTPLATE);
+            event.accept(ItemRegistry.STEEL_LEGGINGS);
+            event.accept(ItemRegistry.STEEL_BOOTS);
         }
 
         if(event.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {

@@ -10,6 +10,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.pafeuu.DruidicQuestMod.DruidicQuestMod;
+import net.pafeuu.DruidicQuestMod.registries.tiers.ArmorTierRegistry;
 import net.pafeuu.DruidicQuestMod.registries.tiers.ToolTierRegistry;
 import net.pafeuu.DruidicQuestMod.registries.tiers.WeaponTierRegistry;
 
@@ -20,6 +21,12 @@ public class ItemRegistry {
 
     public static final RegistryObject<Item> NATURE_ESSENCE = ITEMS.register("nature_essence",
             ()-> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> TREATED_STICK = ITEMS.register("treated_stick",
+            ()-> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> ARCANIST_HAMMER = ITEMS.register("arcanist_hammer",
+            ()-> new Item(new Item.Properties().defaultDurability(256)));
 
     public static final RegistryObject<Item> RAW_URANIUM = ITEMS.register("raw_uranium",
             ()-> new Item(new Item.Properties()));
@@ -92,6 +99,15 @@ public class ItemRegistry {
 
     public static final RegistryObject<Item> STEEL_SWORD = ITEMS.register("steel_sword",
             ()-> new SwordItem(ToolTierRegistry.STEEL, 6,-2.4f, new Item.Properties()));
+
+    public static final RegistryObject<Item> STEEL_HELMET = ITEMS.register("steel_helmet",
+            ()-> new ArmorItem(ArmorTierRegistry.STEEL, ArmorItem.Type.HELMET,new Item.Properties().defaultDurability(-1)));
+    public static final RegistryObject<Item> STEEL_CHESTPLATE = ITEMS.register("steel_chestplate",
+            ()-> new ArmorItem(ArmorTierRegistry.STEEL, ArmorItem.Type.CHESTPLATE,new Item.Properties().defaultDurability(-1)));
+    public static final RegistryObject<Item> STEEL_LEGGINGS = ITEMS.register("steel_leggings",
+            ()-> new ArmorItem(ArmorTierRegistry.STEEL, ArmorItem.Type.LEGGINGS,new Item.Properties().defaultDurability(-1)));
+    public static final RegistryObject<Item> STEEL_BOOTS = ITEMS.register("steel_boots",
+            ()-> new ArmorItem(ArmorTierRegistry.STEEL, ArmorItem.Type.BOOTS,new Item.Properties().defaultDurability(-1)));
 
 
     public static final RegistryObject<Item> CRIMSON_FLOWER_STAFF = ITEMS.register("crimson_flower_staff",

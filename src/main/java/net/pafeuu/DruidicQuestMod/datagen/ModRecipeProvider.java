@@ -2,10 +2,14 @@ package net.pafeuu.DruidicQuestMod.datagen;
 
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.pafeuu.DruidicQuestMod.DruidicQuestMod;
 import net.pafeuu.DruidicQuestMod.registries.BlockRegistry;
 import net.pafeuu.DruidicQuestMod.registries.ItemRegistry;
@@ -27,6 +31,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         nineBlockStorageRecipesFixed(pWriter, RecipeCategory.BUILDING_BLOCKS, ItemRegistry.STEEL_INGOT.get(), RecipeCategory.BUILDING_BLOCKS, BlockRegistry.STEEL_BLOCK.get());
         nineBlockStorageRecipesFixed(pWriter, RecipeCategory.BUILDING_BLOCKS, ItemRegistry.PLATINUM_INGOT.get(), RecipeCategory.BUILDING_BLOCKS, BlockRegistry.PLATINUM_BLOCK.get());
         nineBlockStorageRecipesFixed(pWriter, RecipeCategory.BUILDING_BLOCKS, ItemRegistry.URANIUM_INGOT.get(), RecipeCategory.BUILDING_BLOCKS, BlockRegistry.URANIUM_BLOCK.get());
+        slabBuilder(RecipeCategory.BUILDING_BLOCKS,BlockRegistry.STURDY_DEEPSLATE_SLAB.get(), Ingredient.of(BlockRegistry.STURDY_DEEPSLATE.get()));
+        toolRecipes(pWriter,"steel",ItemRegistry.TREATED_STICK.get());
+        armorRecipes(pWriter,"steel");
+        stickRecipe(pWriter,ItemRegistry.TREATED_STICK.get(),BlockRegistry.TREATED_PLANKS.get(),4);
+
 
     }
 
@@ -47,5 +56,103 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("###").pattern("###")
                 .group(pPackedGroup).unlockedBy(getHasName(pUnpacked), has(pUnpacked))
                 .save(pFinishedRecipeConsumer, DruidicQuestMod.MODID+":packing_"+ getItemName(pUnpacked));
+    }
+
+    protected static void stickRecipe(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pOutput, ItemLike pInput, int count){
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,pOutput,count)
+                .define('X',pInput)
+                .pattern("X")
+                .pattern("X")
+                .unlockedBy(getHasName(pInput),has(pInput))
+                .save(pFinishedRecipeConsumer);
+    }
+    protected static void toolRecipes(Consumer<FinishedRecipe> pFinishedRecipeConsumer, String materialType, ItemLike rod){
+
+        ItemLike ingot = ForgeRegistries.ITEMS.getValue(ResourceLocation.tryParse(DruidicQuestMod.MODID+":"+materialType+"_ingot"));
+        ItemLike pickaxe = ForgeRegistries.ITEMS.getValue(ResourceLocation.tryParse(DruidicQuestMod.MODID+":"+materialType+"_pickaxe"));
+        ItemLike axe = ForgeRegistries.ITEMS.getValue(ResourceLocation.tryParse(DruidicQuestMod.MODID+":"+materialType+"_axe"));
+        ItemLike hoe = ForgeRegistries.ITEMS.getValue(ResourceLocation.tryParse(DruidicQuestMod.MODID+":"+materialType+"_hoe"));
+        ItemLike shovel = ForgeRegistries.ITEMS.getValue(ResourceLocation.tryParse(DruidicQuestMod.MODID+":"+materialType+"_shovel"));
+        ItemLike sword = ForgeRegistries.ITEMS.getValue(ResourceLocation.tryParse(DruidicQuestMod.MODID+":"+materialType+"_sword"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, pickaxe)
+                .define('M', ingot)
+                .define('S',rod)
+                .pattern("MMM")
+                .pattern(" S ")
+                .pattern(" S ")
+                .group(materialType+"pickaxe").unlockedBy(getHasName(ingot), has(ingot))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, axe)
+                .define('M', ingot)
+                .define('S',rod)
+                .pattern("MM ")
+                .pattern("MS ")
+                .pattern(" S ").unlockedBy(getHasName(ingot), has(ingot))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, hoe)
+                .define('M', ingot)
+                .define('S', rod)
+                .pattern("MM ")
+                .pattern(" S ")
+                .pattern(" S ").unlockedBy(getHasName(ingot), has(ingot))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, shovel)
+                .define('M', ingot)
+                .define('S', rod)
+                .pattern(" M ")
+                .pattern(" S ")
+                .pattern(" S ").unlockedBy(getHasName(ingot), has(ingot))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, sword)
+                .define('M', ingot)
+                .define('S', rod)
+                .pattern(" M ")
+                .pattern(" M ")
+                .pattern(" S ").unlockedBy(getHasName(ingot), has(ingot))
+                .save(pFinishedRecipeConsumer);
+    }
+
+    protected static void armorRecipes(Consumer<FinishedRecipe> pFinishedRecipeConsumer, String materialType){
+
+        ItemLike plate = ForgeRegistries.ITEMS.getValue(ResourceLocation.tryParse(DruidicQuestMod.MODID+":"+materialType+"_plate"));
+        ItemLike helmet = ForgeRegistries.ITEMS.getValue(ResourceLocation.tryParse(DruidicQuestMod.MODID+":"+materialType+"_helmet"));
+        ItemLike chestplate = ForgeRegistries.ITEMS.getValue(ResourceLocation.tryParse(DruidicQuestMod.MODID+":"+materialType+"_chestplate"));
+        ItemLike leggings = ForgeRegistries.ITEMS.getValue(ResourceLocation.tryParse(DruidicQuestMod.MODID+":"+materialType+"_leggings"));
+        ItemLike boots = ForgeRegistries.ITEMS.getValue(ResourceLocation.tryParse(DruidicQuestMod.MODID+":"+materialType+"_boots"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, helmet)
+                .define('M', plate)
+                .pattern("MMM")
+                .pattern("M M")
+                .group(materialType+"helmet").unlockedBy(getHasName(plate), has(plate))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, chestplate)
+                .define('M', plate)
+                .pattern("M M")
+                .pattern("MMM")
+                .pattern("MMM")
+                .group(materialType+"chestplate").unlockedBy(getHasName(plate), has(plate))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, leggings)
+                .define('M', plate)
+                .pattern("MMM")
+                .pattern("M M")
+                .pattern("M M")
+                .group(materialType+"leggings").unlockedBy(getHasName(plate), has(plate))
+                .save(pFinishedRecipeConsumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, boots)
+                .define('M', plate)
+                .pattern("M M")
+                .pattern("M M")
+                .group(materialType+"boots").unlockedBy(getHasName(plate), has(plate))
+                .save(pFinishedRecipeConsumer);
     }
 }
