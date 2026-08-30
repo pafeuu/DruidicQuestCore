@@ -4,12 +4,14 @@ import cofh.core.common.item.CountedItem;
 import io.redspace.ironsspellbooks.api.item.weapons.MagicSwordItem;
 import io.redspace.ironsspellbooks.api.registry.SpellDataRegistryHolder;
 import io.redspace.ironsspellbooks.api.registry.SpellRegistry;
+import io.redspace.ironsspellbooks.item.weapons.StaffItem;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.pafeuu.DruidicQuestMod.DruidicQuestMod;
+import net.pafeuu.DruidicQuestMod.itemClasses.ExtendedStaffItem;
 import net.pafeuu.DruidicQuestMod.registries.tiers.ArmorTierRegistry;
 import net.pafeuu.DruidicQuestMod.registries.tiers.ToolTierRegistry;
 import net.pafeuu.DruidicQuestMod.registries.tiers.WeaponTierRegistry;
@@ -109,29 +111,28 @@ public class ItemRegistry {
     public static final RegistryObject<Item> STEEL_BOOTS = ITEMS.register("steel_boots",
             ()-> new ArmorItem(ArmorTierRegistry.STEEL, ArmorItem.Type.BOOTS,new Item.Properties().defaultDurability(-1)));
 
-
     public static final RegistryObject<Item> CRIMSON_FLOWER_STAFF = ITEMS.register("crimson_flower_staff",
-            ()-> new MagicSwordItem(WeaponTierRegistry.FLOWER_STAFF, new Item.Properties(),
+            ()-> new ExtendedStaffItem(WeaponTierRegistry.FLOWER_STAFF, new Item.Properties(),
                     SpellDataRegistryHolder.of(new SpellDataRegistryHolder(SpellRegistry.FIREBOLT_SPELL,1))));
 
     public static final RegistryObject<Item> PURE_FLOWER_STAFF = ITEMS.register("pure_flower_staff",
-            ()-> new MagicSwordItem(WeaponTierRegistry.FLOWER_STAFF, new Item.Properties(),
+            ()-> new ExtendedStaffItem(WeaponTierRegistry.FLOWER_STAFF, new Item.Properties(),
                     SpellDataRegistryHolder.of(new SpellDataRegistryHolder(SpellRegistry.BALL_LIGHTNING_SPELL,1))));
 
     public static final RegistryObject<Item> GOLDEN_FLOWER_STAFF = ITEMS.register("golden_flower_staff",
-            ()-> new MagicSwordItem(WeaponTierRegistry.FLOWER_STAFF, new Item.Properties(),
+            ()-> new ExtendedStaffItem(WeaponTierRegistry.FLOWER_STAFF, new Item.Properties(),
                     SpellDataRegistryHolder.of(new SpellDataRegistryHolder(SpellRegistry.FIRECRACKER_SPELL,1))));
 
     public static final RegistryObject<Item> LUSH_FLOWER_STAFF = ITEMS.register("lush_flower_staff",
-            ()-> new MagicSwordItem(WeaponTierRegistry.FLOWER_STAFF, new Item.Properties(),
+            ()-> new ExtendedStaffItem(WeaponTierRegistry.FLOWER_STAFF, new Item.Properties(),
                     SpellDataRegistryHolder.of(new SpellDataRegistryHolder(net.pafeuu.DruidicQuestMod.registries.SpellRegistry.NATURE_MISSILE,1))));
 
     public static final RegistryObject<Item> COBALT_FLOWER_STAFF = ITEMS.register("cobalt_flower_staff",
-            ()-> new MagicSwordItem(WeaponTierRegistry.FLOWER_STAFF, new Item.Properties(),
+            ()-> new ExtendedStaffItem(WeaponTierRegistry.FLOWER_STAFF, new Item.Properties(),
                     SpellDataRegistryHolder.of(new SpellDataRegistryHolder(SpellRegistry.ICICLE_SPELL,1))));
 
     public static final RegistryObject<Item> EBONY_FLOWER_STAFF = ITEMS.register("ebony_flower_staff",
-            ()-> new MagicSwordItem(WeaponTierRegistry.FLOWER_STAFF, new Item.Properties(),
+            ()-> new ExtendedStaffItem(WeaponTierRegistry.FLOWER_STAFF, new Item.Properties(),
                     SpellDataRegistryHolder.of(new SpellDataRegistryHolder(SpellRegistry.MAGIC_MISSILE_SPELL,1))));
 
 
