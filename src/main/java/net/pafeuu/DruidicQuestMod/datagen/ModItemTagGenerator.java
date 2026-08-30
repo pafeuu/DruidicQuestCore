@@ -9,6 +9,7 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.pafeuu.DruidicQuestMod.DruidicQuestMod;
 import net.pafeuu.DruidicQuestMod.registries.BlockRegistry;
 import net.pafeuu.DruidicQuestMod.registries.ItemRegistry;
@@ -23,59 +24,55 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         super(pOutput, pLookupProvider, pBlockTags, DruidicQuestMod.MODID, existingFileHelper);
     }
 
+
+
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
 
-        tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "ingots/steel")))
-                .add(ItemRegistry.STEEL_INGOT.get());
+        String [] materialTypes = {"steel","platinum","uranium"};
 
-        tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "nuggets/steel")))
-                .add(ItemRegistry.STEEL_NUGGET.get());
+        for(String material : materialTypes)
+        {
 
-        tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "rods/steel")))
-                .add(ItemRegistry.STEEL_ROD.get());
+            addMaterialIngredientTag("nugget",material);
+            addMaterialIngredientTag("ingot",material);
+            storageBlocksTag(material);
+            addMaterialIngredientTag("plate",material);
+            addMaterialIngredientTag("rod",material);
+            addMaterialIngredientTag("gear",material);
+        }
 
-        tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "gears/steel")))
-                .add(ItemRegistry.STEEL_GEAR.get());
-
-        tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "plates/steel")))
-                .add(ItemRegistry.STEEL_PLATE.get());
-
-
-        tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge","plates")))
-                .add(ItemRegistry.STEEL_PLATE.get())
-                .add(ItemRegistry.URANIUM_PLATE.get())
-                .add(ItemRegistry.PLATINUM_PLATE.get());
-
-        tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge","rods")))
-                .add(ItemRegistry.STEEL_ROD.get())
-                .add(ItemRegistry.URANIUM_ROD.get())
-                .add(ItemRegistry.PLATINUM_ROD.get());
-
-        tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge","gears")))
-                .add(ItemRegistry.STEEL_GEAR.get())
-                .add(ItemRegistry.URANIUM_GEAR.get())
-                .add(ItemRegistry.PLATINUM_GEAR.get());
-
-        tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge","nuggets")))
-                .add(ItemRegistry.STEEL_NUGGET.get())
-                .add(ItemRegistry.URANIUM_NUGGET.get())
-                .add(ItemRegistry.PLATINUM_NUGGET.get());
-
-        tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge","ingots")))
-                .add(ItemRegistry.STEEL_INGOT.get())
-                .add(ItemRegistry.URANIUM_INGOT.get())
-                .add(ItemRegistry.PLATINUM_INGOT.get());
-
-
-        tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "storage_blocks/steel")))
+        /*tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "storage_blocks/steel")))
                 .add(Item.byBlock(BlockRegistry.STEEL_BLOCK.get()));
 
         tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "storage_blocks")))
-                .add(Item.byBlock(BlockRegistry.STEEL_BLOCK.get()));
+                .add(Item.byBlock(BlockRegistry.STEEL_BLOCK.get()))
+                .add(Item.byBlock(BlockRegistry.URANIUM_BLOCK.get()))
+                .add(Item.byBlock(BlockRegistry.PLATINUM_BLOCK.get()));*/
 
+        tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge","stripped_logs")))
+                .add(Item.byBlock(BlockRegistry.STRIPPED_TREATED_LOG.get()));
+
+        tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge","stripped_wood")))
+                .add(Item.byBlock(BlockRegistry.STRIPPED_TREATED_WOOD.get()));
 
         copy(BlockTags.LOGS,ItemTags.LOGS);
         copy(BlockTags.PLANKS,ItemTags.PLANKS);
     }
+
+    protected void addMaterialIngredientTag(String ingredientType, String materialType){
+        Item id = ForgeRegistries.ITEMS.getValue(ResourceLocation.fromNamespaceAndPath(DruidicQuestMod.MODID,materialType+"_"+ingredientType));
+        tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", ingredientType+"s/"+materialType))).add(id);
+        tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", ingredientType+"s"))).add(id);
+    }
+
+    protected void storageBlocksTag(String materialType){
+
+        tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "storage_blocks")))
+                .add(Item.byBlock(ForgeRegistries.BLOCKS.getValue(ResourceLocation.fromNamespaceAndPath(DruidicQuestMod.MODID,materialType+"_block"))));
+
+        tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "storage_blocks/"+materialType)))
+                .add(Item.byBlock(ForgeRegistries.BLOCKS.getValue(ResourceLocation.fromNamespaceAndPath(DruidicQuestMod.MODID,materialType+"_block"))));
+    }
+
 }
