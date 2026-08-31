@@ -7,6 +7,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
@@ -27,6 +28,9 @@ public class BlockRegistry {
     public static final RegistryObject<Block> PRIMITIVE_MACHINE = registerBlock("primitive_machine",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE)));
 
+    public static final RegistryObject<Block> ALLOY_BRICKS = registerBlock("alloy_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE)));
+
     public static final RegistryObject<Block> GOLD_LEAF_BLOCK = registerBlock("gold_leaf_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.MOSS_BLOCK)));
 
@@ -38,6 +42,25 @@ public class BlockRegistry {
 
     public static final RegistryObject<Block> TREATED_PLANKS = registerBlock("treated_planks",
             ()-> new Block(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS)));
+
+    public static final RegistryObject<Block> TREATED_SLAB = registerBlock("treated_slab",
+            ()-> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS)));
+
+    public static final RegistryObject<Block> TREATED_FENCE = registerBlock("treated_fence",
+            ()-> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS)));
+
+    public static final RegistryObject<Block> TREATED_FENCE_GATE = registerBlock("treated_fence_gate",
+            ()-> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS),SoundEvents.FENCE_GATE_OPEN,SoundEvents.FENCE_GATE_CLOSE));
+
+    public static final RegistryObject<Block> TREATED_DOOR = registerBlock("treated_door",
+            ()-> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS), BlockSetType.ACACIA));
+
+    public static final RegistryObject<Block> TREATED_TRAPDOOR = registerBlock("treated_trapdoor",
+            ()-> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS), BlockSetType.ACACIA));
+
+
+    public static final RegistryObject<Block> TREATED_STAIRS = registerBlock("treated_stairs",
+            ()-> new StairBlock(()-> BlockRegistry.TREATED_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS)));
 
     public static final RegistryObject<Block> TREATED_LOG = registerBlock("treated_log",
             ()-> new customLogBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS)));
@@ -71,7 +94,6 @@ public class BlockRegistry {
 
     public static final RegistryObject<Block> PLATINUM_BLOCK = registerBlock("platinum_block",
             ()-> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK)));
-
 
     public static final RegistryObject<Block> STURDY_DEEPSLATE_SLAB = registerBlock("sturdy_deepslate_slab",
             ()-> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).pushReaction(PushReaction.BLOCK)));

@@ -2,7 +2,9 @@ package net.pafeuu.DruidicQuestMod;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -131,6 +133,21 @@ public class DruidicQuestMod
             event.accept(BlockRegistry.STURDY_DEEPSLATE);
             event.accept(BlockRegistry.STURDY_DEEPSLATE_SLAB);
             event.accept(BlockRegistry.PRIMITIVE_MACHINE);
+            event.accept(BlockRegistry.ALLOY_BRICKS);
+            event.accept(BlockRegistry.STACKED_PLANKS);
+            event.accept(BlockRegistry.PACKED_PLANKS);
+            event.accept(BlockRegistry.POLISHED_PLANKS);
+            event.accept(BlockRegistry.TREATED_PLANKS);
+            event.accept(BlockRegistry.TREATED_SLAB);
+            event.accept(BlockRegistry.TREATED_STAIRS);
+            event.accept(BlockRegistry.TREATED_DOOR);
+            event.accept(BlockRegistry.TREATED_TRAPDOOR);
+            event.accept(BlockRegistry.TREATED_FENCE);
+            event.accept(BlockRegistry.TREATED_FENCE_GATE);
+            event.accept(BlockRegistry.TREATED_LOG);
+            event.accept(BlockRegistry.STRIPPED_TREATED_LOG);
+            event.accept(BlockRegistry.TREATED_WOOD);
+            event.accept(BlockRegistry.STRIPPED_TREATED_WOOD);
         }
 
         if(event.getTabKey() == CreativeModeTabs.COMBAT) {
@@ -169,6 +186,12 @@ public class DruidicQuestMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
+            event.enqueueWork(() -> {
+                ItemProperties.register(ItemRegistry.PRIMITIVE_SHIELD.get(),
+                        ResourceLocation.tryParse("blocking"),
+                        (stack, level, entity, seed) ->
+                                entity != null && entity.isUsingItem() && entity.getUseItem() == stack ? 1.0F : 0.0F);
+            });
             // Some client setup code
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());

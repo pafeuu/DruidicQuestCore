@@ -3,6 +3,8 @@ package net.pafeuu.DruidicQuestMod.datagen;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
@@ -29,12 +31,22 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         nineBlockStorageRecipesFixed(pWriter, RecipeCategory.BUILDING_BLOCKS, Blocks.DEEPSLATE, RecipeCategory.BUILDING_BLOCKS, BlockRegistry.STURDY_DEEPSLATE.get());
         nineBlockStorageRecipesFixed(pWriter, RecipeCategory.BUILDING_BLOCKS, Items.ROTTEN_FLESH, RecipeCategory.BUILDING_BLOCKS, BlockRegistry.ROTTEN_FLESH_BLOCK.get());
         nineBlockStorageRecipesFixed(pWriter, RecipeCategory.BUILDING_BLOCKS, ItemRegistry.STEEL_INGOT.get(), RecipeCategory.BUILDING_BLOCKS, BlockRegistry.STEEL_BLOCK.get());
+        nineBlockStorageRecipesFixed(pWriter, RecipeCategory.MISC, ItemRegistry.STEEL_NUGGET.get(), RecipeCategory.MISC, ItemRegistry.STEEL_INGOT.get());
         nineBlockStorageRecipesFixed(pWriter, RecipeCategory.BUILDING_BLOCKS, ItemRegistry.PLATINUM_INGOT.get(), RecipeCategory.BUILDING_BLOCKS, BlockRegistry.PLATINUM_BLOCK.get());
+        nineBlockStorageRecipesFixed(pWriter, RecipeCategory.MISC, ItemRegistry.PLATINUM_NUGGET.get(), RecipeCategory.MISC, ItemRegistry.PLATINUM_INGOT.get());
         nineBlockStorageRecipesFixed(pWriter, RecipeCategory.BUILDING_BLOCKS, ItemRegistry.URANIUM_INGOT.get(), RecipeCategory.BUILDING_BLOCKS, BlockRegistry.URANIUM_BLOCK.get());
+        nineBlockStorageRecipesFixed(pWriter, RecipeCategory.MISC, ItemRegistry.URANIUM_NUGGET.get(), RecipeCategory.MISC, ItemRegistry.URANIUM_INGOT.get());
         slabBuilder(RecipeCategory.BUILDING_BLOCKS,BlockRegistry.STURDY_DEEPSLATE_SLAB.get(), Ingredient.of(BlockRegistry.STURDY_DEEPSLATE.get()));
         toolRecipes(pWriter,"steel",ItemRegistry.TREATED_STICK.get());
         armorRecipes(pWriter,"steel");
         stickRecipe(pWriter,ItemRegistry.TREATED_STICK.get(),BlockRegistry.TREATED_PLANKS.get(),4);
+
+        betterTrapdoorBuilder(pWriter,BlockRegistry.TREATED_TRAPDOOR.get(),BlockRegistry.TREATED_PLANKS.get());
+        betterDoorBuilder(pWriter,BlockRegistry.TREATED_DOOR.get(),BlockRegistry.TREATED_PLANKS.get());
+        betterFenceBuilder(pWriter, BlockRegistry.TREATED_FENCE.get(),BlockRegistry.TREATED_PLANKS.get(),ItemRegistry.TREATED_STICK.get());
+        betterFenceGateBuilder(pWriter, BlockRegistry.TREATED_FENCE_GATE.get(),BlockRegistry.TREATED_PLANKS.get(),ItemRegistry.TREATED_STICK.get());
+        betterSlabBuilder(pWriter, BlockRegistry.TREATED_SLAB.get(),BlockRegistry.TREATED_PLANKS.get());
+        betterStairsBuilder(pWriter, BlockRegistry.TREATED_STAIRS.get(),BlockRegistry.TREATED_PLANKS.get());
 
 
     }
@@ -66,6 +78,62 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(pInput),has(pInput))
                 .save(pFinishedRecipeConsumer);
     }
+
+    protected static void betterStairsBuilder(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pStairs, ItemLike pMaterial) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, pStairs, 4)
+                .define('W', pMaterial)
+                .pattern("W  ")
+                .pattern("WW ")
+                .pattern("WWW")
+                .unlockedBy(getHasName(pMaterial),has(pMaterial))
+                .save(pFinishedRecipeConsumer);
+    }
+    protected static void betterSlabBuilder(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pSlab, ItemLike pMaterial) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, pSlab, 5)
+                .define('W', pMaterial)
+                .pattern("WWW")
+                .unlockedBy(getHasName(pMaterial),has(pMaterial))
+                .save(pFinishedRecipeConsumer);
+    }
+
+    protected static void betterTrapdoorBuilder(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pTrapdoor, ItemLike pMaterial) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.REDSTONE, pTrapdoor, 2)
+                .define('#', pMaterial)
+                .pattern("###")
+                .pattern("###")
+                .unlockedBy(getHasName(pMaterial),has(pMaterial))
+                .save(pFinishedRecipeConsumer);
+    }
+
+    protected static void betterDoorBuilder(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pDoor, ItemLike pMaterial) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.REDSTONE, pDoor, 3)
+                .define('#', pMaterial)
+                .pattern("##")
+                .pattern("##")
+                .pattern("##")
+                .unlockedBy(getHasName(pMaterial),has(pMaterial))
+                .save(pFinishedRecipeConsumer);
+    }
+
+    protected static void betterFenceBuilder(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pFence, ItemLike pMaterial, ItemLike pStick) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.DECORATIONS, pFence, 6)
+                .define('W', pMaterial)
+                .define('#', pStick)
+                .pattern("W#W")
+                .pattern("W#W")
+                .unlockedBy(getHasName(pMaterial),has(pMaterial))
+                .save(pFinishedRecipeConsumer);
+    }
+
+    protected static void betterFenceGateBuilder(Consumer<FinishedRecipe> pFinishedRecipeConsumer, ItemLike pFenceGate, ItemLike pMaterial, ItemLike pStick) {
+        ShapedRecipeBuilder.shaped(RecipeCategory.REDSTONE, pFenceGate)
+                .define('#', pStick).define('W', pMaterial)
+                .pattern("#W#")
+                .pattern("#W#")
+                .unlockedBy(getHasName(pMaterial),has(pMaterial))
+                .save(pFinishedRecipeConsumer);
+    }
+
     protected static void toolRecipes(Consumer<FinishedRecipe> pFinishedRecipeConsumer, String materialType, ItemLike rod){
 
         ItemLike ingot = ForgeRegistries.ITEMS.getValue(ResourceLocation.tryParse(DruidicQuestMod.MODID+":"+materialType+"_ingot"));

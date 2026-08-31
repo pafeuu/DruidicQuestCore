@@ -55,8 +55,10 @@ public class CreativeTabRegistry {
                         pOutput.accept(ItemRegistry.LUSH_FLOWER_STAFF.get());
                         pOutput.accept(ItemRegistry.GOLDEN_FLOWER_STAFF.get());
                         pOutput.accept(ItemRegistry.PURE_FLOWER_STAFF.get());
+                        pOutput.accept(ItemRegistry.PRIMITIVE_SHIELD.get());
 
                         pOutput.accept(BlockRegistry.PRIMITIVE_MACHINE.get());
+                        pOutput.accept(BlockRegistry.ALLOY_BRICKS.get());
                         pOutput.accept(BlockRegistry.IVY_BLOCK.get());
                         pOutput.accept(BlockRegistry.STURDY_DEEPSLATE.get());
                         pOutput.accept(BlockRegistry.STURDY_DEEPSLATE_SLAB.get());
@@ -74,6 +76,12 @@ public class CreativeTabRegistry {
                         pOutput.accept(BlockRegistry.TREATED_LOG.get());
                         pOutput.accept(BlockRegistry.STRIPPED_TREATED_LOG.get());
                         pOutput.accept(BlockRegistry.TREATED_PLANKS.get());
+                        pOutput.accept(BlockRegistry.TREATED_SLAB.get());
+                        pOutput.accept(BlockRegistry.TREATED_STAIRS.get());
+                        pOutput.accept(BlockRegistry.TREATED_FENCE.get());
+                        pOutput.accept(BlockRegistry.TREATED_FENCE_GATE.get());
+                        pOutput.accept(BlockRegistry.TREATED_DOOR.get());
+                        pOutput.accept(BlockRegistry.TREATED_TRAPDOOR.get());
                         pOutput.accept(BlockRegistry.TREATED_WOOD.get());
                         pOutput.accept(BlockRegistry.STRIPPED_TREATED_WOOD.get());
                         pOutput.accept(BlockRegistry.PLATINUM_ORE.get());

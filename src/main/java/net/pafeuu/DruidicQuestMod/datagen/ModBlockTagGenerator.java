@@ -27,6 +27,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(BlockRegistry.STURDY_DEEPSLATE_SLAB.get(),
+                        BlockRegistry.ALLOY_BRICKS.get(),
                         BlockRegistry.STURDY_DEEPSLATE.get());
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
@@ -40,6 +41,12 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(BlockRegistry.PACKED_PLANKS.get(),
                         BlockRegistry.STACKED_PLANKS.get(),
                         BlockRegistry.TREATED_PLANKS.get(),
+                        BlockRegistry.TREATED_SLAB.get(),
+                        BlockRegistry.TREATED_STAIRS.get(),
+                        BlockRegistry.TREATED_DOOR.get(),
+                        BlockRegistry.TREATED_FENCE.get(),
+                        BlockRegistry.TREATED_FENCE_GATE.get(),
+                        BlockRegistry.TREATED_TRAPDOOR.get(),
                         BlockRegistry.TREATED_LOG.get(),
                         BlockRegistry.TREATED_WOOD.get(),
                         BlockRegistry.STRIPPED_TREATED_LOG.get(),
@@ -54,6 +61,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(BlockRegistry.PRIMITIVE_MACHINE.get(),
                         BlockRegistry.STURDY_DEEPSLATE.get(),
+                        BlockRegistry.ALLOY_BRICKS.get(),
                         BlockRegistry.STEEL_BLOCK.get(),
                         BlockRegistry.URANIUM_BLOCK.get(),
                         BlockRegistry.URANIUM_ORE.get(),
@@ -77,6 +85,11 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         BlockRegistry.STRIPPED_TREATED_LOG.get(),
                         BlockRegistry.TREATED_WOOD.get(),
                         BlockRegistry.STRIPPED_TREATED_WOOD.get());
+        this.tag(BlockTags.FENCES)
+                .add(BlockRegistry.TREATED_FENCE.get());
+
+        this.tag(BlockTags.FENCE_GATES)
+                .add(BlockRegistry.TREATED_FENCE_GATE.get());
 
 
     }

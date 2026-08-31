@@ -1,6 +1,7 @@
 package net.pafeuu.DruidicQuestMod.registries;
 
 import cofh.core.common.item.CountedItem;
+import cofh.lib.common.item.ShieldItemCoFH;
 import io.redspace.ironsspellbooks.api.item.weapons.MagicSwordItem;
 import io.redspace.ironsspellbooks.api.registry.SpellDataRegistryHolder;
 import io.redspace.ironsspellbooks.api.registry.SpellRegistry;
@@ -134,6 +135,11 @@ public class ItemRegistry {
     public static final RegistryObject<Item> EBONY_FLOWER_STAFF = ITEMS.register("ebony_flower_staff",
             ()-> new ExtendedStaffItem(WeaponTierRegistry.FLOWER_STAFF, new Item.Properties(),
                     SpellDataRegistryHolder.of(new SpellDataRegistryHolder(SpellRegistry.MAGIC_MISSILE_SPELL,1))));
+
+    public static final RegistryObject<Item> PRIMITIVE_SHIELD = ITEMS.register("primitive_shield",
+            ()-> new ShieldItem(new Item.Properties()));
+
+
 
 
     public static void register(IEventBus eventBus) {
