@@ -122,6 +122,10 @@ public class DruidicQuestMod
             event.accept(ItemRegistry.STEEL_PICKAXE);
             event.accept(ItemRegistry.STEEL_HOE);
             event.accept(ItemRegistry.STEEL_AXE);
+            event.accept(ItemRegistry.PLATINUM_SHOVEL);
+            event.accept(ItemRegistry.PLATINUM_PICKAXE);
+            event.accept(ItemRegistry.PLATINUM_HOE);
+            event.accept(ItemRegistry.PLATINUM_AXE);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
@@ -159,6 +163,8 @@ public class DruidicQuestMod
             event.accept(ItemRegistry.CRIMSON_FLOWER_STAFF);
             event.accept(ItemRegistry.EBONY_FLOWER_STAFF);
             event.accept(ItemRegistry.GOLDEN_FLOWER_STAFF);
+            event.accept(ItemRegistry.PLATINUM_AXE);
+            event.accept(ItemRegistry.PLATINUM_SWORD);
             event.accept(ItemRegistry.STEEL_AXE);
             event.accept(ItemRegistry.STEEL_SWORD);
             event.accept(ItemRegistry.STEEL_HELMET);

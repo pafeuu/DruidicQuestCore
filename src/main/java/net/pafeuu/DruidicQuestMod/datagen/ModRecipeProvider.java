@@ -40,6 +40,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         nineBlockStorageRecipesFixed(pWriter, RecipeCategory.MISC, ItemRegistry.URANIUM_NUGGET.get(), RecipeCategory.MISC, ItemRegistry.URANIUM_INGOT.get());
         slabBuilder(RecipeCategory.BUILDING_BLOCKS,BlockRegistry.STURDY_DEEPSLATE_SLAB.get(), Ingredient.of(BlockRegistry.STURDY_DEEPSLATE.get()));
         toolRecipes(pWriter,"steel",Items.STICK);
+        toolRecipes(pWriter,"platinum",Items.STICK);
         armorRecipes(pWriter,"steel");
         /*stickRecipe(pWriter,ItemRegistry.TREATED_STICK.get(),BlockRegistry.TREATED_PLANKS.get(),4);
 

@@ -58,6 +58,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ItemRegistry.STEEL_SHOVEL);
         handheldItem(ItemRegistry.STEEL_HOE);
         handheldItem(ItemRegistry.STEEL_SWORD);
+        handheldItem(ItemRegistry.PLATINUM_PICKAXE);
+        handheldItem(ItemRegistry.PLATINUM_AXE);
+        handheldItem(ItemRegistry.PLATINUM_SHOVEL);
+        handheldItem(ItemRegistry.PLATINUM_HOE);
+        handheldItem(ItemRegistry.PLATINUM_SWORD);
 
         /*simpleBlockItem(BlockRegistry.TREATED_DOOR);
 

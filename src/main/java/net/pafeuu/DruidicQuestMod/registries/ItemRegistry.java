@@ -103,6 +103,21 @@ public class ItemRegistry {
     public static final RegistryObject<Item> STEEL_SWORD = ITEMS.register("steel_sword",
             ()-> new SwordItem(ToolTierRegistry.STEEL, 6,-2.4f, new Item.Properties()));
 
+    public static final RegistryObject<Item> PLATINUM_PICKAXE = ITEMS.register("platinum_pickaxe",
+            ()-> new PickaxeItem(ToolTierRegistry.PLATINUM,3,-2.8f, new Item.Properties()));
+
+    public static final RegistryObject<Item> PLATINUM_AXE = ITEMS.register("platinum_axe",
+            ()-> new AxeItem(ToolTierRegistry.PLATINUM,4,-3.1f, new Item.Properties()));
+
+    public static final RegistryObject<Item> PLATINUM_SHOVEL = ITEMS.register("platinum_shovel",
+            ()-> new ShovelItem(ToolTierRegistry.PLATINUM,3.5f,-3.0f, new Item.Properties()));
+
+    public static final RegistryObject<Item> PLATINUM_HOE = ITEMS.register("platinum_hoe",
+            ()-> new HoeItem(ToolTierRegistry.PLATINUM,0,-1.0f, new Item.Properties()));
+
+    public static final RegistryObject<Item> PLATINUM_SWORD = ITEMS.register("platinum_sword",
+            ()-> new SwordItem(ToolTierRegistry.PLATINUM, 3,-2.4f, new Item.Properties()));
+
     public static final RegistryObject<Item> STEEL_HELMET = ITEMS.register("steel_helmet",
             ()-> new ArmorItem(ArmorTierRegistry.STEEL, ArmorItem.Type.HELMET,new Item.Properties().defaultDurability(-1)));
     public static final RegistryObject<Item> STEEL_CHESTPLATE = ITEMS.register("steel_chestplate",

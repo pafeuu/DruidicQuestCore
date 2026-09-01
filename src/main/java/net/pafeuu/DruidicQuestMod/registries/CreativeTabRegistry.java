@@ -40,6 +40,11 @@ public class CreativeTabRegistry {
                         pOutput.accept(ItemRegistry.PLATINUM_GEAR.get());
                         pOutput.accept(ItemRegistry.PLATINUM_ROD.get());
                         pOutput.accept(ItemRegistry.PLATINUM_PLATE.get());
+                        pOutput.accept(ItemRegistry.PLATINUM_PICKAXE.get());
+                        pOutput.accept(ItemRegistry.PLATINUM_AXE.get());
+                        pOutput.accept(ItemRegistry.PLATINUM_SHOVEL.get());
+                        pOutput.accept(ItemRegistry.PLATINUM_HOE.get());
+                        pOutput.accept(ItemRegistry.PLATINUM_SWORD.get());
                         pOutput.accept(ItemRegistry.STEEL_PICKAXE.get());
                         pOutput.accept(ItemRegistry.STEEL_AXE.get());
                         pOutput.accept(ItemRegistry.STEEL_SHOVEL.get());
