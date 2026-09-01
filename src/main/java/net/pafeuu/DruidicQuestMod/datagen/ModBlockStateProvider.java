@@ -26,8 +26,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(BlockRegistry.ROTTEN_FLESH_BLOCK);
         blockWithItem(BlockRegistry.STEEL_BLOCK);
         blockWithItem(BlockRegistry.PLATINUM_BLOCK);
+        blockWithItem(BlockRegistry.RAW_PLATINUM_BLOCK);
         blockWithItem(BlockRegistry.PLATINUM_ORE);
         blockWithItem(BlockRegistry.URANIUM_BLOCK);
+        blockWithItem(BlockRegistry.RAW_URANIUM_BLOCK);
         blockWithItem(BlockRegistry.URANIUM_ORE);
         blockWithItem(BlockRegistry.TREATED_PLANKS);
         logBlock((RotatedPillarBlock) BlockRegistry.TREATED_LOG.get());

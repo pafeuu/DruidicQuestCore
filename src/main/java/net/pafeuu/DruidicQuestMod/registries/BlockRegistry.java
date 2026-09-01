@@ -58,7 +58,6 @@ public class BlockRegistry {
     public static final RegistryObject<Block> TREATED_TRAPDOOR = registerBlock("treated_trapdoor",
             ()-> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS), BlockSetType.ACACIA));
 
-
     public static final RegistryObject<Block> TREATED_STAIRS = registerBlock("treated_stairs",
             ()-> new StairBlock(()-> BlockRegistry.TREATED_PLANKS.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS)));
 
@@ -92,8 +91,14 @@ public class BlockRegistry {
     public static final RegistryObject<Block> URANIUM_BLOCK = registerBlock("uranium_block",
             ()-> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK)));
 
+    public static final RegistryObject<Block> RAW_URANIUM_BLOCK = registerBlock("raw_uranium_block",
+            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK)));
+
     public static final RegistryObject<Block> PLATINUM_BLOCK = registerBlock("platinum_block",
             ()-> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK)));
+
+    public static final RegistryObject<Block> RAW_PLATINUM_BLOCK = registerBlock("raw_platinum_block",
+            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK)));
 
     public static final RegistryObject<Block> STURDY_DEEPSLATE_SLAB = registerBlock("sturdy_deepslate_slab",
             ()-> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).pushReaction(PushReaction.BLOCK)));

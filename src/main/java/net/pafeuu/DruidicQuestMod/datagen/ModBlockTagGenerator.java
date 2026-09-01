@@ -33,8 +33,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(BlockRegistry.STEEL_BLOCK.get(),
                         BlockRegistry.URANIUM_BLOCK.get(),
+                        BlockRegistry.RAW_URANIUM_BLOCK.get(),
                         BlockRegistry.URANIUM_ORE.get(),
                         BlockRegistry.PLATINUM_ORE.get(),
+                        BlockRegistry.RAW_PLATINUM_BLOCK.get(),
                         BlockRegistry.PLATINUM_BLOCK.get());
 
         this.tag(BlockTags.MINEABLE_WITH_AXE)
@@ -64,8 +66,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         BlockRegistry.ALLOY_BRICKS.get(),
                         BlockRegistry.STEEL_BLOCK.get(),
                         BlockRegistry.URANIUM_BLOCK.get(),
+                        BlockRegistry.RAW_URANIUM_BLOCK.get(),
                         BlockRegistry.URANIUM_ORE.get(),
                         BlockRegistry.PLATINUM_BLOCK.get(),
+                        BlockRegistry.RAW_PLATINUM_BLOCK.get(),
                         BlockRegistry.PLATINUM_ORE.get(),
                         BlockRegistry.STURDY_DEEPSLATE_SLAB.get());
 

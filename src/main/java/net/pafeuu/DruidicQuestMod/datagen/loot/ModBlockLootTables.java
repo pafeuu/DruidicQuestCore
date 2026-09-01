@@ -30,7 +30,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(BlockRegistry.POLISHED_PLANKS.get());
         this.dropSelf(BlockRegistry.STEEL_BLOCK.get());
         this.dropSelf(BlockRegistry.URANIUM_BLOCK.get());
+        this.dropSelf(BlockRegistry.RAW_URANIUM_BLOCK.get());
         this.dropSelf(BlockRegistry.PLATINUM_BLOCK.get());
+        this.dropSelf(BlockRegistry.RAW_PLATINUM_BLOCK.get());
         this.dropSelf(BlockRegistry.TREATED_WOOD.get());
         this.dropSelf(BlockRegistry.TREATED_PLANKS.get());
         this.dropSelf(BlockRegistry.TREATED_SLAB.get());

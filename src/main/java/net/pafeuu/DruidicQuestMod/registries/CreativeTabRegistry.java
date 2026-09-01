@@ -72,7 +72,9 @@ public class CreativeTabRegistry {
                         pOutput.accept(BlockRegistry.POLISHED_PLANKS.get());
                         pOutput.accept(BlockRegistry.STEEL_BLOCK.get());
                         pOutput.accept(BlockRegistry.PLATINUM_BLOCK.get());
+                        pOutput.accept(BlockRegistry.RAW_PLATINUM_BLOCK.get());
                         pOutput.accept(BlockRegistry.URANIUM_BLOCK.get());
+                        pOutput.accept(BlockRegistry.RAW_URANIUM_BLOCK.get());
                         pOutput.accept(BlockRegistry.TREATED_LOG.get());
                         pOutput.accept(BlockRegistry.STRIPPED_TREATED_LOG.get());
                         pOutput.accept(BlockRegistry.TREATED_PLANKS.get());

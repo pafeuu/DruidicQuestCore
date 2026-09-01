@@ -129,7 +129,9 @@ public class DruidicQuestMod
             event.accept(BlockRegistry.GOLD_LEAF_BLOCK);
             event.accept(BlockRegistry.STEEL_BLOCK);
             event.accept(BlockRegistry.PLATINUM_BLOCK);
+            event.accept(BlockRegistry.RAW_PLATINUM_BLOCK);
             event.accept(BlockRegistry.URANIUM_BLOCK);
+            event.accept(BlockRegistry.RAW_URANIUM_BLOCK);
             event.accept(BlockRegistry.STURDY_DEEPSLATE);
             event.accept(BlockRegistry.STURDY_DEEPSLATE_SLAB);
             event.accept(BlockRegistry.PRIMITIVE_MACHINE);

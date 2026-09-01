@@ -42,6 +42,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
             addMaterialIngredientTag("gear",material);
         }
 
+        storageBlocksTag("raw_uranium");
+        storageBlocksTag("raw_platinum");
+
         tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge","stripped_logs")))
                 .add(Item.byBlock(BlockRegistry.STRIPPED_TREATED_LOG.get()));
 

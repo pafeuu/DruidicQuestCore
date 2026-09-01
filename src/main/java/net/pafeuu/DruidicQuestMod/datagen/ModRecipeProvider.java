@@ -33,8 +33,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         nineBlockStorageRecipesFixed(pWriter, RecipeCategory.BUILDING_BLOCKS, ItemRegistry.STEEL_INGOT.get(), RecipeCategory.BUILDING_BLOCKS, BlockRegistry.STEEL_BLOCK.get());
         nineBlockStorageRecipesFixed(pWriter, RecipeCategory.MISC, ItemRegistry.STEEL_NUGGET.get(), RecipeCategory.MISC, ItemRegistry.STEEL_INGOT.get());
         nineBlockStorageRecipesFixed(pWriter, RecipeCategory.BUILDING_BLOCKS, ItemRegistry.PLATINUM_INGOT.get(), RecipeCategory.BUILDING_BLOCKS, BlockRegistry.PLATINUM_BLOCK.get());
+        nineBlockStorageRecipesFixed(pWriter, RecipeCategory.BUILDING_BLOCKS, ItemRegistry.RAW_PLATINUM.get(), RecipeCategory.BUILDING_BLOCKS, BlockRegistry.RAW_PLATINUM_BLOCK.get());
         nineBlockStorageRecipesFixed(pWriter, RecipeCategory.MISC, ItemRegistry.PLATINUM_NUGGET.get(), RecipeCategory.MISC, ItemRegistry.PLATINUM_INGOT.get());
         nineBlockStorageRecipesFixed(pWriter, RecipeCategory.BUILDING_BLOCKS, ItemRegistry.URANIUM_INGOT.get(), RecipeCategory.BUILDING_BLOCKS, BlockRegistry.URANIUM_BLOCK.get());
+        nineBlockStorageRecipesFixed(pWriter, RecipeCategory.BUILDING_BLOCKS, ItemRegistry.RAW_URANIUM.get(), RecipeCategory.BUILDING_BLOCKS, BlockRegistry.RAW_URANIUM_BLOCK.get());
         nineBlockStorageRecipesFixed(pWriter, RecipeCategory.MISC, ItemRegistry.URANIUM_NUGGET.get(), RecipeCategory.MISC, ItemRegistry.URANIUM_INGOT.get());
         slabBuilder(RecipeCategory.BUILDING_BLOCKS,BlockRegistry.STURDY_DEEPSLATE_SLAB.get(), Ingredient.of(BlockRegistry.STURDY_DEEPSLATE.get()));
         toolRecipes(pWriter,"steel",ItemRegistry.TREATED_STICK.get());
