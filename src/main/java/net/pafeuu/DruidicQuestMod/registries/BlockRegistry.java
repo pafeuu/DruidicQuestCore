@@ -16,7 +16,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.pafeuu.DruidicQuestMod.DruidicQuestMod;
-import net.pafeuu.DruidicQuestMod.block.customLogBlock;
+//import net.pafeuu.DruidicQuestMod.block.customLogBlock;
 
 import java.util.function.Supplier;
 
@@ -40,7 +40,7 @@ public class BlockRegistry {
     public static final RegistryObject<Block> POLISHED_PLANKS = registerBlock("polished_planks",
             ()-> new Block(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS)));
 
-    public static final RegistryObject<Block> TREATED_PLANKS = registerBlock("treated_planks",
+    /*public static final RegistryObject<Block> TREATED_PLANKS = registerBlock("treated_planks",
             ()-> new Block(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS)));
 
     public static final RegistryObject<Block> TREATED_SLAB = registerBlock("treated_slab",
@@ -71,7 +71,7 @@ public class BlockRegistry {
             ()-> new customLogBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS)));
 
     public static final RegistryObject<Block> STRIPPED_TREATED_WOOD = registerBlock("stripped_treated_wood",
-            ()-> new customLogBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS)));
+            ()-> new customLogBlock(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS)));*/
 
     public static final RegistryObject<Block> PACKED_PLANKS = registerBlock("packed_planks",
             ()-> new Block(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS)));

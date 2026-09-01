@@ -88,7 +88,7 @@ public class DruidicQuestMod
 
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ItemRegistry.NATURE_ESSENCE);
-            event.accept(ItemRegistry.TREATED_STICK);
+            //event.accept(ItemRegistry.TREATED_STICK);
             event.accept(ItemRegistry.STEEL_INGOT);
             event.accept(ItemRegistry.STEEL_GEAR);
             event.accept(ItemRegistry.STEEL_NUGGET);
@@ -139,7 +139,7 @@ public class DruidicQuestMod
             event.accept(BlockRegistry.STACKED_PLANKS);
             event.accept(BlockRegistry.PACKED_PLANKS);
             event.accept(BlockRegistry.POLISHED_PLANKS);
-            event.accept(BlockRegistry.TREATED_PLANKS);
+            /*event.accept(BlockRegistry.TREATED_PLANKS);
             event.accept(BlockRegistry.TREATED_SLAB);
             event.accept(BlockRegistry.TREATED_STAIRS);
             event.accept(BlockRegistry.TREATED_DOOR);
@@ -149,7 +149,7 @@ public class DruidicQuestMod
             event.accept(BlockRegistry.TREATED_LOG);
             event.accept(BlockRegistry.STRIPPED_TREATED_LOG);
             event.accept(BlockRegistry.TREATED_WOOD);
-            event.accept(BlockRegistry.STRIPPED_TREATED_WOOD);
+            event.accept(BlockRegistry.STRIPPED_TREATED_WOOD);*/
         }
 
         if(event.getTabKey() == CreativeModeTabs.COMBAT) {

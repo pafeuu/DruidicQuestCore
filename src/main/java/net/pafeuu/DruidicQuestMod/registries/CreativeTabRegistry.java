@@ -20,7 +20,7 @@ public class CreativeTabRegistry {
                     .displayItems((pParametersm,pOutput)->{
                         pOutput.accept(ItemRegistry.ARCANIST_HAMMER.get());
                         pOutput.accept(ItemRegistry.NATURE_ESSENCE.get());
-                        pOutput.accept(ItemRegistry.TREATED_STICK.get());
+                        //pOutput.accept(ItemRegistry.TREATED_STICK.get());
                         pOutput.accept(ItemRegistry.PHOENIX_BRUSH.get());
                         pOutput.accept(ItemRegistry.STEEL_BRUSH.get());
                         pOutput.accept(ItemRegistry.STEEL_INGOT.get());
@@ -75,7 +75,7 @@ public class CreativeTabRegistry {
                         pOutput.accept(BlockRegistry.RAW_PLATINUM_BLOCK.get());
                         pOutput.accept(BlockRegistry.URANIUM_BLOCK.get());
                         pOutput.accept(BlockRegistry.RAW_URANIUM_BLOCK.get());
-                        pOutput.accept(BlockRegistry.TREATED_LOG.get());
+                        /*pOutput.accept(BlockRegistry.TREATED_LOG.get());
                         pOutput.accept(BlockRegistry.STRIPPED_TREATED_LOG.get());
                         pOutput.accept(BlockRegistry.TREATED_PLANKS.get());
                         pOutput.accept(BlockRegistry.TREATED_SLAB.get());
@@ -85,7 +85,7 @@ public class CreativeTabRegistry {
                         pOutput.accept(BlockRegistry.TREATED_DOOR.get());
                         pOutput.accept(BlockRegistry.TREATED_TRAPDOOR.get());
                         pOutput.accept(BlockRegistry.TREATED_WOOD.get());
-                        pOutput.accept(BlockRegistry.STRIPPED_TREATED_WOOD.get());
+                        pOutput.accept(BlockRegistry.STRIPPED_TREATED_WOOD.get());*/
                         pOutput.accept(BlockRegistry.PLATINUM_ORE.get());
                         pOutput.accept(BlockRegistry.URANIUM_ORE.get());
                     })

@@ -42,7 +42,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.MINEABLE_WITH_AXE)
                 .add(BlockRegistry.PACKED_PLANKS.get(),
                         BlockRegistry.STACKED_PLANKS.get(),
-                        BlockRegistry.TREATED_PLANKS.get(),
+                        /*BlockRegistry.TREATED_PLANKS.get(),
                         BlockRegistry.TREATED_SLAB.get(),
                         BlockRegistry.TREATED_STAIRS.get(),
                         BlockRegistry.TREATED_DOOR.get(),
@@ -52,7 +52,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         BlockRegistry.TREATED_LOG.get(),
                         BlockRegistry.TREATED_WOOD.get(),
                         BlockRegistry.STRIPPED_TREATED_LOG.get(),
-                        BlockRegistry.STRIPPED_TREATED_WOOD.get(),
+                        BlockRegistry.STRIPPED_TREATED_WOOD.get(),*/
                         BlockRegistry.POLISHED_PLANKS.get());
 
         this.tag(BlockTags.MINEABLE_WITH_SHOVEL)
@@ -79,12 +79,12 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         BlockRegistry.GOLD_LEAF_BLOCK.get());
 
         this.tag(BlockTags.PLANKS)
-                .add(BlockRegistry.TREATED_PLANKS.get(),
+                .add(//BlockRegistry.TREATED_PLANKS.get(),
                         BlockRegistry.POLISHED_PLANKS.get(),
                         BlockRegistry.STACKED_PLANKS.get(),
                         BlockRegistry.PACKED_PLANKS.get());
 
-        this.tag(BlockTags.LOGS)
+        /*this.tag(BlockTags.LOGS)
                 .add(BlockRegistry.TREATED_LOG.get(),
                         BlockRegistry.STRIPPED_TREATED_LOG.get(),
                         BlockRegistry.TREATED_WOOD.get(),
@@ -93,7 +93,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(BlockRegistry.TREATED_FENCE.get());
 
         this.tag(BlockTags.FENCE_GATES)
-                .add(BlockRegistry.TREATED_FENCE_GATE.get());
+                .add(BlockRegistry.TREATED_FENCE_GATE.get());*/
 
 
     }

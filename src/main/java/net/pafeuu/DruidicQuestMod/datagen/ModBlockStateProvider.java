@@ -31,7 +31,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(BlockRegistry.URANIUM_BLOCK);
         blockWithItem(BlockRegistry.RAW_URANIUM_BLOCK);
         blockWithItem(BlockRegistry.URANIUM_ORE);
-        blockWithItem(BlockRegistry.TREATED_PLANKS);
+        /*blockWithItem(BlockRegistry.TREATED_PLANKS);
         logBlock((RotatedPillarBlock) BlockRegistry.TREATED_LOG.get());
         logBlock((RotatedPillarBlock) BlockRegistry.STRIPPED_TREATED_LOG.get());
         axisBlock((RotatedPillarBlock) BlockRegistry.TREATED_WOOD.get(),
@@ -47,7 +47,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         fenceGateBlock((FenceGateBlock) BlockRegistry.TREATED_FENCE_GATE.get(),blockTexture(BlockRegistry.TREATED_PLANKS.get()));
         slabBlock((SlabBlock) BlockRegistry.TREATED_SLAB.get(),blockTexture(BlockRegistry.TREATED_PLANKS.get()),blockTexture(BlockRegistry.TREATED_PLANKS.get()));
         doorBlockWithRenderType((DoorBlock) BlockRegistry.TREATED_DOOR.get(),modLoc("block/treated_wood_door_bottom"),modLoc("block/treated_wood_door_top"),"cutout");
-        trapdoorBlock((TrapDoorBlock) BlockRegistry.TREATED_TRAPDOOR.get(),modLoc("block/treated_wood_trapdoor"),true);
+        trapdoorBlock((TrapDoorBlock) BlockRegistry.TREATED_TRAPDOOR.get(),modLoc("block/treated_wood_trapdoor"),true);*/
 
 
 

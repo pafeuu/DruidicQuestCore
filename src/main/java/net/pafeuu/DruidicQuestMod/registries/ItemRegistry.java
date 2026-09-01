@@ -25,8 +25,8 @@ public class ItemRegistry {
     public static final RegistryObject<Item> NATURE_ESSENCE = ITEMS.register("nature_essence",
             ()-> new Item(new Item.Properties()));
 
-    public static final RegistryObject<Item> TREATED_STICK = ITEMS.register("treated_stick",
-            ()-> new Item(new Item.Properties()));
+    /*public static final RegistryObject<Item> TREATED_STICK = ITEMS.register("treated_stick",
+            ()-> new Item(new Item.Properties()));*/
 
     public static final RegistryObject<Item> ARCANIST_HAMMER = ITEMS.register("arcanist_hammer",
             ()-> new Item(new Item.Properties().defaultDurability(256)));

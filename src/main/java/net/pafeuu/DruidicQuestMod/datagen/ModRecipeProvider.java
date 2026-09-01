@@ -39,16 +39,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         nineBlockStorageRecipesFixed(pWriter, RecipeCategory.BUILDING_BLOCKS, ItemRegistry.RAW_URANIUM.get(), RecipeCategory.BUILDING_BLOCKS, BlockRegistry.RAW_URANIUM_BLOCK.get());
         nineBlockStorageRecipesFixed(pWriter, RecipeCategory.MISC, ItemRegistry.URANIUM_NUGGET.get(), RecipeCategory.MISC, ItemRegistry.URANIUM_INGOT.get());
         slabBuilder(RecipeCategory.BUILDING_BLOCKS,BlockRegistry.STURDY_DEEPSLATE_SLAB.get(), Ingredient.of(BlockRegistry.STURDY_DEEPSLATE.get()));
-        toolRecipes(pWriter,"steel",ItemRegistry.TREATED_STICK.get());
+        toolRecipes(pWriter,"steel",Items.STICK);
         armorRecipes(pWriter,"steel");
-        stickRecipe(pWriter,ItemRegistry.TREATED_STICK.get(),BlockRegistry.TREATED_PLANKS.get(),4);
+        /*stickRecipe(pWriter,ItemRegistry.TREATED_STICK.get(),BlockRegistry.TREATED_PLANKS.get(),4);
 
         betterTrapdoorBuilder(pWriter,BlockRegistry.TREATED_TRAPDOOR.get(),BlockRegistry.TREATED_PLANKS.get());
         betterDoorBuilder(pWriter,BlockRegistry.TREATED_DOOR.get(),BlockRegistry.TREATED_PLANKS.get());
         betterFenceBuilder(pWriter, BlockRegistry.TREATED_FENCE.get(),BlockRegistry.TREATED_PLANKS.get(),ItemRegistry.TREATED_STICK.get());
         betterFenceGateBuilder(pWriter, BlockRegistry.TREATED_FENCE_GATE.get(),BlockRegistry.TREATED_PLANKS.get(),ItemRegistry.TREATED_STICK.get());
         betterSlabBuilder(pWriter, BlockRegistry.TREATED_SLAB.get(),BlockRegistry.TREATED_PLANKS.get());
-        betterStairsBuilder(pWriter, BlockRegistry.TREATED_STAIRS.get(),BlockRegistry.TREATED_PLANKS.get());
+        betterStairsBuilder(pWriter, BlockRegistry.TREATED_STAIRS.get(),BlockRegistry.TREATED_PLANKS.get());*/
 
 
     }

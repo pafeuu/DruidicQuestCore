@@ -33,7 +33,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(BlockRegistry.RAW_URANIUM_BLOCK.get());
         this.dropSelf(BlockRegistry.PLATINUM_BLOCK.get());
         this.dropSelf(BlockRegistry.RAW_PLATINUM_BLOCK.get());
-        this.dropSelf(BlockRegistry.TREATED_WOOD.get());
+        /*this.dropSelf(BlockRegistry.TREATED_WOOD.get());
         this.dropSelf(BlockRegistry.TREATED_PLANKS.get());
         this.dropSelf(BlockRegistry.TREATED_SLAB.get());
         this.dropSelf(BlockRegistry.TREATED_STAIRS.get());
@@ -43,7 +43,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(BlockRegistry.TREATED_TRAPDOOR.get());
         this.dropSelf(BlockRegistry.TREATED_LOG.get());
         this.dropSelf(BlockRegistry.STRIPPED_TREATED_LOG.get());
-        this.dropSelf(BlockRegistry.STRIPPED_TREATED_WOOD.get());
+        this.dropSelf(BlockRegistry.STRIPPED_TREATED_WOOD.get());*/
 
         this.add(BlockRegistry.PLATINUM_ORE.get(),
                 block -> createOreDrop(BlockRegistry.PLATINUM_ORE.get(),ItemRegistry.RAW_PLATINUM.get()));

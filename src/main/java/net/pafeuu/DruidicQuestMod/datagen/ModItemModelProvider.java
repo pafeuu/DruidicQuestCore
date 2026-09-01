@@ -22,7 +22,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         simpleItem(ItemRegistry.NATURE_ESSENCE);
-        simpleItem(ItemRegistry.TREATED_STICK);
+        //simpleItem(ItemRegistry.TREATED_STICK);
         simpleItem(ItemRegistry.STEEL_INGOT);
         simpleItem(ItemRegistry.STEEL_NUGGET);
         simpleItem(ItemRegistry.STEEL_GEAR);
@@ -59,7 +59,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ItemRegistry.STEEL_HOE);
         handheldItem(ItemRegistry.STEEL_SWORD);
 
-        simpleBlockItem(BlockRegistry.TREATED_DOOR);
+        /*simpleBlockItem(BlockRegistry.TREATED_DOOR);
 
         trapdoorItem(BlockRegistry.TREATED_TRAPDOOR);
 
@@ -67,7 +67,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         evenSimplerBlockItem(BlockRegistry.TREATED_STAIRS);
         evenSimplerBlockItem(BlockRegistry.TREATED_SLAB);
-        evenSimplerBlockItem(BlockRegistry.TREATED_FENCE_GATE);
+        evenSimplerBlockItem(BlockRegistry.TREATED_FENCE_GATE);*/
 
     }
 

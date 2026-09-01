@@ -45,7 +45,7 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         storageBlocksTag("raw_uranium");
         storageBlocksTag("raw_platinum");
 
-        tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge","stripped_logs")))
+        /*tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge","stripped_logs")))
                 .add(Item.byBlock(BlockRegistry.STRIPPED_TREATED_LOG.get()));
 
         tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge","stripped_wood")))
@@ -57,13 +57,13 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                 .add(Item.byBlock(BlockRegistry.TREATED_PLANKS.get()));
 
         tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge","rods/treated_wood")))
-                .add(ItemRegistry.TREATED_STICK.get());
+                .add(ItemRegistry.TREATED_STICK.get());*/
 
         tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge","tools/hammers")))
                 .add(ItemRegistry.ARCANIST_HAMMER.get());
 
-        copy(BlockTags.LOGS,ItemTags.LOGS);
-        copy(BlockTags.PLANKS,ItemTags.PLANKS);
+        //copy(BlockTags.LOGS,ItemTags.LOGS);
+        //copy(BlockTags.PLANKS,ItemTags.PLANKS);
     }
 
     protected void addMaterialIngredientTag(String ingredientType, String materialType){
