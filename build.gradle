@@ -50,6 +50,9 @@ minecraft {
         client {
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
             property 'forge.enabledGameTestNamespaces', mod_id
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+            setJvmArgs(["-Xmx6G", "-Xms6G"])
         }
 
         server {
@@ -101,6 +104,13 @@ dependencies {
     implementation fg.deobf("curse.maven:geckolib-388172:8285794")
     implementation fg.deobf("curse.maven:playeranimator-658587:4587214")
     implementation fg.deobf("curse.maven:cofh-core-69162:5374122")
+    implementation fg.deobf("curse.maven:botania-225643:8702079")
+    implementation fg.deobf("curse.maven:patchouli-306770:6164575")
+    implementation fg.deobf("curse.maven:curios-309927:6418456")
+
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+    compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:0.5.4")) //this may be stupid, but it works for me
+    implementation(jarJar("io.github.llamalad7:mixinextras-forge:[0.5.4,)"))
 
     compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}")
     runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}")
@@ -109,6 +119,16 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
 }
+
+mixin {
+    // MixinGradle Settings
+    add sourceSets.main, 'mixins.druidic_quest_core.refmap.json'
+    config 'mixin.druidic_quest_core.json'
+
+    debug.verbose = true
+    debug.export = true
+}
+
 
 // This block of code expands all declared replace properties in the specified resource targets.
 // A missing property will result in an error. Properties are expanded using ${} Groovy notation.
@@ -139,7 +159,8 @@ tasks.named('jar', Jar).configure {
                 'Implementation-Title'    : project.name,
                 'Implementation-Version'  : project.jar.archiveVersion,
                 'Implementation-Vendor'   : mod_authors,
-                'Implementation-Timestamp': new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+                'Implementation-Timestamp': new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
+                'MixinConfigs'            : 'mixin.druidic_quest_core.json' //likely unnecessary, but I will keep it since I keep it for myself as well
         ])
     }
 
