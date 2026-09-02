@@ -2,8 +2,18 @@ package net.pafeuu.DruidicQuestMod;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.item.ItemProperties;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -15,8 +25,9 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-import net.pafeuu.DruidicQuestMod.config.CommonConfig;
+import net.minecraftforge.registries.RegistryObject;
 import net.pafeuu.DruidicQuestMod.registries.*;
 import org.slf4j.Logger;
 
@@ -52,8 +63,6 @@ public class DruidicQuestMod
 
         // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
         context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
-
-        context.registerConfig(ModConfig.Type.COMMON, CommonConfig.SPEC, "druidic_quest_core/common_config.toml"); //yes I made a separate config
     }
 
     private void registerDispenserBehaviors(final FMLCommonSetupEvent event)
@@ -79,7 +88,7 @@ public class DruidicQuestMod
 
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ItemRegistry.NATURE_ESSENCE);
-            event.accept(ItemRegistry.TREATED_STICK);
+            //event.accept(ItemRegistry.TREATED_STICK);
             event.accept(ItemRegistry.STEEL_INGOT);
             event.accept(ItemRegistry.STEEL_GEAR);
             event.accept(ItemRegistry.STEEL_NUGGET);
@@ -113,6 +122,10 @@ public class DruidicQuestMod
             event.accept(ItemRegistry.STEEL_PICKAXE);
             event.accept(ItemRegistry.STEEL_HOE);
             event.accept(ItemRegistry.STEEL_AXE);
+            event.accept(ItemRegistry.PLATINUM_SHOVEL);
+            event.accept(ItemRegistry.PLATINUM_PICKAXE);
+            event.accept(ItemRegistry.PLATINUM_HOE);
+            event.accept(ItemRegistry.PLATINUM_AXE);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
@@ -120,10 +133,27 @@ public class DruidicQuestMod
             event.accept(BlockRegistry.GOLD_LEAF_BLOCK);
             event.accept(BlockRegistry.STEEL_BLOCK);
             event.accept(BlockRegistry.PLATINUM_BLOCK);
+            event.accept(BlockRegistry.RAW_PLATINUM_BLOCK);
             event.accept(BlockRegistry.URANIUM_BLOCK);
+            event.accept(BlockRegistry.RAW_URANIUM_BLOCK);
             event.accept(BlockRegistry.STURDY_DEEPSLATE);
             event.accept(BlockRegistry.STURDY_DEEPSLATE_SLAB);
             event.accept(BlockRegistry.PRIMITIVE_MACHINE);
+            event.accept(BlockRegistry.ALLOY_BRICKS);
+            event.accept(BlockRegistry.STACKED_PLANKS);
+            event.accept(BlockRegistry.PACKED_PLANKS);
+            event.accept(BlockRegistry.POLISHED_PLANKS);
+            /*event.accept(BlockRegistry.TREATED_PLANKS);
+            event.accept(BlockRegistry.TREATED_SLAB);
+            event.accept(BlockRegistry.TREATED_STAIRS);
+            event.accept(BlockRegistry.TREATED_DOOR);
+            event.accept(BlockRegistry.TREATED_TRAPDOOR);
+            event.accept(BlockRegistry.TREATED_FENCE);
+            event.accept(BlockRegistry.TREATED_FENCE_GATE);
+            event.accept(BlockRegistry.TREATED_LOG);
+            event.accept(BlockRegistry.STRIPPED_TREATED_LOG);
+            event.accept(BlockRegistry.TREATED_WOOD);
+            event.accept(BlockRegistry.STRIPPED_TREATED_WOOD);*/
         }
 
         if(event.getTabKey() == CreativeModeTabs.COMBAT) {
@@ -133,6 +163,8 @@ public class DruidicQuestMod
             event.accept(ItemRegistry.CRIMSON_FLOWER_STAFF);
             event.accept(ItemRegistry.EBONY_FLOWER_STAFF);
             event.accept(ItemRegistry.GOLDEN_FLOWER_STAFF);
+            event.accept(ItemRegistry.PLATINUM_AXE);
+            event.accept(ItemRegistry.PLATINUM_SWORD);
             event.accept(ItemRegistry.STEEL_AXE);
             event.accept(ItemRegistry.STEEL_SWORD);
             event.accept(ItemRegistry.STEEL_HELMET);
@@ -162,6 +194,12 @@ public class DruidicQuestMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
+            event.enqueueWork(() -> {
+                ItemProperties.register(ItemRegistry.PRIMITIVE_SHIELD.get(),
+                        ResourceLocation.tryParse("blocking"),
+                        (stack, level, entity, seed) ->
+                                entity != null && entity.isUsingItem() && entity.getUseItem() == stack ? 1.0F : 0.0F);
+            });
             // Some client setup code
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());

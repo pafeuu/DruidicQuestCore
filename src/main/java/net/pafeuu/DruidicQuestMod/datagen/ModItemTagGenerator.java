@@ -42,22 +42,28 @@ public class ModItemTagGenerator extends ItemTagsProvider {
             addMaterialIngredientTag("gear",material);
         }
 
-        /*tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "storage_blocks/steel")))
-                .add(Item.byBlock(BlockRegistry.STEEL_BLOCK.get()));
+        storageBlocksTag("raw_uranium");
+        storageBlocksTag("raw_platinum");
 
-        tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", "storage_blocks")))
-                .add(Item.byBlock(BlockRegistry.STEEL_BLOCK.get()))
-                .add(Item.byBlock(BlockRegistry.URANIUM_BLOCK.get()))
-                .add(Item.byBlock(BlockRegistry.PLATINUM_BLOCK.get()));*/
-
-        tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge","stripped_logs")))
+        /*tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge","stripped_logs")))
                 .add(Item.byBlock(BlockRegistry.STRIPPED_TREATED_LOG.get()));
 
         tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge","stripped_wood")))
                 .add(Item.byBlock(BlockRegistry.STRIPPED_TREATED_WOOD.get()));
 
-        copy(BlockTags.LOGS,ItemTags.LOGS);
-        copy(BlockTags.PLANKS,ItemTags.PLANKS);
+        tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge","treated_wood")))
+                .add(Item.byBlock(BlockRegistry.TREATED_PLANKS.get()));
+        tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge","treated_wood_slabs")))
+                .add(Item.byBlock(BlockRegistry.TREATED_PLANKS.get()));
+
+        tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge","rods/treated_wood")))
+                .add(ItemRegistry.TREATED_STICK.get());*/
+
+        tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge","tools/hammers")))
+                .add(ItemRegistry.ARCANIST_HAMMER.get());
+
+        //copy(BlockTags.LOGS,ItemTags.LOGS);
+        //copy(BlockTags.PLANKS,ItemTags.PLANKS);
     }
 
     protected void addMaterialIngredientTag(String ingredientType, String materialType){

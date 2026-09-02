@@ -1,6 +1,7 @@
 package net.pafeuu.DruidicQuestMod.registries;
 
 import cofh.core.common.item.CountedItem;
+import cofh.lib.common.item.ShieldItemCoFH;
 import io.redspace.ironsspellbooks.api.item.weapons.MagicSwordItem;
 import io.redspace.ironsspellbooks.api.registry.SpellDataRegistryHolder;
 import io.redspace.ironsspellbooks.api.registry.SpellRegistry;
@@ -24,8 +25,8 @@ public class ItemRegistry {
     public static final RegistryObject<Item> NATURE_ESSENCE = ITEMS.register("nature_essence",
             ()-> new Item(new Item.Properties()));
 
-    public static final RegistryObject<Item> TREATED_STICK = ITEMS.register("treated_stick",
-            ()-> new Item(new Item.Properties()));
+    /*public static final RegistryObject<Item> TREATED_STICK = ITEMS.register("treated_stick",
+            ()-> new Item(new Item.Properties()));*/
 
     public static final RegistryObject<Item> ARCANIST_HAMMER = ITEMS.register("arcanist_hammer",
             ()-> new Item(new Item.Properties().defaultDurability(256)));
@@ -102,6 +103,21 @@ public class ItemRegistry {
     public static final RegistryObject<Item> STEEL_SWORD = ITEMS.register("steel_sword",
             ()-> new SwordItem(ToolTierRegistry.STEEL, 6,-2.4f, new Item.Properties()));
 
+    public static final RegistryObject<Item> PLATINUM_PICKAXE = ITEMS.register("platinum_pickaxe",
+            ()-> new PickaxeItem(ToolTierRegistry.PLATINUM,3,-2.8f, new Item.Properties()));
+
+    public static final RegistryObject<Item> PLATINUM_AXE = ITEMS.register("platinum_axe",
+            ()-> new AxeItem(ToolTierRegistry.PLATINUM,4,-3.1f, new Item.Properties()));
+
+    public static final RegistryObject<Item> PLATINUM_SHOVEL = ITEMS.register("platinum_shovel",
+            ()-> new ShovelItem(ToolTierRegistry.PLATINUM,3.5f,-3.0f, new Item.Properties()));
+
+    public static final RegistryObject<Item> PLATINUM_HOE = ITEMS.register("platinum_hoe",
+            ()-> new HoeItem(ToolTierRegistry.PLATINUM,0,-1.0f, new Item.Properties()));
+
+    public static final RegistryObject<Item> PLATINUM_SWORD = ITEMS.register("platinum_sword",
+            ()-> new SwordItem(ToolTierRegistry.PLATINUM, 3,-2.4f, new Item.Properties()));
+
     public static final RegistryObject<Item> STEEL_HELMET = ITEMS.register("steel_helmet",
             ()-> new ArmorItem(ArmorTierRegistry.STEEL, ArmorItem.Type.HELMET,new Item.Properties().defaultDurability(-1)));
     public static final RegistryObject<Item> STEEL_CHESTPLATE = ITEMS.register("steel_chestplate",
@@ -134,6 +150,11 @@ public class ItemRegistry {
     public static final RegistryObject<Item> EBONY_FLOWER_STAFF = ITEMS.register("ebony_flower_staff",
             ()-> new ExtendedStaffItem(WeaponTierRegistry.FLOWER_STAFF, new Item.Properties(),
                     SpellDataRegistryHolder.of(new SpellDataRegistryHolder(SpellRegistry.MAGIC_MISSILE_SPELL,1))));
+
+    public static final RegistryObject<Item> PRIMITIVE_SHIELD = ITEMS.register("primitive_shield",
+            ()-> new ShieldItem(new Item.Properties()));
+
+
 
 
     public static void register(IEventBus eventBus) {
