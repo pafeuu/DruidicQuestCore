@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "steelhelmet",
+  "key": {
+    "M": {
+      "item": "druidic_quest_core:steel_plate"
+    }
+  },
+  "pattern": [
+    "MMM",
+    "M M"
+  ],
+  "result": {
+    "item": "druidic_quest_core:steel_helmet"
+  },
+  "show_notification": true
+}

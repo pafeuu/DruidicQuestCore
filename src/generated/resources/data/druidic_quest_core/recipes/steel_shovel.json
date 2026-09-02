@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "M": {
+      "item": "druidic_quest_core:steel_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " M ",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "item": "druidic_quest_core:steel_shovel"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "platinumpickaxe",
+  "key": {
+    "M": {
+      "item": "druidic_quest_core:platinum_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "MMM",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "item": "druidic_quest_core:platinum_pickaxe"
+  },
+  "show_notification": true
+}
