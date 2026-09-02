@@ -1,0 +1,11 @@
+{
+  "values": [
+    "druidic_quest_core:steel_block",
+    "druidic_quest_core:uranium_block",
+    "druidic_quest_core:raw_uranium_block",
+    "druidic_quest_core:uranium_ore",
+    "druidic_quest_core:platinum_ore",
+    "druidic_quest_core:raw_platinum_block",
+    "druidic_quest_core:platinum_block"
+  ]
+}
