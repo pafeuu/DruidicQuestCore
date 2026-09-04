@@ -4,6 +4,8 @@
   "creativetab.druidic_quest": "Druidic Quest",
 
   "item.druidic_quest_core.nature_essence": "Nature Essence",
+  "item.druidic_quest_core.arcane_clay_blend": "Arcane Clay Blend",
+  "item.druidic_quest_core.arcane_brick": "Arcane Brick",
   "item.druidic_quest_core.treated_stick": "Treated Stick",
   "item.druidic_quest_core.arcanist_hammer": "Arcanist's Hammer",
   "item.druidic_quest_core.phoenix_brush": "Phoenix Brush",
@@ -47,6 +49,13 @@
   "item.druidic_quest_core.ebony_flower_staff": "Ebony Flower Staff",
   "item.druidic_quest_core.golden_flower_staff": "Golden Flower Staff",
 
+  "item.druidic_quest_core.improved_crimson_flower_staff": "Improved Crimson Flower Staff",
+  "item.druidic_quest_core.improved_cobalt_flower_staff": "Improved Cobalt Flower Staff",
+  "item.druidic_quest_core.improved_pure_flower_staff": "Improved Pure Flower Staff",
+  "item.druidic_quest_core.improved_lush_flower_staff": "Improved Lush Flower Staff",
+  "item.druidic_quest_core.improved_ebony_flower_staff": "Improved Ebony Flower Staff",
+  "item.druidic_quest_core.improved_golden_flower_staff": "Improved Golden Flower Staff",
+
   "item.druidic_quest_core.primitive_shield": "Primitive Shield",
 
   "block.druidic_quest_core.steel_block": "Steel Block",
@@ -58,6 +67,7 @@
   "block.druidic_quest_core.platinum_ore": "Platinum Ore",
   "block.druidic_quest_core.primitive_machine": "Primitive Machine Block",
   "block.druidic_quest_core.alloy_bricks": "Alloy Bricks",
+  "block.druidic_quest_core.arcane_bricks": "Arcane Bricks",
   "block.druidic_quest_core.gold_leaf_block": "Gold Leaf Block",
   "block.druidic_quest_core.stacked_planks": "Stacked Planks",
   "block.druidic_quest_core.packed_planks": "Packed Planks",

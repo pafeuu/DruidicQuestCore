@@ -85,6 +85,8 @@ public class DruidicQuestMod
 
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ItemRegistry.NATURE_ESSENCE);
+            event.accept(ItemRegistry.ARCANE_BRICK);
+            event.accept(ItemRegistry.ARCANE_CLAY_BLEND);
             //event.accept(ItemRegistry.TREATED_STICK);
             event.accept(ItemRegistry.STEEL_INGOT);
             event.accept(ItemRegistry.STEEL_GEAR);
@@ -137,6 +139,7 @@ public class DruidicQuestMod
             event.accept(BlockRegistry.STURDY_DEEPSLATE_SLAB);
             event.accept(BlockRegistry.PRIMITIVE_MACHINE);
             event.accept(BlockRegistry.ALLOY_BRICKS);
+            event.accept(BlockRegistry.ARCANE_BRICKS);
             event.accept(BlockRegistry.STACKED_PLANKS);
             event.accept(BlockRegistry.PACKED_PLANKS);
             event.accept(BlockRegistry.POLISHED_PLANKS);
@@ -160,6 +163,12 @@ public class DruidicQuestMod
             event.accept(ItemRegistry.CRIMSON_FLOWER_STAFF);
             event.accept(ItemRegistry.EBONY_FLOWER_STAFF);
             event.accept(ItemRegistry.GOLDEN_FLOWER_STAFF);
+            event.accept(ItemRegistry.IMPROVED_LUSH_FLOWER_STAFF);
+            event.accept(ItemRegistry.IMPROVED_PURE_FLOWER_STAFF);
+            event.accept(ItemRegistry.IMPROVED_COBALT_FLOWER_STAFF);
+            event.accept(ItemRegistry.IMPROVED_CRIMSON_FLOWER_STAFF);
+            event.accept(ItemRegistry.IMPROVED_EBONY_FLOWER_STAFF);
+            event.accept(ItemRegistry.IMPROVED_GOLDEN_FLOWER_STAFF);
             event.accept(ItemRegistry.PLATINUM_AXE);
             event.accept(ItemRegistry.PLATINUM_SWORD);
             event.accept(ItemRegistry.STEEL_AXE);

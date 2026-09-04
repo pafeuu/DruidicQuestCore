@@ -25,6 +25,12 @@ public class ItemRegistry {
     public static final RegistryObject<Item> NATURE_ESSENCE = ITEMS.register("nature_essence",
             ()-> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> ARCANE_CLAY_BLEND = ITEMS.register("arcane_clay_blend",
+            ()-> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> ARCANE_BRICK = ITEMS.register("arcane_brick",
+            ()-> new Item(new Item.Properties()));
+
     /*public static final RegistryObject<Item> TREATED_STICK = ITEMS.register("treated_stick",
             ()-> new Item(new Item.Properties()));*/
 
@@ -150,6 +156,30 @@ public class ItemRegistry {
     public static final RegistryObject<Item> EBONY_FLOWER_STAFF = ITEMS.register("ebony_flower_staff",
             ()-> new ExtendedStaffItem(WeaponTierRegistry.FLOWER_STAFF, new Item.Properties(),
                     SpellDataRegistryHolder.of(new SpellDataRegistryHolder(SpellRegistry.MAGIC_MISSILE_SPELL,1))));
+
+    public static final RegistryObject<Item> IMPROVED_CRIMSON_FLOWER_STAFF = ITEMS.register("improved_crimson_flower_staff",
+            ()-> new ExtendedStaffItem(WeaponTierRegistry.IMPROVED_FLOWER_STAFF, new Item.Properties(),
+                    SpellDataRegistryHolder.of(new SpellDataRegistryHolder(SpellRegistry.FIREBOLT_SPELL,4))));
+
+    public static final RegistryObject<Item> IMPROVED_PURE_FLOWER_STAFF = ITEMS.register("improved_pure_flower_staff",
+            ()-> new ExtendedStaffItem(WeaponTierRegistry.IMPROVED_FLOWER_STAFF, new Item.Properties(),
+                    SpellDataRegistryHolder.of(new SpellDataRegistryHolder(SpellRegistry.BALL_LIGHTNING_SPELL,4))));
+
+    public static final RegistryObject<Item> IMPROVED_GOLDEN_FLOWER_STAFF = ITEMS.register("improved_golden_flower_staff",
+            ()-> new ExtendedStaffItem(WeaponTierRegistry.IMPROVED_FLOWER_STAFF, new Item.Properties(),
+                    SpellDataRegistryHolder.of(new SpellDataRegistryHolder(SpellRegistry.FIRECRACKER_SPELL,4))));
+
+    public static final RegistryObject<Item> IMPROVED_LUSH_FLOWER_STAFF = ITEMS.register("improved_lush_flower_staff",
+            ()-> new ExtendedStaffItem(WeaponTierRegistry.IMPROVED_FLOWER_STAFF, new Item.Properties(),
+                    SpellDataRegistryHolder.of(new SpellDataRegistryHolder(net.pafeuu.DruidicQuestMod.registries.SpellRegistry.NATURE_MISSILE,4))));
+
+    public static final RegistryObject<Item> IMPROVED_COBALT_FLOWER_STAFF = ITEMS.register("improved_cobalt_flower_staff",
+            ()-> new ExtendedStaffItem(WeaponTierRegistry.IMPROVED_FLOWER_STAFF, new Item.Properties(),
+                    SpellDataRegistryHolder.of(new SpellDataRegistryHolder(SpellRegistry.ICICLE_SPELL,4))));
+
+    public static final RegistryObject<Item> IMPROVED_EBONY_FLOWER_STAFF = ITEMS.register("improved_ebony_flower_staff",
+            ()-> new ExtendedStaffItem(WeaponTierRegistry.IMPROVED_FLOWER_STAFF, new Item.Properties(),
+                    SpellDataRegistryHolder.of(new SpellDataRegistryHolder(SpellRegistry.MAGIC_MISSILE_SPELL,4))));
 
     public static final RegistryObject<Item> PRIMITIVE_SHIELD = ITEMS.register("primitive_shield",
             ()-> new ShieldItem(new Item.Properties()));
