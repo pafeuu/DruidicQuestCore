@@ -31,6 +31,9 @@ public class BlockRegistry {
     public static final RegistryObject<Block> ALLOY_BRICKS = registerBlock("alloy_bricks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.COBBLESTONE)));
 
+    public static final RegistryObject<Block> ARCANE_BRICKS = registerBlock("arcane_bricks",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE)));
+
     public static final RegistryObject<Block> GOLD_LEAF_BLOCK = registerBlock("gold_leaf_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.MOSS_BLOCK)));
 

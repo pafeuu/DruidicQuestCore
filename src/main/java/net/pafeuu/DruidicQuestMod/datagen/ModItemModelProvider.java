@@ -22,6 +22,8 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         simpleItem(ItemRegistry.NATURE_ESSENCE);
+        simpleItem(ItemRegistry.ARCANE_CLAY_BLEND);
+        simpleItem(ItemRegistry.ARCANE_BRICK);
         //simpleItem(ItemRegistry.TREATED_STICK);
         simpleItem(ItemRegistry.STEEL_INGOT);
         simpleItem(ItemRegistry.STEEL_NUGGET);
@@ -47,6 +49,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ItemRegistry.LUSH_FLOWER_STAFF);
         simpleItem(ItemRegistry.PURE_FLOWER_STAFF);
         simpleItem(ItemRegistry.GOLDEN_FLOWER_STAFF);
+        simpleItem(ItemRegistry.IMPROVED_EBONY_FLOWER_STAFF);
+        simpleItem(ItemRegistry.IMPROVED_COBALT_FLOWER_STAFF);
+        simpleItem(ItemRegistry.IMPROVED_CRIMSON_FLOWER_STAFF);
+        simpleItem(ItemRegistry.IMPROVED_LUSH_FLOWER_STAFF);
+        simpleItem(ItemRegistry.IMPROVED_PURE_FLOWER_STAFF);
+        simpleItem(ItemRegistry.IMPROVED_GOLDEN_FLOWER_STAFF);
 
         countedItem(ItemRegistry.STEEL_PLATE);
         countedItem(ItemRegistry.URANIUM_PLATE);

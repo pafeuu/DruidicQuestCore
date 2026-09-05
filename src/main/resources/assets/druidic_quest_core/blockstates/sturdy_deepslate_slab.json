@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "druidic_quest_core:block/sturdy_deepslate_slab"
+    },
+    "type=double": {
+      "model": "druidic_quest_core:block/sturdy_deepslate"
+    },
+    "type=top": {
+      "model": "druidic_quest_core:block/sturdy_deepslate_slab_top"
+    }
+  }
+}

@@ -20,6 +20,8 @@ public class CreativeTabRegistry {
                     .displayItems((pParametersm,pOutput)->{
                         pOutput.accept(ItemRegistry.ARCANIST_HAMMER.get());
                         pOutput.accept(ItemRegistry.NATURE_ESSENCE.get());
+                        pOutput.accept(ItemRegistry.ARCANE_BRICK.get());
+                        pOutput.accept(ItemRegistry.ARCANE_CLAY_BLEND.get());
                         //pOutput.accept(ItemRegistry.TREATED_STICK.get());
                         pOutput.accept(ItemRegistry.PHOENIX_BRUSH.get());
                         pOutput.accept(ItemRegistry.STEEL_BRUSH.get());
@@ -64,6 +66,7 @@ public class CreativeTabRegistry {
 
                         pOutput.accept(BlockRegistry.PRIMITIVE_MACHINE.get());
                         pOutput.accept(BlockRegistry.ALLOY_BRICKS.get());
+                        pOutput.accept(BlockRegistry.ARCANE_BRICKS.get());
                         pOutput.accept(BlockRegistry.IVY_BLOCK.get());
                         pOutput.accept(BlockRegistry.STURDY_DEEPSLATE.get());
                         pOutput.accept(BlockRegistry.STURDY_DEEPSLATE_SLAB.get());
