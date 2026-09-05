@@ -4,36 +4,31 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.pafeuu.DruidicQuestMod.DruidicQuestMod;
-import net.pafeuu.DruidicQuestMod.registries.BlockRegistry;
 import net.pafeuu.DruidicQuestMod.registries.ItemRegistry;
+import net.pafeuu.DruidicQuestMod.tag.ModTags;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
 
 public class ModItemTagGenerator extends ItemTagsProvider {
-
-
     public ModItemTagGenerator(PackOutput pOutput, CompletableFuture<HolderLookup.Provider> pLookupProvider, CompletableFuture<TagLookup<Block>> pBlockTags, @Nullable ExistingFileHelper existingFileHelper) {
         super(pOutput, pLookupProvider, pBlockTags, DruidicQuestMod.MODID, existingFileHelper);
     }
 
 
-
     @Override
-    protected void addTags(HolderLookup.Provider pProvider) {
+    protected void addTags(HolderLookup.@NotNull Provider pProvider) {
 
         String [] materialTypes = {"steel","platinum","uranium"};
 
-        for(String material : materialTypes)
-        {
-
+        for(String material : materialTypes) {
             addMaterialIngredientTag("nugget",material);
             addMaterialIngredientTag("ingot",material);
             storageBlocksTag(material);
@@ -64,6 +59,8 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         //copy(BlockTags.LOGS,ItemTags.LOGS);
         //copy(BlockTags.PLANKS,ItemTags.PLANKS);
+
+        this.tag(ModTags.Items.RUNE_ITEM);
     }
 
     protected void addMaterialIngredientTag(String ingredientType, String materialType){

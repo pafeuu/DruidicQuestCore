@@ -3,17 +3,11 @@ package net.pafeuu.DruidicQuestMod;
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.item.ItemProperties;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
-import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -21,22 +15,17 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.ForgeRegistries;
 import net.pafeuu.DruidicQuestMod.config.CommonConfig;
 import net.pafeuu.DruidicQuestMod.registries.*;
 import org.slf4j.Logger;
 
-// The value here should match an entry in the META-INF/mods.toml file
 @Mod(DruidicQuestMod.MODID)
 public class DruidicQuestMod
 {
-    // Define mod id in a common place for everything to reference
     public static final String MODID = "druidic_quest_core";
-    // Directly reference a logger
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public DruidicQuestMod(FMLJavaModLoadingContext context)
-    {
+    public DruidicQuestMod(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
 
         CreativeTabRegistry.register(modEventBus);
@@ -45,48 +34,25 @@ public class DruidicQuestMod
         EntityRegistry.register(modEventBus);
         SpellRegistry.register(modEventBus);
 
-
-        // Register the commonSetup method for modloading
-        modEventBus.addListener(this::commonSetup);
         modEventBus.addListener(this::registerDispenserBehaviors);
 
-        // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
-        // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
-        // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
-        context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
-
-        context.registerConfig(ModConfig.Type.COMMON, CommonConfig.SPEC, "druidic_quest_core/common_config.toml"); //yes I made a separate config
+        context.registerConfig(ModConfig.Type.COMMON, CommonConfig.SPEC,  DruidicQuestMod.MODID + "/common_config.toml");
     }
 
-    private void registerDispenserBehaviors(final FMLCommonSetupEvent event)
-    {
+    //pafeu why is this here
+    private void registerDispenserBehaviors(final FMLCommonSetupEvent event) {
         //event.enqueueWork(DispenserBehaviourRegistry::registerDispenserBehaviour);
     }
 
-    private void commonSetup(final FMLCommonSetupEvent event)
-    {
-        // Some common setup code
-        LOGGER.info("HELLO FROM COMMON SETUP");
-
-        if (Config.logDirtBlock)
-            LOGGER.info("DIRT BLOCK >> {}", ForgeRegistries.BLOCKS.getKey(Blocks.DIRT));
-
-        LOGGER.info(Config.magicNumberIntroduction + Config.magicNumber);
-
-        Config.items.forEach((item) -> LOGGER.info("ITEM >> {}", item.toString()));
-    }
-
-    // Add the example block item to the building blocks tab
+    //pafeu seriously make this a separate class
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
 
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ItemRegistry.NATURE_ESSENCE);
-            event.accept(ItemRegistry.ARCANE_BRICK);
-            event.accept(ItemRegistry.ARCANE_CLAY_BLEND);
             //event.accept(ItemRegistry.TREATED_STICK);
             event.accept(ItemRegistry.STEEL_INGOT);
             event.accept(ItemRegistry.STEEL_GEAR);
@@ -139,7 +105,6 @@ public class DruidicQuestMod
             event.accept(BlockRegistry.STURDY_DEEPSLATE_SLAB);
             event.accept(BlockRegistry.PRIMITIVE_MACHINE);
             event.accept(BlockRegistry.ALLOY_BRICKS);
-            event.accept(BlockRegistry.ARCANE_BRICKS);
             event.accept(BlockRegistry.STACKED_PLANKS);
             event.accept(BlockRegistry.PACKED_PLANKS);
             event.accept(BlockRegistry.POLISHED_PLANKS);
@@ -163,12 +128,6 @@ public class DruidicQuestMod
             event.accept(ItemRegistry.CRIMSON_FLOWER_STAFF);
             event.accept(ItemRegistry.EBONY_FLOWER_STAFF);
             event.accept(ItemRegistry.GOLDEN_FLOWER_STAFF);
-            event.accept(ItemRegistry.IMPROVED_LUSH_FLOWER_STAFF);
-            event.accept(ItemRegistry.IMPROVED_PURE_FLOWER_STAFF);
-            event.accept(ItemRegistry.IMPROVED_COBALT_FLOWER_STAFF);
-            event.accept(ItemRegistry.IMPROVED_CRIMSON_FLOWER_STAFF);
-            event.accept(ItemRegistry.IMPROVED_EBONY_FLOWER_STAFF);
-            event.accept(ItemRegistry.IMPROVED_GOLDEN_FLOWER_STAFF);
             event.accept(ItemRegistry.PLATINUM_AXE);
             event.accept(ItemRegistry.PLATINUM_SWORD);
             event.accept(ItemRegistry.STEEL_AXE);
@@ -185,14 +144,7 @@ public class DruidicQuestMod
         }
     }
 
-    // You can use SubscribeEvent and let the Event Bus discover methods to call
-    @SubscribeEvent
-    public void onServerStarting(ServerStartingEvent event)
-    {
-        // Do something when the server starts
-        LOGGER.info("HELLO from server starting");
-    }
-
+    //pafeu seriously, seperate classes please
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents
@@ -200,12 +152,10 @@ public class DruidicQuestMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-            event.enqueueWork(() -> {
-                ItemProperties.register(ItemRegistry.PRIMITIVE_SHIELD.get(),
-                        ResourceLocation.tryParse("blocking"),
-                        (stack, level, entity, seed) ->
-                                entity != null && entity.isUsingItem() && entity.getUseItem() == stack ? 1.0F : 0.0F);
-            });
+            event.enqueueWork(() -> ItemProperties.register(ItemRegistry.PRIMITIVE_SHIELD.get(),
+                    ResourceLocation.tryParse("blocking"),
+                    (stack, level, entity, seed) ->
+                            entity != null && entity.isUsingItem() && entity.getUseItem() == stack ? 1.0F : 0.0F));
             // Some client setup code
             LOGGER.info("HELLO FROM CLIENT SETUP");
             LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());

@@ -5,7 +5,10 @@
   "compatibilityLevel": "JAVA_17",
   "refmap": "mixins.druidic_quest_core.refmap.json",
   "mixins": [
-    "botania.PlayerMoverEntityMixin"
+    "botania.PlayerMoverEntityMixin",
+    "botania.RunicAltarBlockEntityMixin",
+    "botania.RunicAltarRecipeMixin",
+    "botania.RunicAltarRecipeSerializerMixin"
   ],
   "client": [],
   "server": []
