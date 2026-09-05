@@ -9,7 +9,7 @@ import vazkii.botania.common.crafting.RunicAltarRecipe;
 @Mixin(RunicAltarRecipe.class)
 public abstract class RunicAltarRecipeMixin implements ICatalystRunicAltarRecipe {
     @Unique
-    private ItemStack druidic_quest_core$catalyst = null;
+    private ItemStack druidic_quest_core$catalyst = ItemStack.EMPTY;
 
     @Override
     public ItemStack druidic_quest_core$getCatalyst() {
