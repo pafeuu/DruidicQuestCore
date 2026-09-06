@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "fill=0": { "model": "druidic_quest_core:block/source_jars/big_source_jar0" },
+	"fill=1": { "model": "druidic_quest_core:block/source_jars/big_source_jar_sliver" },
+	"fill=2": { "model": "druidic_quest_core:block/source_jars/big_source_jar10" },
+	"fill=3": { "model": "druidic_quest_core:block/source_jars/big_source_jar20" },
+	"fill=4": { "model": "druidic_quest_core:block/source_jars/big_source_jar30" },
+	"fill=5": { "model": "druidic_quest_core:block/source_jars/big_source_jar40" },
+	"fill=6": { "model": "druidic_quest_core:block/source_jars/big_source_jar50" },
+	"fill=7": { "model": "druidic_quest_core:block/source_jars/big_source_jar60" },
+	"fill=8": { "model": "druidic_quest_core:block/source_jars/big_source_jar70" },
+	"fill=9": { "model": "druidic_quest_core:block/source_jars/big_source_jar80" },
+	"fill=10": { "model": "druidic_quest_core:block/source_jars/big_source_jar90" },
+	"fill=11": { "model": "druidic_quest_core:block/source_jars/big_source_jar100" }
+  }
+}

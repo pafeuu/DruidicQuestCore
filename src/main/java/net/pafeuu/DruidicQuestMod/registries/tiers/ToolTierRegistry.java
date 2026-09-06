@@ -22,4 +22,12 @@ public class ToolTierRegistry {
             List.of()
     );
 
+    public static final Tier PLATINUM = TierSortingRegistry.registerTier(
+            new ForgeTier(4, 16384,12f,6,25, BlockTags.NEEDS_DIAMOND_TOOL,
+                    ()-> Ingredient.of(ItemRegistry.PLATINUM_INGOT.get())),
+            ResourceLocation.fromNamespaceAndPath(DruidicQuestMod.MODID,"platinum"),
+            List.of(Tiers.NETHERITE),
+            List.of()
+    );
+
 }

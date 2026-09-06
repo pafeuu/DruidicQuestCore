@@ -7,7 +7,7 @@
       "item": "druidic_quest_core:steel_ingot"
     },
     "S": {
-      "item": "druidic_quest_core:treated_stick"
+      "item": "minecraft:stick"
     }
   },
   "pattern": [

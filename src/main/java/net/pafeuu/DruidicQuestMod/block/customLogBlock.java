@@ -1,4 +1,4 @@
-package net.pafeuu.DruidicQuestMod.block;
+/*package net.pafeuu.DruidicQuestMod.block;
 
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.context.UseOnContext;
@@ -28,4 +28,4 @@ public class customLogBlock extends RotatedPillarBlock {
         }
         return super.getToolModifiedState(state, context, toolAction, simulate);
     }
-}
+}*/

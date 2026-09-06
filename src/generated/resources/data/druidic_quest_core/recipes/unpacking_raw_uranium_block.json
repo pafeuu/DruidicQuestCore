@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "druidic_quest_core:raw_uranium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "druidic_quest_core:raw_uranium"
+  }
+}

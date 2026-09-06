@@ -3,11 +3,14 @@ package net.pafeuu.DruidicQuestMod.datagen;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.pafeuu.DruidicQuestMod.DruidicQuestMod;
+import net.pafeuu.DruidicQuestMod.registries.BlockRegistry;
 import net.pafeuu.DruidicQuestMod.registries.ItemRegistry;
 
 public class ModItemModelProvider extends ItemModelProvider {
@@ -19,7 +22,13 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         simpleItem(ItemRegistry.NATURE_ESSENCE);
-        simpleItem(ItemRegistry.TREATED_STICK);
+        simpleItem(ItemRegistry.ARCANE_CLAY_BLEND);
+        simpleItem(ItemRegistry.ARCANE_BRICK);
+        simpleItem(ItemRegistry.LIVINGROCK_GEAR);
+        simpleItem(ItemRegistry.LIVINGROCK_PLATE);
+        simpleItem(ItemRegistry.LIVINGWOOD_GEAR);
+        simpleItem(ItemRegistry.LIVINGWOOD_PLATE);
+        //simpleItem(ItemRegistry.TREATED_STICK);
         simpleItem(ItemRegistry.STEEL_INGOT);
         simpleItem(ItemRegistry.STEEL_NUGGET);
         simpleItem(ItemRegistry.STEEL_GEAR);
@@ -44,6 +53,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ItemRegistry.LUSH_FLOWER_STAFF);
         simpleItem(ItemRegistry.PURE_FLOWER_STAFF);
         simpleItem(ItemRegistry.GOLDEN_FLOWER_STAFF);
+        simpleItem(ItemRegistry.IMPROVED_EBONY_FLOWER_STAFF);
+        simpleItem(ItemRegistry.IMPROVED_COBALT_FLOWER_STAFF);
+        simpleItem(ItemRegistry.IMPROVED_CRIMSON_FLOWER_STAFF);
+        simpleItem(ItemRegistry.IMPROVED_LUSH_FLOWER_STAFF);
+        simpleItem(ItemRegistry.IMPROVED_PURE_FLOWER_STAFF);
+        simpleItem(ItemRegistry.IMPROVED_GOLDEN_FLOWER_STAFF);
 
         countedItem(ItemRegistry.STEEL_PLATE);
         countedItem(ItemRegistry.URANIUM_PLATE);
@@ -55,6 +70,21 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ItemRegistry.STEEL_SHOVEL);
         handheldItem(ItemRegistry.STEEL_HOE);
         handheldItem(ItemRegistry.STEEL_SWORD);
+        handheldItem(ItemRegistry.PLATINUM_PICKAXE);
+        handheldItem(ItemRegistry.PLATINUM_AXE);
+        handheldItem(ItemRegistry.PLATINUM_SHOVEL);
+        handheldItem(ItemRegistry.PLATINUM_HOE);
+        handheldItem(ItemRegistry.PLATINUM_SWORD);
+
+        /*simpleBlockItem(BlockRegistry.TREATED_DOOR);
+
+        trapdoorItem(BlockRegistry.TREATED_TRAPDOOR);
+
+        fenceItem(BlockRegistry.TREATED_FENCE,BlockRegistry.TREATED_PLANKS);
+
+        evenSimplerBlockItem(BlockRegistry.TREATED_STAIRS);
+        evenSimplerBlockItem(BlockRegistry.TREATED_SLAB);
+        evenSimplerBlockItem(BlockRegistry.TREATED_FENCE_GATE);*/
 
     }
 
@@ -70,6 +100,37 @@ public class ModItemModelProvider extends ItemModelProvider {
                 ResourceLocation.tryParse("item/handheld"))
                 .texture("layer0", ResourceLocation.tryBuild(DruidicQuestMod.MODID,"item/" + item.getId().getPath()));
 
+    }
+
+    public void evenSimplerBlockItem(RegistryObject<Block> block) {
+        this.withExistingParent(DruidicQuestMod.MODID + ":" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
+                modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath()));
+    }
+
+    public void trapdoorItem(RegistryObject<Block> block) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
+                modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath() + "_bottom"));
+    }
+
+    public void fenceItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/fence_inventory"))
+                .texture("texture",  ResourceLocation.fromNamespaceAndPath(DruidicQuestMod.MODID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
+    }
+
+    public void buttonItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/button_inventory"))
+                .texture("texture",  ResourceLocation.fromNamespaceAndPath(DruidicQuestMod.MODID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
+    }
+
+    public void wallItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/wall_inventory"))
+                .texture("wall",  ResourceLocation.fromNamespaceAndPath(DruidicQuestMod.MODID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
+    }
+
+    private ItemModelBuilder simpleBlockItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.tryParse("item/generated")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(DruidicQuestMod.MODID,"item/" + item.getId().getPath()));
     }
 
     private void countedItemVariant(String variantName) {

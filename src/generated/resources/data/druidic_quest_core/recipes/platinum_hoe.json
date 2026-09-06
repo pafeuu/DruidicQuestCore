@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "M": {
+      "item": "druidic_quest_core:platinum_ingot"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "MM ",
+    " S ",
+    " S "
+  ],
+  "result": {
+    "item": "druidic_quest_core:platinum_hoe"
+  },
+  "show_notification": true
+}
