@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "steelleggings",
+  "key": {
+    "M": {
+      "item": "druidic_quest_core:steel_plate"
+    }
+  },
+  "pattern": [
+    "MMM",
+    "M M",
+    "M M"
+  ],
+  "result": {
+    "item": "druidic_quest_core:steel_leggings"
+  },
+  "show_notification": true
+}

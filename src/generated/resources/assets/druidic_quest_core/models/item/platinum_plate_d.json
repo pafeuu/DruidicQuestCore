@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "druidic_quest_core:item/platinum_plate_d"
+  }
+}

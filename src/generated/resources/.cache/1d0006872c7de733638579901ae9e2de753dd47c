@@ -1,0 +1,15 @@
+// 1.20.1	2026-08-26T08:20:40.6353656	Tags for minecraft:item mod id druidic_quest_core
+fdb79b1e7f52989229fa6c0328a7eb867223ba52 data/forge/tags/items/gears.json
+e6b288941d11e6a0779d8bc7b13a1d73c969aaf9 data/forge/tags/items/gears/steel.json
+2ffea079bab3df0545aa327daabcc69bf364fb34 data/forge/tags/items/ingots.json
+99f33f310299b4d41f4099735ab8bb8eabb9411f data/forge/tags/items/ingots/steel.json
+453f6a7d8c3affe7d639bc5c1d4271b70bbd9d65 data/forge/tags/items/nuggets.json
+126ab90cdd87f310673ac2932bb8e02e15bbafce data/forge/tags/items/nuggets/steel.json
+1ee1d4dd88b25de8ab4c7fdb64601dbba3dd7017 data/forge/tags/items/plates.json
+b2a7e101e90a5d9cd83e9ba8b8d8cd6978dff6cc data/forge/tags/items/plates/steel.json
+7b2b001c75e0b7c0d8acb6e3b3e933e00e34fa8c data/forge/tags/items/rods.json
+770d2c4f42eb34546019f213dc387d293f6ff44a data/forge/tags/items/rods/steel.json
+6eedec670001bd77c5b7e9fd586db68db6b34f8b data/forge/tags/items/storage_blocks.json
+6eedec670001bd77c5b7e9fd586db68db6b34f8b data/forge/tags/items/storage_blocks/steel.json
+c404e765476b7c569c8f575e7174f77dbfc68a4b data/minecraft/tags/items/logs.json
+685c2b36c2b466780fd5bf314e10451f5d32c14f data/minecraft/tags/items/planks.json

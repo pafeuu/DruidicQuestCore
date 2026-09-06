@@ -1,0 +1,10 @@
+// 1.20.1	2026-08-26T08:20:40.6323735	Tags for minecraft:block mod id druidic_quest_core
+c404e765476b7c569c8f575e7174f77dbfc68a4b data/minecraft/tags/blocks/logs.json
+94e082a9a7d78fc97a0421571352cfa45cc3544a data/minecraft/tags/blocks/mineable/axe.json
+b46ec2ab0766a68e3469f329b8e8efcc894fc886 data/minecraft/tags/blocks/mineable/hoe.json
+41aba73d69144b8c9a3f08cfd618f189a888065e data/minecraft/tags/blocks/mineable/pickaxe.json
+10176bfff3ae40a733644922f93a8515458d1dd9 data/minecraft/tags/blocks/mineable/shovel.json
+b2f4f4e8b44542b33b592f8f2fcb2c85af417ac8 data/minecraft/tags/blocks/needs_diamond_tool.json
+2b71706424b30ed2dde479fd05b9f5a4b281b54f data/minecraft/tags/blocks/needs_iron_tool.json
+41696b26e0f17541145edc94ed9b195919d5764f data/minecraft/tags/blocks/needs_stone_tool.json
+685c2b36c2b466780fd5bf314e10451f5d32c14f data/minecraft/tags/blocks/planks.json

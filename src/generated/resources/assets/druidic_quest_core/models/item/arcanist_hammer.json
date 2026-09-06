@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "druidic_quest_core:item/arcanist_hammer"
+  }
+}

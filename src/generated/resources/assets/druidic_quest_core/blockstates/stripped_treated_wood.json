@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "druidic_quest_core:block/stripped_treated_wood_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "druidic_quest_core:block/stripped_treated_wood"
+    },
+    "axis=z": {
+      "model": "druidic_quest_core:block/stripped_treated_wood_horizontal",
+      "x": 90
+    }
+  }
+}

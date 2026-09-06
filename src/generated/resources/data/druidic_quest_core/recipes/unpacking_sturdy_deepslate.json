@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "druidic_quest_core:sturdy_deepslate"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "minecraft:deepslate"
+  }
+}

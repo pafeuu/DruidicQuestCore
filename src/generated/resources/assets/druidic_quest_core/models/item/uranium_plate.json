@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:item/generated",
+  "overrides": [
+    {
+      "model": "druidic_quest_core:item/uranium_plate_a",
+      "predicate": {
+        "minecraft:count": 0.0
+      }
+    },
+    {
+      "model": "druidic_quest_core:item/uranium_plate_b",
+      "predicate": {
+        "minecraft:count": 0.25
+      }
+    },
+    {
+      "model": "druidic_quest_core:item/uranium_plate_c",
+      "predicate": {
+        "minecraft:count": 0.5
+      }
+    },
+    {
+      "model": "druidic_quest_core:item/uranium_plate_d",
+      "predicate": {
+        "minecraft:count": 1.0
+      }
+    }
+  ],
+  "textures": {
+    "layer0": "druidic_quest_core:item/uranium_plate_a"
+  }
+}
