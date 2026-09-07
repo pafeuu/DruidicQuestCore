@@ -6,9 +6,10 @@
   "refmap": "mixins.druidic_quest_core.refmap.json",
   "mixins": [
     "botania.PlayerMoverEntityMixin",
-    "botania.RunicAltarBlockEntityMixin",
-    "botania.RunicAltarRecipeMixin",
-    "botania.RunicAltarRecipeSerializerMixin"
+    "botania.RunicAltar.RunicAltarBlockEntityHudMixin",
+    "botania.RunicAltar.RunicAltarBlockEntityMixin",
+    "botania.RunicAltar.RunicAltarRecipeMixin",
+    "botania.RunicAltar.RunicAltarRecipeSerializerMixin"
   ],
   "client": [],
   "server": []
