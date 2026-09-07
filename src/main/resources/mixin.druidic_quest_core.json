@@ -8,6 +8,7 @@
     "botania.PlayerMoverEntityMixin",
     "botania.RunicAltar.RunicAltarBlockEntityHudMixin",
     "botania.RunicAltar.RunicAltarBlockEntityMixin",
+    "botania.RunicAltar.RunicAltarEmiRecipeMixin",
     "botania.RunicAltar.RunicAltarRecipeMixin",
     "botania.RunicAltar.RunicAltarRecipeSerializerMixin"
   ],
