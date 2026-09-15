@@ -1,0 +1,23 @@
+{
+  "type": "botania:runic_altar",
+  "ingredients": [
+    {
+      "item": "minecraft:dirt"
+    },
+    {
+      "item": "minecraft:dirt"
+    },
+    {
+      "item": "minecraft:dirt"
+    },
+    {
+      "item": "minecraft:dirt"
+    }
+  ],
+  "mana": 5200,
+  "output": {
+    "count": 2,
+    "item": "botania:rune_earth"
+  },
+  "catalyst": [{"item": "minecraft:stone"}]
+}

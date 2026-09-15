@@ -5,8 +5,7 @@
   "compatibilityLevel": "JAVA_17",
   "refmap": "mixins.druidic_quest_core.refmap.json",
   "mixins": [
-    "botania.PlayerMoverEntityMixin",
-    "botania.TerrestrialAgglomerationPlateBlockEntityMixin"
+    "botania.PlayerMoverEntityMixin"
   ],
   "client": [],
   "server": []
