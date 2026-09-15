@@ -2,6 +2,8 @@
   "values": [
     "druidic_quest_core:steel_gear",
     "druidic_quest_core:platinum_gear",
-    "druidic_quest_core:uranium_gear"
+    "druidic_quest_core:uranium_gear",
+    "druidic_quest_core:livingwood_gear",
+    "druidic_quest_core:livingrock_gear"
   ]
 }

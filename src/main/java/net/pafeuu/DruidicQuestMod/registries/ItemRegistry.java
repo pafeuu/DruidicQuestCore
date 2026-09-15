@@ -31,6 +31,19 @@ public class ItemRegistry {
     public static final RegistryObject<Item> ARCANE_BRICK = ITEMS.register("arcane_brick",
             ()-> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> LIVINGWOOD_PLATE = ITEMS.register("livingwood_plate",
+            ()-> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> LIVINGWOOD_GEAR = ITEMS.register("livingwood_gear",
+            ()-> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> LIVINGROCK_PLATE = ITEMS.register("livingrock_plate",
+            ()-> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> LIVINGROCK_GEAR = ITEMS.register("livingrock_gear",
+            ()-> new Item(new Item.Properties()));
+
+
     /*public static final RegistryObject<Item> TREATED_STICK = ITEMS.register("treated_stick",
             ()-> new Item(new Item.Properties()));*/
 

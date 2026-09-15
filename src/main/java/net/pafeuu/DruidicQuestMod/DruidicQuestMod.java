@@ -88,6 +88,10 @@ public class DruidicQuestMod
             event.accept(ItemRegistry.ARCANE_BRICK);
             event.accept(ItemRegistry.ARCANE_CLAY_BLEND);
             //event.accept(ItemRegistry.TREATED_STICK);
+            event.accept(ItemRegistry.LIVINGROCK_PLATE);
+            event.accept(ItemRegistry.LIVINGROCK_GEAR);
+            event.accept(ItemRegistry.LIVINGWOOD_PLATE);
+            event.accept(ItemRegistry.LIVINGWOOD_GEAR);
             event.accept(ItemRegistry.STEEL_INGOT);
             event.accept(ItemRegistry.STEEL_GEAR);
             event.accept(ItemRegistry.STEEL_NUGGET);
