@@ -99,6 +99,7 @@ repositories {
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 
+    //if you ever want to speedrun load time, just switch implementation to compileOnly for mods you dont want to load
     implementation fg.deobf("io.redspace:irons_spellbooks:${irons_spells_version}")
     implementation fg.deobf("curse.maven:irons-lib-1492763:8364892")
     implementation fg.deobf("curse.maven:geckolib-388172:8285794")
@@ -109,6 +110,9 @@ dependencies {
     implementation fg.deobf("curse.maven:curios-309927:6418456")
     implementation fg.deobf("curse.maven:emi-580555:8081375")
     implementation fg.deobf("curse.maven:tmrv-1194921:8336855")
+    implementation fg.deobf("curse.maven:zeta-968868:7335229")
+    implementation fg.deobf("curse.maven:quark-243121:6427817")
+    implementation fg.deobf("curse.maven:puffish-attributes-991341:7551331")
 
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
     compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:0.5.4")) //this may be stupid, but it works for me
