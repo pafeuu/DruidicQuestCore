@@ -6,12 +6,13 @@
   "refmap": "mixins.druidic_quest_core.refmap.json",
   "mixins": [
     "botania.PlayerMoverEntityMixin",
+    "botania.TerrestrialAgglomerationPlateBlockEntityMixin",
     "botania.RunicAltar.RunicAltarBlockEntityHudMixin",
     "botania.RunicAltar.RunicAltarBlockEntityMixin",
     "botania.RunicAltar.RunicAltarEmiRecipeMixin",
     "botania.RunicAltar.RunicAltarRecipeMixin",
     "botania.RunicAltar.RunicAltarRecipeSerializerMixin",
-    "botania.TerrestrialAgglomerationPlateBlockEntityMixin"
+    "quark.AttributeTooltipsMixin"
   ],
   "client": [],
   "server": []
