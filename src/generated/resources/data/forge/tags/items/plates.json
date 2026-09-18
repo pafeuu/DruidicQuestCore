@@ -2,6 +2,8 @@
   "values": [
     "druidic_quest_core:steel_plate",
     "druidic_quest_core:platinum_plate",
-    "druidic_quest_core:uranium_plate"
+    "druidic_quest_core:uranium_plate",
+    "druidic_quest_core:livingwood_plate",
+    "druidic_quest_core:livingrock_plate"
   ]
 }

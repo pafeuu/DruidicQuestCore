@@ -22,6 +22,10 @@ public class CreativeTabRegistry {
                         pOutput.accept(ItemRegistry.NATURE_ESSENCE.get());
                         pOutput.accept(ItemRegistry.ARCANE_BRICK.get());
                         pOutput.accept(ItemRegistry.ARCANE_CLAY_BLEND.get());
+                        pOutput.accept(ItemRegistry.LIVINGROCK_PLATE.get());
+                        pOutput.accept(ItemRegistry.LIVINGROCK_GEAR.get());
+                        pOutput.accept(ItemRegistry.LIVINGWOOD_PLATE.get());
+                        pOutput.accept(ItemRegistry.LIVINGWOOD_GEAR.get());
                         //pOutput.accept(ItemRegistry.TREATED_STICK.get());
                         pOutput.accept(ItemRegistry.PHOENIX_BRUSH.get());
                         pOutput.accept(ItemRegistry.STEEL_BRUSH.get());

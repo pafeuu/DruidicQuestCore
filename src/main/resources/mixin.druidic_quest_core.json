@@ -11,7 +11,7 @@
     "botania.RunicAltar.RunicAltarEmiRecipeMixin",
     "botania.RunicAltar.RunicAltarRecipeMixin",
     "botania.RunicAltar.RunicAltarRecipeSerializerMixin",
-    "quark.AttributeTooltipsMixin"
+    "botania.TerrestrialAgglomerationPlateBlockEntityMixin"
   ],
   "client": [],
   "server": []

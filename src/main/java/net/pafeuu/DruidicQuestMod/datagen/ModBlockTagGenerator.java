@@ -9,6 +9,7 @@ import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.pafeuu.DruidicQuestMod.DruidicQuestMod;
 import net.pafeuu.DruidicQuestMod.registries.BlockRegistry;
+import net.pafeuu.DruidicQuestMod.registries.TagsRegistry;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -21,6 +22,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
+
+        this.tag(TagsRegistry.Blocks.TERRA_PLATE_BASE_ALT)
+                .add(BlockRegistry.PRIMITIVE_MACHINE.get());
 
         this.tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(BlockRegistry.PRIMITIVE_MACHINE.get());

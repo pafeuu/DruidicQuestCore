@@ -24,6 +24,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ItemRegistry.NATURE_ESSENCE);
         simpleItem(ItemRegistry.ARCANE_CLAY_BLEND);
         simpleItem(ItemRegistry.ARCANE_BRICK);
+        simpleItem(ItemRegistry.LIVINGROCK_GEAR);
+        simpleItem(ItemRegistry.LIVINGROCK_PLATE);
+        simpleItem(ItemRegistry.LIVINGWOOD_GEAR);
+        simpleItem(ItemRegistry.LIVINGWOOD_PLATE);
         //simpleItem(ItemRegistry.TREATED_STICK);
         simpleItem(ItemRegistry.STEEL_INGOT);
         simpleItem(ItemRegistry.STEEL_NUGGET);

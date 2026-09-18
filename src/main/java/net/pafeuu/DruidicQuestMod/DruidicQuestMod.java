@@ -54,6 +54,10 @@ public class DruidicQuestMod
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ItemRegistry.NATURE_ESSENCE);
             //event.accept(ItemRegistry.TREATED_STICK);
+            event.accept(ItemRegistry.LIVINGROCK_PLATE);
+            event.accept(ItemRegistry.LIVINGROCK_GEAR);
+            event.accept(ItemRegistry.LIVINGWOOD_PLATE);
+            event.accept(ItemRegistry.LIVINGWOOD_GEAR);
             event.accept(ItemRegistry.STEEL_INGOT);
             event.accept(ItemRegistry.STEEL_GEAR);
             event.accept(ItemRegistry.STEEL_NUGGET);
