@@ -11,6 +11,7 @@ import net.pafeuu.DruidicQuestMod.DruidicQuestMod;
 import net.pafeuu.DruidicQuestMod.registries.BlockRegistry;
 import net.pafeuu.DruidicQuestMod.registries.TagsRegistry;
 import org.jetbrains.annotations.Nullable;
+import vazkii.botania.common.lib.BotaniaTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -24,7 +25,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider pProvider) {
 
         this.tag(TagsRegistry.Blocks.TERRA_PLATE_BASE_ALT)
-                .add(BlockRegistry.PRIMITIVE_MACHINE.get());
+                .add(BlockRegistry.ALLOY_BRICKS.get());
+
+        this.tag(BotaniaTags.Blocks.TERRA_PLATE_BASE)
+                .add(BlockRegistry.ARCANE_BRICKS.get());
 
         this.tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(BlockRegistry.PRIMITIVE_MACHINE.get());
