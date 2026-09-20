@@ -1,6 +1,9 @@
 package net.pafeuu.DruidicQuestMod.registries;
 
 import cofh.lib.common.block.OreBlockCoFH;
+import com.hollingsworth.arsnouveau.common.block.SourceJar;
+import com.hollingsworth.arsnouveau.common.block.tile.SourceJarTile;
+import com.hollingsworth.arsnouveau.common.util.RegistryWrapper;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -16,9 +19,14 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.pafeuu.DruidicQuestMod.DruidicQuestMod;
+import net.pafeuu.DruidicQuestMod.blockClasses.SourceJarExtended;
+import net.pafeuu.DruidicQuestMod.blockClasses.SourceJarTileExtended;
 //import net.pafeuu.DruidicQuestMod.block.customLogBlock;
 
 import java.util.function.Supplier;
+
+import static com.hollingsworth.arsnouveau.setup.registry.BlockRegistry.registerBlockAndItem;
+import static com.hollingsworth.arsnouveau.setup.registry.BlockRegistry.registerTile;
 
 public class BlockRegistry {
 
@@ -42,6 +50,13 @@ public class BlockRegistry {
 
     public static final RegistryObject<Block> POLISHED_PLANKS = registerBlock("polished_planks",
             ()-> new Block(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS)));
+
+    public static RegistryWrapper<SourceJar> BIG_SOURCE_JAR = registerBlockAndItem("big_source_jar",
+            SourceJarExtended::new);
+
+    public static RegistryWrapper<BlockEntityType<SourceJarTileExtended>> BIG_SOURCE_JAR_TILE = registerTile("big_jar_tile",
+            SourceJarTileExtended::new,
+            BIG_SOURCE_JAR);
 
     /*public static final RegistryObject<Block> TREATED_PLANKS = registerBlock("treated_planks",
             ()-> new Block(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS)));
