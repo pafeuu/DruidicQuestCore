@@ -1,8 +1,5 @@
 package net.pafeuu.DruidicQuestMod.registries;
 
-import cofh.lib.common.block.OreBlockCoFH;
-import com.hollingsworth.arsnouveau.common.block.SourceJar;
-import com.hollingsworth.arsnouveau.common.block.tile.SourceJarTile;
 import com.hollingsworth.arsnouveau.common.util.RegistryWrapper;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.BlockItem;
@@ -10,17 +7,16 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.properties.BlockSetType;
-import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
-import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.pafeuu.DruidicQuestMod.DruidicQuestMod;
-import net.pafeuu.DruidicQuestMod.blockClasses.SourceJarExtended;
-import net.pafeuu.DruidicQuestMod.blockClasses.SourceJarTileExtended;
+import net.pafeuu.DruidicQuestMod.blockClasses.BigSourceJar;
+import net.pafeuu.DruidicQuestMod.blockClasses.BigSourceJarTile;
+import net.pafeuu.DruidicQuestMod.blockClasses.HugeSourceJar;
+import net.pafeuu.DruidicQuestMod.blockClasses.HugeSourceJarTile;
 //import net.pafeuu.DruidicQuestMod.block.customLogBlock;
 
 import java.util.function.Supplier;
@@ -51,12 +47,19 @@ public class BlockRegistry {
     public static final RegistryObject<Block> POLISHED_PLANKS = registerBlock("polished_planks",
             ()-> new Block(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS)));
 
-    public static RegistryWrapper<SourceJar> BIG_SOURCE_JAR = registerBlockAndItem("big_source_jar",
-            SourceJarExtended::new);
+    public static RegistryWrapper<BigSourceJar> BIG_SOURCE_JAR = registerBlockWrapper("big_source_jar",
+            BigSourceJar::new);
 
-    public static RegistryWrapper<BlockEntityType<SourceJarTileExtended>> BIG_SOURCE_JAR_TILE = registerTile("big_jar_tile",
-            SourceJarTileExtended::new,
+    public static RegistryWrapper<BlockEntityType<BigSourceJarTile>> BIG_SOURCE_JAR_TILE = registerTile("big_jar_tile",
+            BigSourceJarTile::new,
             BIG_SOURCE_JAR);
+
+    public static RegistryWrapper<HugeSourceJar> HUGE_SOURCE_JAR = registerBlockWrapper("huge_source_jar",
+            HugeSourceJar::new);
+
+    public static RegistryWrapper<BlockEntityType<HugeSourceJarTile>> HUGE_SOURCE_JAR_TILE = registerTile("huge_jar_tile",
+            HugeSourceJarTile::new,
+            HUGE_SOURCE_JAR);
 
     /*public static final RegistryObject<Block> TREATED_PLANKS = registerBlock("treated_planks",
             ()-> new Block(BlockBehaviour.Properties.copy(Blocks.ACACIA_PLANKS)));
@@ -101,7 +104,7 @@ public class BlockRegistry {
             ()-> new Block(BlockBehaviour.Properties.copy(Blocks.MOSS_BLOCK).destroyTime(1.0F).sound(SoundType.HONEY_BLOCK)));
 
     public static final RegistryObject<Block> STURDY_DEEPSLATE = registerBlock("sturdy_deepslate",
-            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).pushReaction(PushReaction.BLOCK)));
+            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).explosionResistance(54).strength(9).pushReaction(PushReaction.BLOCK)));
 
     public static final RegistryObject<Block> STEEL_BLOCK = registerBlock("steel_block",
             ()-> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK)));
@@ -144,6 +147,17 @@ public class BlockRegistry {
 
     private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
         return ItemRegistry.ITEMS.register(name, ()-> new BlockItem(block.get(), new Item.Properties()));
+    }
+
+    //No clue why I need it for jars
+    private static <T extends Block> RegistryWrapper<T> registerBlockWrapper(String name, Supplier<T> block) {
+        RegistryWrapper<T> toReturn = new RegistryWrapper<>(BLOCKS.register(name, block));
+        registerBlockItemWrapper(name, toReturn);
+        return toReturn;
+    }
+
+    private static <T extends Block> RegistryWrapper<Item> registerBlockItemWrapper(String name, RegistryWrapper<T> block) {
+        return new RegistryWrapper<>(ItemRegistry.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties())));
     }
 
     public static void register(IEventBus eventBus) {

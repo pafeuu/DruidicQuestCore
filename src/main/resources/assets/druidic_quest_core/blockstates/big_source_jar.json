@@ -1,5 +1,5 @@
 {
-  "variants": {
+	"variants": {
     "fill=0": { "model": "druidic_quest_core:block/source_jars/big_source_jar0" },
 	"fill=1": { "model": "druidic_quest_core:block/source_jars/big_source_jar_sliver" },
 	"fill=2": { "model": "druidic_quest_core:block/source_jars/big_source_jar10" },

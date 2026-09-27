@@ -93,5 +93,8 @@
   "block.druidic_quest_core.suspicious_snow": "Suspicious Snow",
   "block.druidic_quest_core.suspicious_mud": "Suspicious Mud",
   "block.druidic_quest_core.suspicious_clay": "Suspicious Clay",
-  "block.druidic_quest_core.ivy_block": "Ivy Block"
+  "block.druidic_quest_core.ivy_block": "Ivy Block",
+
+  "block.druidic_quest_core.big_source_jar": "Big Source Jar",
+  "block.druidic_quest_core.huge_source_jar": "Huge Source Jar"
 }

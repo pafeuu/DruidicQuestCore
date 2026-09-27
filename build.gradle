@@ -14,7 +14,7 @@ base {
     archivesName = mod_id
 }
 
-// Mojang ships Java 17 to end users in 1.18+, so your mod should target Java 17.
+
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty 'java.vm.version'} (${System.getProperty 'java.vendor'}), Arch: ${System.getProperty 'os.arch'}"
@@ -52,7 +52,7 @@ minecraft {
             property 'forge.enabledGameTestNamespaces', mod_id
             property 'mixin.env.remapRefMap', 'true'
             property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
-            setJvmArgs(["-Xmx6G", "-Xms6G"])
+            setJvmArgs(["-Xmx3G", "-Xms3G"])
         }
 
         server {
@@ -109,6 +109,7 @@ dependencies {
     implementation fg.deobf("curse.maven:patchouli-306770:6164575")
     implementation fg.deobf("curse.maven:emi-580555:8081375")
     runtimeOnly fg.deobf("curse.maven:tmrv-1194921:8336855")
+    runtimeOnly fg.deobf("curse.maven:jade-324717:8479276")
     implementation fg.deobf("curse.maven:zeta-968868:7335229")
     implementation fg.deobf("curse.maven:quark-243121:6427817")
     implementation fg.deobf("curse.maven:ars-nouveau-401955:6688854")

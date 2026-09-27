@@ -5,22 +5,23 @@ import com.hollingsworth.arsnouveau.common.block.tile.SourceJarTile;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
+import net.pafeuu.DruidicQuestMod.config.CommonConfig;
 import net.pafeuu.DruidicQuestMod.registries.BlockRegistry;
 
-public class SourceJarTileExtended extends SourceJarTile {
+public class HugeSourceJarTile extends SourceJarTile {
 
-    public SourceJarTileExtended(BlockPos pos, BlockState state) {
+    public HugeSourceJarTile(BlockPos pos, BlockState state) {
         super(pos, state);
     }
-
+    int capacity = CommonConfig.HUGE_JAR_CAPACITY.get();
     @Override
     public int getMaxSource() {
-        return 100000;
+        return capacity;
     }
 
     @Override
     public BlockEntityType<?> getType() {
-        return BlockRegistry.BIG_SOURCE_JAR_TILE.get();
+        return BlockRegistry.HUGE_SOURCE_JAR_TILE.get();
     }
 
     @Override
@@ -39,10 +40,10 @@ public class SourceJarTileExtended extends SourceJarTile {
         setChanged();
 
         int fillState = 0;
-        if (this.getSource() > 0 && this.getSource() < 10000)
+        if (this.getSource() > 0 && this.getSource() < (capacity/10))
             fillState = 1;
         else if (this.getSource() != 0) {
-            fillState = (this.getSource() / 10000) + 1;
+            fillState = (this.getSource() / (capacity/10)) + 1;
         }
         if (state.hasProperty(SourceJar.fill))
             level.setBlock(worldPosition, state.setValue(SourceJar.fill, fillState), 3);

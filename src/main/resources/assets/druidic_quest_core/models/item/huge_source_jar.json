@@ -1,0 +1,71 @@
+{
+  "parent": "druidic_quest_core:block/source_jars/huge_source_jar0",
+  "overrides": [
+    {
+      "predicate": {
+        "druidic_quest_core:source": 0.01
+      },
+      "model": "druidic_quest_core:block/source_jars/huge_source_jar_sliver"
+    },
+    {
+      "predicate": {
+        "druidic_quest_core:source": 0.10
+      },
+      "model": "druidic_quest_core:block/source_jars/huge_source_jar10"
+    },
+    {
+      "predicate": {
+        "druidic_quest_core:source": 0.20
+      },
+      "model": "druidic_quest_core:block/source_jars/huge_source_jar20"
+    },
+    {
+      "predicate": {
+        "druidic_quest_core:source": 0.30
+      },
+      "model": "druidic_quest_core:block/source_jars/huge_source_jar30"
+    },
+    {
+      "predicate": {
+        "druidic_quest_core:source": 0.40
+      },
+      "model": "druidic_quest_core:block/source_jars/huge_source_jar40"
+    },
+    {
+      "predicate": {
+        "druidic_quest_core:source": 0.50
+      },
+      "model": "druidic_quest_core:block/source_jars/huge_source_jar50"
+    },
+    {
+      "predicate": {
+        "druidic_quest_core:source": 0.60
+      },
+      "model": "druidic_quest_core:block/source_jars/huge_source_jar60"
+    },
+    {
+      "predicate": {
+        "druidic_quest_core:source": 0.70
+      },
+      "model": "druidic_quest_core:block/source_jars/huge_source_jar70"
+    },
+    {
+      "predicate": {
+        "druidic_quest_core:source": 0.80
+      },
+      "model": "druidic_quest_core:block/source_jars/huge_source_jar80"
+    },
+    {
+      "predicate": {
+        "druidic_quest_core:source": 0.90
+      },
+      "model": "druidic_quest_core:block/source_jars/huge_source_jar90"
+    },
+    {
+      "predicate": {
+        "druidic_quest_core:source": 1.00
+      },
+      "model": "druidic_quest_core:block/source_jars/huge_source_jar100"
+    }
+  ]
+}
