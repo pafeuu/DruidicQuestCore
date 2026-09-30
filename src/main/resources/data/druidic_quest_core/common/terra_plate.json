@@ -1,0 +1,26 @@
+{
+  "type": "multiblock_structure",
+  "structure": "druidic_quest_core:terrestrial_agglomeration_plate",
+  "layout": {
+    "0": {
+      "0": "_____",
+      "1": "__X__",
+      "2": "_XPX_",
+      "3": "__X__",
+      "4": "_____"
+    },
+    "1": {
+      "0": "XXLXX",
+      "1": "XLLLX",
+      "2": "LL0LL",
+      "3": "XLLLX",
+      "4": "XXLXX"
+    }
+  },
+  "symbol_map": {
+    "P": "botania:terra_plate",
+    "X": "botania:livingrock",
+    "0": "minecraft:dirt",
+    "L": "minecraft:stone"
+  }
+}

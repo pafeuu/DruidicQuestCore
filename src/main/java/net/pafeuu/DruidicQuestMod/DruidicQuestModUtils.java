@@ -29,4 +29,12 @@ public class DruidicQuestModUtils {
                 )
         );
     }
+
+    public static final Codec<Integer> INT_KEY = Codec.STRING.comapFlatMap(s -> {
+        try {
+            return DataResult.success(Integer.parseInt(s));
+        } catch (NumberFormatException e) {
+            return DataResult.error(() -> "Expected integer key but got '" + s + "'");
+        }
+    }, i -> Integer.toString(i));
 }

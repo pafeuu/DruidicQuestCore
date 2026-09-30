@@ -16,6 +16,7 @@ import java.util.Map;
 import java.util.OptionalInt;
 
 import static net.pafeuu.DruidicQuestMod.DruidicQuestMod.DQ_LOGGER;
+import static net.pafeuu.DruidicQuestMod.DruidicQuestModUtils.INT_KEY;
 
 public record MultiBlockStructureMatcherData(
         String structureId,
@@ -25,7 +26,7 @@ public record MultiBlockStructureMatcherData(
     public static final Codec<MultiBlockStructureMatcherData> CODEC = RecordCodecBuilder.create(instance ->
             instance.group(
                     Codec.STRING.fieldOf("structure").forGetter(MultiBlockStructureMatcherData::structureId),
-                    Codec.unboundedMap(Codec.INT, Codec.unboundedMap(Codec.INT, Codec.STRING))
+                    Codec.unboundedMap(INT_KEY, Codec.unboundedMap(INT_KEY, Codec.STRING))
                             .fieldOf("layout").forGetter(MultiBlockStructureMatcherData::structure3DLayeredMap),
                     Codec.unboundedMap(Codec.STRING, DruidicQuestModUtils.elementOrTagCodec(ForgeRegistries.BLOCKS, Registries.BLOCK))
                             .fieldOf("symbol_map").forGetter(MultiBlockStructureMatcherData::symbolToBlockMap)
@@ -53,12 +54,13 @@ public record MultiBlockStructureMatcherData(
     public Object[] assembleSymbolMap() {
         List<Object> symbolMap = new ArrayList<>();
         for (String symbol : symbolToBlockMap.keySet()) {
-            symbolMap.add(symbol);
+            symbolMap.add(symbol.charAt(0));
             symbolToBlockMap.get(symbol)
-                    .ifRight(blockTag -> PatchouliAPI.get().tagMatcher(blockTag))
+                    .ifRight(blockTag -> symbolMap.add(PatchouliAPI.get().tagMatcher(blockTag)))
                     .ifLeft(symbolMap::add);
         }
-
         return symbolMap.toArray();
     }
+
+    //Currently, incorrect structure JSON files have no explicit safety nets built to catch errors or crashes. Happy pack dev-ing!
 }
