@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column_horizontal",
-  "textures": {
-    "end": "druidic_quest_core:block/stripped_treated_log_top",
-    "side": "druidic_quest_core:block/stripped_treated_log"
-  }
-}

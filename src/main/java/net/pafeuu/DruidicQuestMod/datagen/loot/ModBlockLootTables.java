@@ -1,10 +1,21 @@
 package net.pafeuu.DruidicQuestMod.datagen.loot;
 
+import com.hollingsworth.arsnouveau.common.datagen.DefaultTableProvider;
 import net.minecraft.data.loot.BlockLootSubProvider;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraft.world.level.storage.loot.entries.DynamicLoot;
+import net.minecraft.world.level.storage.loot.entries.LootItem;
+import net.minecraft.world.level.storage.loot.functions.CopyNameFunction;
+import net.minecraft.world.level.storage.loot.functions.CopyNbtFunction;
+import net.minecraft.world.level.storage.loot.functions.SetContainerContents;
+import net.minecraft.world.level.storage.loot.providers.nbt.ContextNbtProvider;
+import net.minecraft.world.level.storage.loot.providers.number.ConstantValue;
 import net.minecraftforge.registries.RegistryObject;
 import net.pafeuu.DruidicQuestMod.registries.BlockRegistry;
 import net.pafeuu.DruidicQuestMod.registries.ItemRegistry;
@@ -34,6 +45,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(BlockRegistry.RAW_URANIUM_BLOCK.get());
         this.dropSelf(BlockRegistry.PLATINUM_BLOCK.get());
         this.dropSelf(BlockRegistry.RAW_PLATINUM_BLOCK.get());
+        this.dropSelf(BlockRegistry.RAW_PLATINUM_BLOCK.get());
         /*this.dropSelf(BlockRegistry.TREATED_WOOD.get());
         this.dropSelf(BlockRegistry.TREATED_PLANKS.get());
         this.dropSelf(BlockRegistry.TREATED_SLAB.get());
@@ -46,6 +58,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(BlockRegistry.STRIPPED_TREATED_LOG.get());
         this.dropSelf(BlockRegistry.STRIPPED_TREATED_WOOD.get());*/
 
+        add(BlockRegistry.BIG_SOURCE_JAR.get(), createManaMachineTable(BlockRegistry.BIG_SOURCE_JAR.get(),BlockRegistry.BIG_SOURCE_JAR_TILE.get()));
+        add(BlockRegistry.HUGE_SOURCE_JAR.get(), createManaMachineTable(BlockRegistry.HUGE_SOURCE_JAR.get(),BlockRegistry.HUGE_SOURCE_JAR_TILE.get()));
         this.add(BlockRegistry.PLATINUM_ORE.get(),
                 block -> createOreDrop(BlockRegistry.PLATINUM_ORE.get(),ItemRegistry.RAW_PLATINUM.get()));
 
@@ -56,5 +70,19 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     @Override
     protected Iterable<Block> getKnownBlocks() {
         return BlockRegistry.BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
+    }
+
+    public LootTable.Builder createManaMachineTable(Block block, BlockEntityType tile) {
+        LootPool.Builder builder = LootPool.lootPool()
+                .setRolls(ConstantValue.exactly(1))
+                .add(LootItem.lootTableItem(block)
+                        .apply(CopyNameFunction.copyName(CopyNameFunction.NameSource.BLOCK_ENTITY))
+                        .apply(CopyNbtFunction.copyData(ContextNbtProvider.BLOCK_ENTITY)
+                                .copy("inv", "BlockEntityTag.inv", CopyNbtFunction.MergeStrategy.REPLACE) //addOperation
+                                .copy("source", "BlockEntityTag.source", CopyNbtFunction.MergeStrategy.REPLACE))
+                        .apply(SetContainerContents.setContents(tile)
+                                .withEntry(DynamicLoot.dynamicEntry(ResourceLocation.fromNamespaceAndPath("minecraft", "contents"))))
+                );
+        return LootTable.lootTable().withPool(builder);
     }
 }

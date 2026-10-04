@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "druidic_quest_core:block/treated_log_top",
-    "side": "druidic_quest_core:block/treated_log"
-  }
-}

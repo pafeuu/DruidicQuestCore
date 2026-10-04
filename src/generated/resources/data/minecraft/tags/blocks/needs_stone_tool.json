@@ -1,5 +1,7 @@
 {
   "values": [
-    "druidic_quest_core:primitive_machine"
+    "druidic_quest_core:primitive_machine",
+    "druidic_quest_core:big_source_jar",
+    "druidic_quest_core:huge_source_jar"
   ]
 }

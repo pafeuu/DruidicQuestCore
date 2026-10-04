@@ -29,6 +29,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ItemRegistry.LIVINGWOOD_GEAR);
         simpleItem(ItemRegistry.LIVINGWOOD_PLATE);
         //simpleItem(ItemRegistry.TREATED_STICK);
+        simpleItem(ItemRegistry.MANASTEEL_GEAR);
+        simpleItem(ItemRegistry.TERRASTEEL_GEAR);
+        simpleItem(ItemRegistry.MANASTEEL_ROD);
+        simpleItem(ItemRegistry.TERRASTEEL_ROD);
         simpleItem(ItemRegistry.STEEL_INGOT);
         simpleItem(ItemRegistry.STEEL_NUGGET);
         simpleItem(ItemRegistry.STEEL_GEAR);
@@ -63,6 +67,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         countedItem(ItemRegistry.STEEL_PLATE);
         countedItem(ItemRegistry.URANIUM_PLATE);
         countedItem(ItemRegistry.PLATINUM_PLATE);
+        countedItem(ItemRegistry.MANASTEEL_PLATE);
+        countedItem(ItemRegistry.TERRASTEEL_PLATE);
 
         handheldItem(ItemRegistry.ARCANIST_HAMMER);
         handheldItem(ItemRegistry.STEEL_PICKAXE);

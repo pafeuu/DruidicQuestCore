@@ -27,6 +27,14 @@ public class ModItemTagGenerator extends ItemTagsProvider {
     protected void addTags(HolderLookup.@NotNull Provider pProvider) {
 
         String [] materialTypes = {"steel","platinum","uranium"};
+        String [] botaniaMaterialTypes = {"manasteel","terrasteel"};
+
+        for(String material : botaniaMaterialTypes) {
+
+            addMaterialIngredientTag("plate",material);
+            addMaterialIngredientTag("rod",material);
+            addMaterialIngredientTag("gear",material);
+        }
 
         for(String material : materialTypes) {
             addMaterialIngredientTag("nugget",material);

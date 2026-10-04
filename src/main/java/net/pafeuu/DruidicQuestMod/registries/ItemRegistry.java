@@ -47,6 +47,24 @@ public class ItemRegistry {
     /*public static final RegistryObject<Item> TREATED_STICK = ITEMS.register("treated_stick",
             ()-> new Item(new Item.Properties()));*/
 
+    public static final RegistryObject<Item> MANASTEEL_GEAR = ITEMS.register("manasteel_gear",
+            ()-> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> MANASTEEL_ROD = ITEMS.register("manasteel_rod",
+            ()-> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> MANASTEEL_PLATE = ITEMS.register("manasteel_plate",
+            ()-> new CountedItem(new Item.Properties()));
+
+    public static final RegistryObject<Item> TERRASTEEL_GEAR = ITEMS.register("terrasteel_gear",
+            ()-> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> TERRASTEEL_ROD = ITEMS.register("terrasteel_rod",
+            ()-> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> TERRASTEEL_PLATE = ITEMS.register("terrasteel_plate",
+            ()-> new CountedItem(new Item.Properties()));
+
     public static final RegistryObject<Item> ARCANIST_HAMMER = ITEMS.register("arcanist_hammer",
             ()-> new Item(new Item.Properties().defaultDurability(256)));
 

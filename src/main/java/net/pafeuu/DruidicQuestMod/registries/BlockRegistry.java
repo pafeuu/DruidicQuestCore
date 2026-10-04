@@ -107,16 +107,16 @@ public class BlockRegistry {
             ()-> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE).explosionResistance(54).strength(9).pushReaction(PushReaction.BLOCK)));
 
     public static final RegistryObject<Block> STEEL_BLOCK = registerBlock("steel_block",
-            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK)));
+            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK).strength(30)));
 
     public static final RegistryObject<Block> URANIUM_BLOCK = registerBlock("uranium_block",
-            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK)));
+            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK).strength(20)));
 
     public static final RegistryObject<Block> RAW_URANIUM_BLOCK = registerBlock("raw_uranium_block",
-            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK)));
+            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK).strength(20)));
 
     public static final RegistryObject<Block> PLATINUM_BLOCK = registerBlock("platinum_block",
-            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK)));
+            ()-> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK).strength(30)));
 
     public static final RegistryObject<Block> RAW_PLATINUM_BLOCK = registerBlock("raw_platinum_block",
             ()-> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_IRON_BLOCK)));

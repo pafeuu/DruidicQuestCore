@@ -1,51 +1,659 @@
-[26sie2026 08:20:03.207] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\Lenovo\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.4.10, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, druidic_quest_core, --all, --output, C:\Users\Lenovo\Desktop\code\DruidicQuestCore\src\generated\resources, --existing, C:\Users\Lenovo\Desktop\code\DruidicQuestCore\src\main\resources]
-[26sie2026 08:20:03.217] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.19 by Eclipse Adoptium; OS Windows 10 arch amd64 version 10.0
-[26sie2026 08:20:03.528] [main/WARN] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Configuration file C:\Users\Lenovo\Desktop\code\DruidicQuestCore\run-data\config\fml.toml is not correct. Correcting
-[26sie2026 08:20:03.533] [main/INFO] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Incorrect key [earlyWindowSkipGLVersions] was corrected from null to []
-[26sie2026 08:20:03.535] [main/INFO] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Incorrect key [earlyWindowLogHelpMessage] was corrected from null to true
-[26sie2026 08:20:03.537] [main/INFO] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Incorrect key [earlyWindowSquir] was corrected from null to false
-[26sie2026 08:20:03.539] [main/INFO] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Incorrect key [earlyWindowShowCPU] was corrected from null to false
-[26sie2026 08:20:03.586] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
-[26sie2026 08:20:03.757] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Lenovo/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
-[26sie2026 08:20:04.587] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Lenovo\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.4.10\ccc533c7dd67e0983217197d7549c8b49e7ab453\javafmllanguage-1.20.1-47.4.10.jar is missing mods.toml file
-[26sie2026 08:20:04.593] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Lenovo\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.4.10\e9a2879fe3612ea34b9728ec2633304a1e67d480\lowcodelanguage-1.20.1-47.4.10.jar is missing mods.toml file
-[26sie2026 08:20:04.598] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Lenovo\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.4.10\ec5cefbbc65c67302b8fac317010faab85fa14b9\mclanguage-1.20.1-47.4.10.jar is missing mods.toml file
-[26sie2026 08:20:04.606] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Lenovo\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.4.10\94dae566be650566ea9115a1414ab76bfcf5a804\fmlcore-1.20.1-47.4.10.jar is missing mods.toml file
-[26sie2026 08:20:05.136] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 1 dependencies adding them to mods collection
-[26sie2026 08:20:08.895] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
-[26sie2026 08:20:08.969] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\Lenovo\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, druidic_quest_core, --all, --output, C:\Users\Lenovo\Desktop\code\DruidicQuestCore\src\generated\resources, --existing, C:\Users\Lenovo\Desktop\code\DruidicQuestCore\src\main\resources]
-[26sie2026 08:20:09.703] [main/INFO] [mixin/]: Remapping refMap irons_lib.refmap.json using C:\Users\Lenovo\Desktop\code\DruidicQuestCore\build\createSrgToMcp\output.srg
-[26sie2026 08:20:09.710] [main/INFO] [mixin/]: Remapping refMap mixins.cofhcore.refmap.json using C:\Users\Lenovo\Desktop\code\DruidicQuestCore\build\createSrgToMcp\output.srg
-[26sie2026 08:20:09.713] [main/INFO] [mixin/]: Remapping refMap curios.refmap.json using C:\Users\Lenovo\Desktop\code\DruidicQuestCore\build\createSrgToMcp\output.srg
-[26sie2026 08:20:09.715] [main/INFO] [mixin/]: Remapping refMap geckolib.refmap.json using C:\Users\Lenovo\Desktop\code\DruidicQuestCore\build\createSrgToMcp\output.srg
-[26sie2026 08:20:09.733] [main/INFO] [mixin/]: Remapping refMap player-animation-lib-minecraft_common-refmap.json using C:\Users\Lenovo\Desktop\code\DruidicQuestCore\build\createSrgToMcp\output.srg
-[26sie2026 08:20:09.744] [main/INFO] [mixin/]: Remapping refMap irons_spellbooks.refmap.json using C:\Users\Lenovo\Desktop\code\DruidicQuestCore\build\createSrgToMcp\output.srg
-[26sie2026 08:20:11.381] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [druidic_quest_core]
-[26sie2026 08:20:25.780] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.4.10, for MC 1.20.1 with MCP 20230612.114412
-[26sie2026 08:20:25.807] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.4.10 Initialized
-[26sie2026 08:20:29.674] [modloading-worker-0/WARN] [software.bernie.geckolib.GeckoLib/]: Minecraft.getInstance() was null, could not register reload listeners
-[26sie2026 08:20:34.930] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file C:\Users\Lenovo\Desktop\code\DruidicQuestCore\run-data\config\cofh_core-common.toml is not correct. Correcting
-[26sie2026 08:20:34.931] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Gameplay was corrected from null to its default, SimpleCommentedConfig:{}. 
-[26sie2026 08:20:34.932] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Gameplay.Return Dismantle Drops was corrected from null to its default, false. 
-[26sie2026 08:20:34.932] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Gameplay.Fishing was corrected from null to its default, SimpleCommentedConfig:{}. 
-[26sie2026 08:20:34.932] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Gameplay.Fishing.Fishing Exhaustion was corrected from null to its default, false. 
-[26sie2026 08:20:34.933] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Gameplay.Fishing.Fishing Exhaustion Amount was corrected from null to its default, 0.125. 
-[26sie2026 08:20:34.933] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Gameplay.World was corrected from null to its default, SimpleCommentedConfig:{}. 
-[26sie2026 08:20:34.933] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Gameplay.World.Sapling Growth Reduction was corrected from null to its default, false. 
-[26sie2026 08:20:34.933] [main/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key Gameplay.World.Sapling Growth Reduction Factor was corrected from null to its default, 4. 
-[26sie2026 08:20:37.204] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Lenovo/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
-[26sie2026 08:20:37.205] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Lenovo/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
-[26sie2026 08:20:37.589] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[26sie2026 08:20:37.831] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 235 ms
-[26sie2026 08:20:37.831] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
-[26sie2026 08:20:39.531] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 1699 ms
-[26sie2026 08:20:39.532] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: druidic_quest_core
-[26sie2026 08:20:40.283] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: druidic_quest_core finished after 750 ms
-[26sie2026 08:20:40.284] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: druidic_quest_core
-[26sie2026 08:20:40.529] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: druidic_quest_core finished after 244 ms
-[26sie2026 08:20:40.529] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id druidic_quest_core
-[26sie2026 08:20:40.593] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id druidic_quest_core finished after 62 ms
-[26sie2026 08:20:40.593] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id druidic_quest_core
-[26sie2026 08:20:40.626] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id druidic_quest_core finished after 32 ms
-[26sie2026 08:20:40.626] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 3038 ms
-[26sie2026 08:20:40.664] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 175, old count: 0, new count: 176, removed stale: 0, written: 175
+[30wrz2026 15:02:15.563] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\Admin\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.4.10, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, druidic_quest_core, --all, --output, C:\Users\Admin\Desktop\DruidicQuestCore\src\generated\resources, --existing, C:\Users\Admin\Desktop\DruidicQuestCore\src\main\resources, --mixin.config, mixin.druidic_quest_core.json]
+[30wrz2026 15:02:15.570] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.18 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[30wrz2026 15:02:15.705] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[30wrz2026 15:02:15.749] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Admin/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[30wrz2026 15:02:16.116] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.4.10\ccc533c7dd67e0983217197d7549c8b49e7ab453\javafmllanguage-1.20.1-47.4.10.jar is missing mods.toml file
+[30wrz2026 15:02:16.118] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.4.10\e9a2879fe3612ea34b9728ec2633304a1e67d480\lowcodelanguage-1.20.1-47.4.10.jar is missing mods.toml file
+[30wrz2026 15:02:16.120] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.4.10\ec5cefbbc65c67302b8fac317010faab85fa14b9\mclanguage-1.20.1-47.4.10.jar is missing mods.toml file
+[30wrz2026 15:02:16.123] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.4.10\94dae566be650566ea9115a1414ab76bfcf5a804\fmlcore-1.20.1-47.4.10.jar is missing mods.toml file
+[30wrz2026 15:02:16.460] [main/WARN] [net.minecraftforge.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: geckolib. Using Mod File: C:\Users\Admin\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\geckolib-388172\8285794_mapped_parchment_2023.09.03-1.20.1\geckolib-388172-8285794_mapped_parchment_2023.09.03-1.20.1.jar
+[30wrz2026 15:02:16.460] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 4 dependencies adding them to mods collection
+[30wrz2026 15:02:18.782] [main/WARN] [mixin/]: Compatibility level JAVA_17 specified by mixin.druidic_quest_core.json is higher than the maximum level supported by this version of mixin (JAVA_13).
+[30wrz2026 15:02:18.783] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[30wrz2026 15:02:18.790] [main/WARN] [mixin/]: Compatibility level JAVA_16 specified by jade.mixins.json is higher than the maximum level supported by this version of mixin (JAVA_13).
+[30wrz2026 15:02:18.795] [main/WARN] [mixin/]: Compatibility level JAVA_16 specified by playerAnimator-common.mixins.json is higher than the maximum level supported by this version of mixin (JAVA_13).
+[30wrz2026 15:02:18.815] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\Admin\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, druidic_quest_core, --all, --output, C:\Users\Admin\Desktop\DruidicQuestCore\src\generated\resources, --existing, C:\Users\Admin\Desktop\DruidicQuestCore\src\main\resources]
+[30wrz2026 15:02:18.879] [main/INFO] [mixin/]: Attempting to load Fernflower decompiler (Threaded mode)
+[30wrz2026 15:02:18.880] [main/INFO] [mixin/]: Fernflower could not be loaded, exported classes will not be decompiled. NoClassDefFoundError: org/jetbrains/java/decompiler/main/extern/IResultSaver
+[30wrz2026 15:02:19.025] [main/INFO] [mixin/]: Preparing mixins for MixinEnvironment[DEFAULT]
+[30wrz2026 15:02:19.026] [main/INFO] [mixin/]: Selecting config mixin.druidic_quest_core.json
+[30wrz2026 15:02:19.032] [main/WARN] [mixin/]: Reference map 'mixins.druidic_quest_core.refmap.json' for mixin.druidic_quest_core.json could not be read. If this is a development environment you can ignore this message
+[30wrz2026 15:02:19.034] [main/INFO] [mixin/]: Selecting config emi.mixins.json
+[30wrz2026 15:02:19.314] [main/INFO] [mixin/]: Remapping refMap emi-xplat-refmap.json using C:\Users\Admin\Desktop\DruidicQuestCore\build\createSrgToMcp\output.srg
+[30wrz2026 15:02:19.314] [main/INFO] [mixin/]: Selecting config emi-forge.mixins.json
+[30wrz2026 15:02:19.315] [main/INFO] [mixin/]: Selecting config toomanyrecipeviewers.mixins.json
+[30wrz2026 15:02:19.316] [main/WARN] [mixin/]: Reference map 'toomanyrecipeviewers.mixins-refmap.json' for toomanyrecipeviewers.mixins.json could not be read. If this is a development environment you can ignore this message
+[30wrz2026 15:02:19.316] [main/INFO] [mixin/]: Selecting config jade.mixins.json
+[30wrz2026 15:02:19.317] [main/INFO] [mixin/]: Remapping refMap jade.refmap.json using C:\Users\Admin\Desktop\DruidicQuestCore\build\createSrgToMcp\output.srg
+[30wrz2026 15:02:19.317] [main/INFO] [mixin/]: Selecting config geckolib.mixins.json
+[30wrz2026 15:02:19.317] [main/INFO] [mixin/]: Remapping refMap geckolib.refmap.json using C:\Users\Admin\Desktop\DruidicQuestCore\build\createSrgToMcp\output.srg
+[30wrz2026 15:02:19.317] [main/INFO] [mixin/]: Selecting config playerAnimator-common.mixins.json
+[30wrz2026 15:02:19.319] [main/INFO] [mixin/]: Remapping refMap player-animation-lib-minecraft_common-refmap.json using C:\Users\Admin\Desktop\DruidicQuestCore\build\createSrgToMcp\output.srg
+[30wrz2026 15:02:19.319] [main/INFO] [mixin/]: Selecting config mixins.irons_spellbooks.json
+[30wrz2026 15:02:19.320] [main/INFO] [mixin/]: Remapping refMap irons_spellbooks.refmap.json using C:\Users\Admin\Desktop\DruidicQuestCore\build\createSrgToMcp\output.srg
+[30wrz2026 15:02:19.320] [main/INFO] [mixin/]: Selecting config irons_lib.mixins.json
+[30wrz2026 15:02:19.321] [main/INFO] [mixin/]: Remapping refMap irons_lib.refmap.json using C:\Users\Admin\Desktop\DruidicQuestCore\build\createSrgToMcp\output.srg
+[30wrz2026 15:02:19.321] [main/INFO] [mixin/]: Selecting config botania_xplat.mixins.json
+[30wrz2026 15:02:19.322] [main/INFO] [mixin/]: Remapping refMap botania.refmap.json using C:\Users\Admin\Desktop\DruidicQuestCore\build\createSrgToMcp\output.srg
+[30wrz2026 15:02:19.322] [main/INFO] [mixin/]: Selecting config botania_forge.mixins.json
+[30wrz2026 15:02:19.324] [main/INFO] [mixin/]: Remapping refMap botania.refmap.json using C:\Users\Admin\Desktop\DruidicQuestCore\build\createSrgToMcp\output.srg
+[30wrz2026 15:02:19.324] [main/INFO] [mixin/]: Selecting config zeta.mixins.json
+[30wrz2026 15:02:19.325] [main/INFO] [mixin/]: Remapping refMap zeta.mixins.refmap.json using C:\Users\Admin\Desktop\DruidicQuestCore\build\createSrgToMcp\output.srg
+[30wrz2026 15:02:19.325] [main/INFO] [mixin/]: Selecting config zeta_forge.mixins.json
+[30wrz2026 15:02:19.328] [main/INFO] [mixin/]: Remapping refMap zeta.mixins.refmap.json using C:\Users\Admin\Desktop\DruidicQuestCore\build\createSrgToMcp\output.srg
+[30wrz2026 15:02:19.328] [main/INFO] [mixin/]: Selecting config mixins.cofhcore.json
+[30wrz2026 15:02:19.329] [main/INFO] [mixin/]: Remapping refMap mixins.cofhcore.refmap.json using C:\Users\Admin\Desktop\DruidicQuestCore\build\createSrgToMcp\output.srg
+[30wrz2026 15:02:19.329] [main/INFO] [mixin/]: Selecting config curios.mixins.json
+[30wrz2026 15:02:19.329] [main/INFO] [mixin/]: Remapping refMap curios.refmap.json using C:\Users\Admin\Desktop\DruidicQuestCore\build\createSrgToMcp\output.srg
+[30wrz2026 15:02:19.329] [main/INFO] [mixin/]: Selecting config ars_nouveau.mixins.json
+[30wrz2026 15:02:19.409] [main/INFO] [mixin/]: Remapping refMap ars_nouveau.refmap.json using C:\Users\Admin\Desktop\DruidicQuestCore\build\createSrgToMcp\output.srg
+[30wrz2026 15:02:19.409] [main/INFO] [mixin/]: Selecting config quark.mixins.json
+[30wrz2026 15:02:19.410] [main/INFO] [mixin/]: Remapping refMap quark.mixins.refmap.json using C:\Users\Admin\Desktop\DruidicQuestCore\build\createSrgToMcp\output.srg
+[30wrz2026 15:02:19.410] [main/INFO] [mixin/]: Selecting config quark_integrations.mixins.json
+[30wrz2026 15:02:19.412] [main/INFO] [mixin/]: Remapping refMap quark.mixins.refmap.json using C:\Users\Admin\Desktop\DruidicQuestCore\build\createSrgToMcp\output.srg
+[30wrz2026 15:02:19.413] [main/INFO] [mixin/]: Selecting config patchouli_xplat.mixins.json
+[30wrz2026 15:02:19.414] [main/INFO] [mixin/]: Remapping refMap patchouli.refmap.json using C:\Users\Admin\Desktop\DruidicQuestCore\build\createSrgToMcp\output.srg
+[30wrz2026 15:02:19.414] [main/INFO] [mixin/]: Selecting config mixinextras.init.mixins.json
+[30wrz2026 15:02:19.416] [main/INFO] [mixin/]: Preparing mixin.druidic_quest_core.json (8)
+[30wrz2026 15:02:19.464] [main/INFO] [mixin/]: Preparing emi.mixins.json (25)
+[30wrz2026 15:02:20.841] [main/WARN] [mixin/]: Error loading class: mezz/jei/library/load/PluginCaller (java.lang.ClassNotFoundException: mezz.jei.library.load.PluginCaller)
+[30wrz2026 15:02:21.021] [main/INFO] [mixin/]: Preparing emi-forge.mixins.json (0)
+[30wrz2026 15:02:21.021] [main/INFO] [mixin/]: Preparing toomanyrecipeviewers.mixins.json (17)
+[30wrz2026 15:02:21.026] [main/WARN] [mixin/]: @Mixin target mezz/jei/library/recipes/ExtendableRecipeCategoryHelper is public in toomanyrecipeviewers.mixins.json:ExtendableRecipeCategoryHelperMixin and should be specified in value
+[30wrz2026 15:02:21.028] [main/WARN] [mixin/]: Error loading class: mekanism/client/recipe_viewer/jei/MekanismJEI (java.lang.ClassNotFoundException: mekanism.client.recipe_viewer.jei.MekanismJEI)
+[30wrz2026 15:02:21.028] [main/WARN] [mixin/]: @Mixin target mekanism/client/recipe_viewer/jei/MekanismJEI was not found toomanyrecipeviewers.mixins.json:MekanismJEIMixin
+[30wrz2026 15:02:21.031] [main/INFO] [mixin/]: Preparing jade.mixins.json (2)
+[30wrz2026 15:02:21.035] [main/INFO] [mixin/]: Preparing geckolib.mixins.json (1)
+[30wrz2026 15:02:21.036] [main/INFO] [mixin/]: Preparing playerAnimator-common.mixins.json (14)
+[30wrz2026 15:02:21.075] [main/INFO] [mixin/]: Preparing mixins.irons_spellbooks.json (33)
+[30wrz2026 15:02:21.125] [main/INFO] [mixin/]: Preparing irons_lib.mixins.json (10)
+[30wrz2026 15:02:21.128] [main/INFO] [mixin/]: Preparing botania_xplat.mixins.json (77)
+[30wrz2026 15:02:21.405] [main/INFO] [mixin/]: Preparing botania_forge.mixins.json (6)
+[30wrz2026 15:02:21.410] [main/INFO] [mixin/]: Preparing zeta.mixins.json (7)
+[30wrz2026 15:02:21.470] [main/INFO] [mixin/]: Preparing zeta_forge.mixins.json (9)
+[30wrz2026 15:02:21.491] [main/INFO] [mixin/]: Preparing mixins.cofhcore.json (10)
+[30wrz2026 15:02:21.500] [main/INFO] [mixin/]: Preparing curios.mixins.json (13)
+[30wrz2026 15:02:21.509] [main/INFO] [mixin/]: Preparing ars_nouveau.mixins.json (31)
+[30wrz2026 15:02:21.537] [main/INFO] [mixin/]: Preparing quark.mixins.json (115)
+[30wrz2026 15:02:21.652] [main/INFO] [mixin/]: Preparing quark_integrations.mixins.json (1)
+[30wrz2026 15:02:21.653] [main/WARN] [mixin/]: Error loading class: noobanidus/mods/lootr/config/ConfigManager (java.lang.ClassNotFoundException: noobanidus.mods.lootr.config.ConfigManager)
+[30wrz2026 15:02:21.653] [main/WARN] [mixin/]: @Mixin target noobanidus.mods.lootr.config.ConfigManager was not found quark_integrations.mixins.json:lootr.ConfigManagerMixin
+[30wrz2026 15:02:21.653] [main/INFO] [mixin/]: Preparing patchouli_xplat.mixins.json (10)
+[30wrz2026 15:02:21.657] [main/INFO] [mixin/]: Preparing mixinextras.init.mixins.json (0)
+[30wrz2026 15:02:21.725] [main/INFO] [mixin/]: Prepared 385 mixins in 2,698 sec (7,0ms avg) (0ms load, 0ms transform, 0ms plugin)
+[30wrz2026 15:02:22.138] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [druidic_quest_core]
+[30wrz2026 15:02:22.145] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.5).
+[30wrz2026 15:02:22.166] [main/INFO] [mixin/]: Mixing BuiltInRegistriesForgeAccessor from botania_forge.mixins.json into net.minecraft.core.registries.BuiltInRegistries
+[30wrz2026 15:02:22.171] [main/INFO] [mixin/]: Renaming @Invoker method callRegisterDefaulted(Lnet/minecraft/resources/ResourceKey;Ljava/lang/String;Lnet/minecraft/core/registries/BuiltInRegistries$RegistryBootstrap;)Lnet/minecraft/core/DefaultedRegistry; to callRegisterDefaulted_$md$a6011d$0 in botania_forge.mixins.json:BuiltInRegistriesForgeAccessor
+[30wrz2026 15:02:22.320] [main/INFO] [mixin/]: Mixing BlockBehaviourMixin from quark.mixins.json into net.minecraft.world.level.block.state.BlockBehaviour
+[30wrz2026 15:02:22.354] [main/INFO] [mixin/]: Mixing redstone.RedstoneLevelMixin from ars_nouveau.mixins.json into net.minecraft.world.level.block.state.BlockBehaviour$BlockStateBase
+[30wrz2026 15:02:22.379] [main/INFO] [mixin/]: Mixing EntityAccessor from mixins.irons_spellbooks.json into net.minecraft.world.entity.Entity
+[30wrz2026 15:02:22.385] [main/INFO] [mixin/]: Mixing EntityMixin from mixins.irons_spellbooks.json into net.minecraft.world.entity.Entity
+[30wrz2026 15:02:22.393] [main/INFO] [mixin/]: Mixing ClientEntityMixin from mixins.irons_spellbooks.json into net.minecraft.world.entity.Entity
+[30wrz2026 15:02:22.405] [main/INFO] [mixin/]: Mixing EntityAccessor from botania_xplat.mixins.json into net.minecraft.world.entity.Entity
+[30wrz2026 15:02:22.407] [main/INFO] [mixin/]: Mixing EntityMixin from botania_xplat.mixins.json into net.minecraft.world.entity.Entity
+[30wrz2026 15:02:22.431] [main/INFO] [mixin/]: Mixing AccessorEntity from curios.mixins.json into net.minecraft.world.entity.Entity
+[30wrz2026 15:02:22.433] [main/INFO] [mixin/]: Mixing EntityMixin from ars_nouveau.mixins.json into net.minecraft.world.entity.Entity
+[30wrz2026 15:02:22.436] [main/INFO] [mixin/]: Mixing rewind.RewindEntityMixin from ars_nouveau.mixins.json into net.minecraft.world.entity.Entity
+[30wrz2026 15:02:22.445] [main/INFO] [mixin/]: Mixing light.LightEntityMixin from ars_nouveau.mixins.json into net.minecraft.world.entity.Entity
+[30wrz2026 15:02:22.464] [main/INFO] [mixin/]: Mixing EntityMixin from quark.mixins.json into net.minecraft.world.entity.Entity
+[30wrz2026 15:02:22.590] [main/INFO] [mixin/]: Mixing LivingEntityAccessor from mixins.irons_spellbooks.json into net.minecraft.world.entity.LivingEntity
+[30wrz2026 15:02:22.592] [main/INFO] [mixin/]: Mixing LivingEntityMixin from mixins.irons_spellbooks.json into net.minecraft.world.entity.LivingEntity
+[30wrz2026 15:02:22.593] [main/INFO] [mixin/]: Renaming synthetic method lambda$static$1(Lnet/minecraft/world/entity/ai/attributes/Attribute;)Z to mda6011d$lambda$static$1$0 in mixins.irons_spellbooks.json:LivingEntityMixin
+[30wrz2026 15:02:22.593] [main/INFO] [mixin/]: Renaming synthetic method lambda$static$0(Lnet/minecraft/world/entity/ai/attributes/Attribute;)Z to mda6011d$lambda$static$0$1 in mixins.irons_spellbooks.json:LivingEntityMixin
+[30wrz2026 15:02:22.623] [main/INFO] [mixin/]: Mixing CommonLivingEntityMixin from irons_lib.mixins.json into net.minecraft.world.entity.LivingEntity
+[30wrz2026 15:02:22.625] [main/INFO] [mixin/]: Mixing ClientLivingEntityMixin from irons_lib.mixins.json into net.minecraft.world.entity.LivingEntity
+[30wrz2026 15:02:22.627] [main/INFO] [mixin/]: Mixing LivingEntityAccessor from botania_xplat.mixins.json into net.minecraft.world.entity.LivingEntity
+[30wrz2026 15:02:22.634] [main/INFO] [mixin/]: Mixing LivingEntityMixin from mixins.cofhcore.json into net.minecraft.world.entity.LivingEntity
+[30wrz2026 15:02:22.636] [main/INFO] [mixin/]: Renaming synthetic method lambda$shield$0(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;Lnet/minecraft/world/damagesource/DamageSource;Lcofh/lib/api/capability/IShieldItem;)V to mda6011d$lambda$shield$0$2 in mixins.cofhcore.json:LivingEntityMixin
+[30wrz2026 15:02:22.643] [main/INFO] [mixin/]: Mixing MixinLivingEntity from curios.mixins.json into net.minecraft.world.entity.LivingEntity
+[30wrz2026 15:02:22.644] [main/INFO] [mixin/]: Mixing LivingAccessor from ars_nouveau.mixins.json into net.minecraft.world.entity.LivingEntity
+[30wrz2026 15:02:22.646] [main/INFO] [mixin/]: Mixing elytra.MixinLivingEntity from ars_nouveau.mixins.json into net.minecraft.world.entity.LivingEntity
+[30wrz2026 15:02:22.647] [main/INFO] [mixin/]: Mixing perks.PerkLivingEntity from ars_nouveau.mixins.json into net.minecraft.world.entity.LivingEntity
+[30wrz2026 15:02:22.649] [main/INFO] [mixin/]: Mixing accessor.AccessorLivingEntity from quark.mixins.json into net.minecraft.world.entity.LivingEntity
+[30wrz2026 15:02:22.800] [main/INFO] [mixin/]: Mixing ItemEntityAccessor from botania_xplat.mixins.json into net.minecraft.world.entity.item.ItemEntity
+[30wrz2026 15:02:22.804] [main/INFO] [mixin/]: Mixing ItemEntityMixin from botania_xplat.mixins.json into net.minecraft.world.entity.item.ItemEntity
+[30wrz2026 15:02:22.833] [main/INFO] [mixin/]: Mixing PlayerEntityMixin from playerAnimator-common.mixins.json into net.minecraft.world.entity.player.Player
+[30wrz2026 15:02:22.833] [main/WARN] [mixin/]: playerAnimator-common.mixins.json:PlayerEntityMixin: Class version 61 required is higher than the class version supported by the current version of Mixin (JAVA_16 supports class version 60)
+[30wrz2026 15:02:22.839] [main/INFO] [mixin/]: Mixing PlayerMixin from mixins.irons_spellbooks.json into net.minecraft.world.entity.player.Player
+[30wrz2026 15:02:22.841] [main/INFO] [mixin/]: Mixing PlayerAccessor from irons_lib.mixins.json into net.minecraft.world.entity.player.Player
+[30wrz2026 15:02:22.842] [main/INFO] [mixin/]: Renaming @Accessor method getDataPlayerModeCustomisation()Lnet/minecraft/network/syncher/EntityDataAccessor; to getDataPlayerModeCustomisation_$md$a6011d$0 in irons_lib.mixins.json:PlayerAccessor
+[30wrz2026 15:02:22.844] [main/INFO] [mixin/]: Mixing ClientPlayerMixin from irons_lib.mixins.json into net.minecraft.world.entity.player.Player
+[30wrz2026 15:02:22.847] [main/INFO] [mixin/]: Mixing PlayerMixin from botania_xplat.mixins.json into net.minecraft.world.entity.player.Player
+[30wrz2026 15:02:22.850] [main/INFO] [mixin/]: Mixing elytra.ElytraPlayerMixin from ars_nouveau.mixins.json into net.minecraft.world.entity.player.Player
+[30wrz2026 15:02:22.947] [main/INFO] [mixin/]: Mixing LevelMixin from mixins.irons_spellbooks.json into net.minecraft.world.level.Level
+[30wrz2026 15:02:22.948] [main/INFO] [mixin/]: Mixing LevelAccessor from botania_xplat.mixins.json into net.minecraft.world.level.Level
+[30wrz2026 15:02:22.973] [main/INFO] [mixin/]: Mixing ServerLevelMixin from botania_xplat.mixins.json into net.minecraft.server.level.ServerLevel
+[30wrz2026 15:02:23.045] [main/INFO] [mixin/]: Mixing ItemMixin from mixins.irons_spellbooks.json into net.minecraft.world.item.Item
+[30wrz2026 15:02:23.047] [main/INFO] [mixin/]: Mixing ItemMixin from botania_xplat.mixins.json into net.minecraft.world.item.Item
+[30wrz2026 15:02:23.047] [main/INFO] [mixin/]: Mixing client.ItemMixin from zeta_forge.mixins.json into net.minecraft.world.item.Item
+[30wrz2026 15:02:23.048] [main/INFO] [mixin/]: Mixing ItemMixin from quark.mixins.json into net.minecraft.world.item.Item
+[30wrz2026 15:02:23.071] [main/INFO] [mixin/]: Mixing IForgeItemMixin from quark.mixins.json into net.minecraftforge.common.extensions.IForgeItem
+[30wrz2026 15:02:23.131] [main/INFO] [mixin/]: Mixing MobEffectMixin from mixins.irons_spellbooks.json into net.minecraft.world.effect.MobEffect
+[30wrz2026 15:02:23.143] [main/INFO] [mixin/]: Mixing EnchantmentMixin from quark.mixins.json into net.minecraft.world.item.enchantment.Enchantment
+[30wrz2026 15:02:23.288] [main/INFO] [mixin/]: Mixing CreativeModeTabsMixin from quark.mixins.json into net.minecraft.world.item.CreativeModeTabs
+[30wrz2026 15:02:23.289] [main/INFO] [mixin/]: Renaming synthetic method lambda$quark$filterEnchantments2$1(Lnet/minecraft/world/item/enchantment/Enchantment;)Z to mda6011d$lambda$quark$filterEnchantments2$1$0 in quark.mixins.json:CreativeModeTabsMixin
+[30wrz2026 15:02:23.289] [main/INFO] [mixin/]: Renaming synthetic method lambda$quark$filterEnchantments$0(Lnet/minecraft/world/item/enchantment/Enchantment;)Z to mda6011d$lambda$quark$filterEnchantments$0$1 in quark.mixins.json:CreativeModeTabsMixin
+[30wrz2026 15:02:23.365] [main/INFO] [mixin/]: Mixing FireBlockAccessor from botania_xplat.mixins.json into net.minecraft.world.level.block.FireBlock
+[30wrz2026 15:02:23.547] [main/INFO] [mixin/]: Mixing BushBlockMixin from botania_xplat.mixins.json into net.minecraft.world.level.block.BushBlock
+[30wrz2026 15:02:23.576] [main/INFO] [mixin/]: Mixing SpongeBlockMixin from quark.mixins.json into net.minecraft.world.level.block.SpongeBlock
+[30wrz2026 15:02:23.587] [main/INFO] [mixin/]: Mixing HalfTransparentBlockMixin from quark.mixins.json into net.minecraft.world.level.block.HalfTransparentBlock
+[30wrz2026 15:02:23.601] [main/INFO] [mixin/]: Mixing DispenserBlockMixin from mixins.irons_spellbooks.json into net.minecraft.world.level.block.DispenserBlock
+[30wrz2026 15:02:23.605] [main/INFO] [mixin/]: Mixing DispenserBlockAccessor from botania_xplat.mixins.json into net.minecraft.world.level.block.DispenserBlock
+[30wrz2026 15:02:23.605] [main/INFO] [mixin/]: Renaming @Accessor method getDispenserRegistry()Ljava/util/Map; to getDispenserRegistry_$md$a6011d$0 in botania_xplat.mixins.json:DispenserBlockAccessor
+[30wrz2026 15:02:23.607] [main/INFO] [mixin/]: Mixing jar.DispenserMixin from ars_nouveau.mixins.json into net.minecraft.world.level.block.DispenserBlock
+[30wrz2026 15:02:23.653] [main/INFO] [mixin/]: Mixing PistonBaseBlockMixin from botania_xplat.mixins.json into net.minecraft.world.level.block.piston.PistonBaseBlock
+[30wrz2026 15:02:23.653] [main/INFO] [mixin/]: Mixing PistonBaseBlockAccessor from botania_xplat.mixins.json into net.minecraft.world.level.block.piston.PistonBaseBlock
+[30wrz2026 15:02:23.656] [main/INFO] [mixin/]: Mixing PistonBaseBlockMixin from zeta.mixins.json into net.minecraft.world.level.block.piston.PistonBaseBlock
+[30wrz2026 15:02:23.657] [main/INFO] [mixin/]: Mixing PistonBaseBlockMixin from quark.mixins.json into net.minecraft.world.level.block.piston.PistonBaseBlock
+[30wrz2026 15:02:23.792] [main/INFO] [mixin/]: Mixing FarmBlockMixin from botania_xplat.mixins.json into net.minecraft.world.level.block.FarmBlock
+[30wrz2026 15:02:23.810] [main/INFO] [mixin/]: Mixing LadderBlockMixin from quark.mixins.json into net.minecraft.world.level.block.LadderBlock
+[30wrz2026 15:02:23.828] [main/INFO] [mixin/]: Mixing CeilingHangingSignBlockMixin from quark.mixins.json into net.minecraft.world.level.block.CeilingHangingSignBlock
+[30wrz2026 15:02:23.886] [main/INFO] [mixin/]: Mixing IronBarsBlockMixin from quark.mixins.json into net.minecraft.world.level.block.IronBarsBlock
+[30wrz2026 15:02:23.905] [main/INFO] [mixin/]: Mixing AbstractCauldronBlockAccessor from botania_xplat.mixins.json into net.minecraft.world.level.block.AbstractCauldronBlock
+[30wrz2026 15:02:23.916] [main/INFO] [mixin/]: Mixing TripWireHookBlockMixin from quark.mixins.json into net.minecraft.world.level.block.TripWireHookBlock
+[30wrz2026 15:02:23.929] [main/INFO] [mixin/]: Mixing WallBlockMixin from quark.mixins.json into net.minecraft.world.level.block.WallBlock
+[30wrz2026 15:02:23.963] [main/INFO] [mixin/]: Mixing ConcretePowderBlockMixin from quark.mixins.json into net.minecraft.world.level.block.ConcretePowderBlock
+[30wrz2026 15:02:23.973] [main/INFO] [mixin/]: Mixing GrowingPlantBodyBlockMixin from botania_xplat.mixins.json into net.minecraft.world.level.block.GrowingPlantBodyBlock
+[30wrz2026 15:02:23.981] [main/INFO] [mixin/]: Mixing BaseCoralPlantTypeBlockMixin from quark.mixins.json into net.minecraft.world.level.block.BaseCoralPlantTypeBlock
+[30wrz2026 15:02:24.005] [main/INFO] [mixin/]: Mixing LanternBlockMixin from quark.mixins.json into net.minecraft.world.level.block.LanternBlock
+[30wrz2026 15:02:24.023] [main/INFO] [mixin/]: Mixing client.AbstractCandleBlockMixin from quark.mixins.json into net.minecraft.world.level.block.AbstractCandleBlock
+[30wrz2026 15:02:24.044] [main/INFO] [mixin/]: Mixing MixinPowderSnowBlock from curios.mixins.json into net.minecraft.world.level.block.PowderSnowBlock
+[30wrz2026 15:02:24.055] [main/INFO] [mixin/]: Mixing WeatheringCopperMixin from zeta_forge.mixins.json into net.minecraft.world.level.block.WeatheringCopper
+[30wrz2026 15:02:24.073] [main/INFO] [mixin/]: Mixing BlockPropertiesAccessor from botania_xplat.mixins.json into net.minecraft.world.level.block.state.BlockBehaviour$Properties
+[30wrz2026 15:02:24.242] [main/INFO] [mixin/]: Mixing FallingBlockEntityMixin from quark.mixins.json into net.minecraft.world.entity.item.FallingBlockEntity
+[30wrz2026 15:02:24.288] [main/INFO] [mixin/]: Mixing ServerPlayerMixin from botania_xplat.mixins.json into net.minecraft.server.level.ServerPlayer
+[30wrz2026 15:02:24.288] [main/INFO] [mixin/]: Mixing camera.ANServerPlayerMixin from ars_nouveau.mixins.json into net.minecraft.server.level.ServerPlayer
+[30wrz2026 15:02:24.305] [main/INFO] [mixin/]: Mixing RandomizableContainerBlockEntityAccessor from botania_xplat.mixins.json into net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity
+[30wrz2026 15:02:24.393] [main/INFO] [mixin/]: Mixing PistonStructureResolverMixin from botania_xplat.mixins.json into net.minecraft.world.level.block.piston.PistonStructureResolver
+[30wrz2026 15:02:24.394] [main/INFO] [mixin/]: Mixing AccessorPistonStructureResolver from zeta.mixins.json into net.minecraft.world.level.block.piston.PistonStructureResolver
+[30wrz2026 15:02:24.403] [main/WARN] [mixin/]: Write access to @Mutable @Final field pistonPos:Lnet/minecraft/core/BlockPos; in botania_xplat.mixins.json:PistonStructureResolverMixin::handler$zfj000$modifyForcePushOrigin
+[30wrz2026 15:02:24.425] [main/INFO] [mixin/]: Mixing PistonMovingBlockEntityMixin from quark.mixins.json into net.minecraft.world.level.block.piston.PistonMovingBlockEntity
+[30wrz2026 15:02:24.525] [main/INFO] [mixin/]: Mixing SpawnerBlockEntityMixin from quark.mixins.json into net.minecraft.world.level.block.entity.SpawnerBlockEntity
+[30wrz2026 15:02:24.573] [main/INFO] [mixin/]: Mixing AbstractFurnaceBlockEntityAccessor from botania_xplat.mixins.json into net.minecraft.world.level.block.entity.AbstractFurnaceBlockEntity
+[30wrz2026 15:02:24.584] [main/INFO] [mixin/]: Mixing AbstractFurnaceBlockEntityForgeAccessor from botania_forge.mixins.json into net.minecraft.world.level.block.entity.AbstractFurnaceBlockEntity
+[30wrz2026 15:02:24.647] [main/INFO] [mixin/]: Mixing AbstractArrowAccessor from mixins.irons_spellbooks.json into net.minecraft.world.entity.projectile.AbstractArrow
+[30wrz2026 15:02:24.649] [main/INFO] [mixin/]: Mixing accessor.AccessorAbstractArrow from quark.mixins.json into net.minecraft.world.entity.projectile.AbstractArrow
+[30wrz2026 15:02:24.662] [main/INFO] [mixin/]: Mixing ProjectileAccessor from botania_xplat.mixins.json into net.minecraft.world.entity.projectile.Projectile
+[30wrz2026 15:02:24.674] [main/INFO] [mixin/]: Mixing client.JukeboxBlockEntityMixin from quark.mixins.json into net.minecraft.world.level.block.entity.JukeboxBlockEntity
+[30wrz2026 15:02:24.696] [main/INFO] [mixin/]: Mixing MobAccessor from botania_xplat.mixins.json into net.minecraft.world.entity.Mob
+[30wrz2026 15:02:24.704] [main/INFO] [mixin/]: Mixing MobMixin from botania_xplat.mixins.json into net.minecraft.world.entity.Mob
+[30wrz2026 15:02:24.706] [main/INFO] [mixin/]: Mixing MobAccessor from ars_nouveau.mixins.json into net.minecraft.world.entity.Mob
+[30wrz2026 15:02:24.709] [main/INFO] [mixin/]: Mixing jar.MobAccessorMixin from ars_nouveau.mixins.json into net.minecraft.world.entity.Mob
+[30wrz2026 15:02:24.811] [main/INFO] [mixin/]: Mixing ItemStackMixin from emi.mixins.json into net.minecraft.world.item.ItemStack
+[30wrz2026 15:02:24.813] [main/INFO] [mixin/]: Mixing ItemStackMixin from mixins.irons_spellbooks.json into net.minecraft.world.item.ItemStack
+[30wrz2026 15:02:24.814] [main/INFO] [mixin/]: Mixing ItemStackMixin from quark.mixins.json into net.minecraft.world.item.ItemStack
+[30wrz2026 15:02:24.853] [main/INFO] [mixin/]: Mixing IItemExtensionMixin from mixins.irons_spellbooks.json into net.minecraftforge.common.extensions.IForgeItemStack
+[30wrz2026 15:02:24.879] [main/INFO] [mixin/]: Mixing BeaconBlockEntityMixin from quark.mixins.json into net.minecraft.world.level.block.entity.BeaconBlockEntity
+[30wrz2026 15:02:24.914] [main/INFO] [mixin/]: Mixing WitherEntityAccessor from botania_xplat.mixins.json into net.minecraft.world.entity.boss.wither.WitherBoss
+[30wrz2026 15:02:24.930] [main/INFO] [mixin/]: Mixing AnvilMenuMixin from quark.mixins.json into net.minecraft.world.inventory.AnvilMenu
+[30wrz2026 15:02:24.953] [main/INFO] [mixin/]: Mixing HopperBlockEntityAccessor from botania_xplat.mixins.json into net.minecraft.world.level.block.entity.HopperBlockEntity
+[30wrz2026 15:02:24.953] [main/INFO] [mixin/]: Renaming @Invoker method botania_canInsert(Lnet/minecraft/world/Container;Lnet/minecraft/world/item/ItemStack;ILnet/minecraft/core/Direction;)Z to botania_canInsert_$md$a6011d$0 in botania_xplat.mixins.json:HopperBlockEntityAccessor
+[30wrz2026 15:02:24.956] [main/INFO] [mixin/]: Renaming @Invoker method botania_canMerge(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemStack;)Z to botania_canMerge_$md$a6011d$1 in botania_xplat.mixins.json:HopperBlockEntityAccessor
+[30wrz2026 15:02:25.033] [main/INFO] [mixin/]: Mixing AnimalAccessor from botania_xplat.mixins.json into net.minecraft.world.entity.animal.Animal
+[30wrz2026 15:02:25.037] [main/INFO] [mixin/]: Mixing AnimalMixin from quark.mixins.json into net.minecraft.world.entity.animal.Animal
+[30wrz2026 15:02:25.139] [main/INFO] [mixin/]: Mixing LoomMenuMixin from botania_xplat.mixins.json into net.minecraft.world.inventory.LoomMenu
+[30wrz2026 15:02:25.140] [main/INFO] [mixin/]: Mixing LoomMenuMixin from quark.mixins.json into net.minecraft.world.inventory.LoomMenu
+[30wrz2026 15:02:25.167] [main/INFO] [mixin/]: Mixing LecternBlockEntityMixin from mixins.irons_spellbooks.json into net.minecraft.world.level.block.entity.LecternBlockEntity
+[30wrz2026 15:02:25.223] [main/INFO] [mixin/]: Mixing BeehiveBlockEntityMixin from quark.mixins.json into net.minecraft.world.level.block.entity.BeehiveBlockEntity
+[30wrz2026 15:02:25.330] [main/INFO] [mixin/]: Mixing LightningBoltMixin from quark.mixins.json into net.minecraft.world.entity.LightningBolt
+[30wrz2026 15:02:25.421] [main/INFO] [mixin/]: Mixing BlockItemMixin from quark.mixins.json into net.minecraft.world.item.BlockItem
+[30wrz2026 15:02:25.423] [main/INFO] [mixin/]: Mixing accessor.AccessorBlockItem from quark.mixins.json into net.minecraft.world.item.BlockItem
+[30wrz2026 15:02:25.447] [main/INFO] [mixin/]: Mixing ElytraItemMixin from quark.mixins.json into net.minecraft.world.item.ElytraItem
+[30wrz2026 15:02:25.456] [main/INFO] [mixin/]: Mixing FlintAnSteelItemMixin from mixins.irons_spellbooks.json into net.minecraft.world.item.FlintAndSteelItem
+[30wrz2026 15:02:25.456] [main/INFO] [mixin/]: Renaming synthetic method lambda$useOn$0(Lnet/minecraft/world/item/context/UseOnContext;Lnet/minecraft/world/entity/player/Player;)V to mda6011d$lambda$useOn$0$0 in mixins.irons_spellbooks.json:FlintAnSteelItemMixin
+[30wrz2026 15:02:25.475] [main/INFO] [mixin/]: Mixing accessor.ShovelItemAccessor from emi.mixins.json into net.minecraft.world.item.ShovelItem
+[30wrz2026 15:02:25.476] [main/INFO] [mixin/]: Renaming @Accessor method getPathStates()Ljava/util/Map; to getPathStates_$md$a6011d$0 in emi.mixins.json:accessor.ShovelItemAccessor
+[30wrz2026 15:02:25.484] [main/INFO] [mixin/]: Mixing DiggerItemMixin from quark.mixins.json into net.minecraft.world.item.DiggerItem
+[30wrz2026 15:02:25.496] [main/INFO] [mixin/]: Mixing accessor.AxeItemAccessor from emi.mixins.json into net.minecraft.world.item.AxeItem
+[30wrz2026 15:02:25.496] [main/INFO] [mixin/]: Renaming @Accessor method getStrippedBlocks()Ljava/util/Map; to getStrippedBlocks_$md$a6011d$0 in emi.mixins.json:accessor.AxeItemAccessor
+[30wrz2026 15:02:25.501] [main/INFO] [mixin/]: Mixing accessor.HoeItemAccessor from emi.mixins.json into net.minecraft.world.item.HoeItem
+[30wrz2026 15:02:25.501] [main/INFO] [mixin/]: Renaming @Accessor method getTillingActions()Ljava/util/Map; to getTillingActions_$md$a6011d$0 in emi.mixins.json:accessor.HoeItemAccessor
+[30wrz2026 15:02:25.503] [main/INFO] [mixin/]: Mixing HoeItemMixin from emi.mixins.json into net.minecraft.world.item.HoeItem
+[30wrz2026 15:02:25.530] [main/INFO] [mixin/]: Mixing BundleItemAccessor from botania_xplat.mixins.json into net.minecraft.world.item.BundleItem
+[30wrz2026 15:02:25.530] [main/INFO] [mixin/]: Renaming @Invoker method call_getContents(Lnet/minecraft/world/item/ItemStack;)Ljava/util/stream/Stream; to call_getContents_$md$a6011d$0 in botania_xplat.mixins.json:BundleItemAccessor
+[30wrz2026 15:02:25.542] [main/INFO] [mixin/]: Mixing ShearsItemMixin from mixins.cofhcore.json into net.minecraft.world.item.ShearsItem
+[30wrz2026 15:02:25.542] [main/INFO] [mixin/]: Mixing MixinShearsItem from curios.mixins.json into net.minecraft.world.item.ShearsItem
+[30wrz2026 15:02:25.542] [main/INFO] [mixin/]: Mixing ShearsItemMixin from quark.mixins.json into net.minecraft.world.item.ShearsItem
+[30wrz2026 15:02:25.561] [main/INFO] [mixin/]: Mixing HorseArmorItemMixin from mixins.cofhcore.json into net.minecraft.world.item.HorseArmorItem
+[30wrz2026 15:02:25.565] [main/INFO] [mixin/]: Mixing client.BannerItemMixin from quark.mixins.json into net.minecraft.world.item.BannerItem
+[30wrz2026 15:02:25.573] [main/INFO] [mixin/]: Mixing ShieldItemMixin from mixins.cofhcore.json into net.minecraft.world.item.ShieldItem
+[30wrz2026 15:02:25.577] [main/INFO] [mixin/]: Mixing TridentItemMixin from mixins.irons_spellbooks.json into net.minecraft.world.item.TridentItem
+[30wrz2026 15:02:25.585] [main/INFO] [mixin/]: Mixing CrossbowMixin from ars_nouveau.mixins.json into net.minecraft.world.item.CrossbowItem
+[30wrz2026 15:02:25.586] [main/INFO] [mixin/]: Mixing CrossbowMultishotMixin from quark.mixins.json into net.minecraft.world.item.CrossbowItem
+[30wrz2026 15:02:25.624] [main/INFO] [mixin/]: Mixing AbstractMinecartMixin from botania_xplat.mixins.json into net.minecraft.world.entity.vehicle.AbstractMinecart
+[30wrz2026 15:02:26.148] [main/INFO] [mixin/]: Mixing ArmorStandAccessor from irons_lib.mixins.json into net.minecraft.world.entity.decoration.ArmorStand
+[30wrz2026 15:02:26.150] [main/INFO] [mixin/]: Mixing ClientArmorStandMixin from irons_lib.mixins.json into net.minecraft.world.entity.decoration.ArmorStand
+[30wrz2026 15:02:26.151] [main/INFO] [mixin/]: Mixing ArmorStandMixin from quark.mixins.json into net.minecraft.world.entity.decoration.ArmorStand
+[30wrz2026 15:02:26.166] [main/INFO] [mixin/]: Mixing ExperienceOrbAccessor from botania_xplat.mixins.json into net.minecraft.world.entity.ExperienceOrb
+[30wrz2026 15:02:26.168] [main/INFO] [mixin/]: Mixing ExperienceOrbMixin from quark.mixins.json into net.minecraft.world.entity.ExperienceOrb
+[30wrz2026 15:02:26.180] [main/INFO] [mixin/]: Mixing BeeMixin from botania_xplat.mixins.json into net.minecraft.world.entity.animal.Bee
+[30wrz2026 15:02:26.192] [main/INFO] [mixin/]: Mixing TemptGoalMixin from quark.mixins.json into net.minecraft.world.entity.ai.goal.TemptGoal
+[30wrz2026 15:02:26.199] [main/INFO] [mixin/]: Mixing PollinateGoalMixin from botania_xplat.mixins.json into net.minecraft.world.entity.animal.Bee$BeePollinateGoal
+[30wrz2026 15:02:26.199] [main/INFO] [mixin/]: Renaming synthetic method lambda$extendPredicate$0(Lnet/minecraft/world/level/block/state/BlockState;)Z to mda6011d$lambda$extendPredicate$0$0 in botania_xplat.mixins.json:PollinateGoalMixin
+[30wrz2026 15:02:26.200] [main/WARN] [mixin/]: Write access to @Mutable @Final field VALID_POLLINATION_BLOCKS:Ljava/util/function/Predicate; in botania_xplat.mixins.json:PollinateGoalMixin::handler$zfm000$extendPredicate
+[30wrz2026 15:02:26.205] [main/INFO] [mixin/]: Mixing HurtByTargetGoalAccessor from botania_xplat.mixins.json into net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal
+[30wrz2026 15:02:26.207] [main/INFO] [mixin/]: Mixing HurtByTargetGoalMixin from botania_xplat.mixins.json into net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal
+[30wrz2026 15:02:26.214] [main/INFO] [mixin/]: Mixing NearestAttackableTargetGoalAccessor from botania_xplat.mixins.json into net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal
+[30wrz2026 15:02:26.226] [main/INFO] [mixin/]: Mixing BoatMixin from quark.mixins.json into net.minecraft.world.entity.vehicle.Boat
+[30wrz2026 15:02:26.233] [main/INFO] [mixin/]: Mixing AbstractHorseAccessor from botania_xplat.mixins.json into net.minecraft.world.entity.animal.horse.AbstractHorse
+[30wrz2026 15:02:26.289] [main/INFO] [mixin/]: Mixing CreeperMixin from mixins.irons_spellbooks.json into net.minecraft.world.entity.monster.Creeper
+[30wrz2026 15:02:26.290] [main/INFO] [mixin/]: Mixing CreeperAccessor from botania_xplat.mixins.json into net.minecraft.world.entity.monster.Creeper
+[30wrz2026 15:02:26.291] [main/INFO] [mixin/]: Mixing CreeperMixin from botania_xplat.mixins.json into net.minecraft.world.entity.monster.Creeper
+[30wrz2026 15:02:26.307] [main/INFO] [mixin/]: Mixing accessor.AccessorAbstractChestedHorse from quark.mixins.json into net.minecraft.world.entity.animal.horse.AbstractChestedHorse
+[30wrz2026 15:02:26.346] [main/INFO] [mixin/]: Mixing ThrowableProjectileMixin from botania_xplat.mixins.json into net.minecraft.world.entity.projectile.ThrowableProjectile
+[30wrz2026 15:02:26.443] [main/INFO] [mixin/]: Mixing SlimeMixin from quark.mixins.json into net.minecraft.world.entity.monster.Slime
+[30wrz2026 15:02:26.455] [main/INFO] [mixin/]: Mixing MushroomCowAccessor from botania_xplat.mixins.json into net.minecraft.world.entity.animal.MushroomCow
+[30wrz2026 15:02:26.483] [main/INFO] [mixin/]: Mixing PigMixin from quark.mixins.json into net.minecraft.world.entity.animal.Pig
+[30wrz2026 15:02:26.505] [main/INFO] [mixin/]: Mixing PufferfishAccessor from ars_nouveau.mixins.json into net.minecraft.world.entity.animal.Pufferfish
+[30wrz2026 15:02:26.509] [main/INFO] [mixin/]: Renaming @Accessor method targetConditions()Lnet/minecraft/world/entity/ai/targeting/TargetingConditions; to targetConditions_$md$a6011d$0 in ars_nouveau.mixins.json:PufferfishAccessor
+[30wrz2026 15:02:26.538] [main/INFO] [mixin/]: Mixing BaseSpawnerMixin from botania_xplat.mixins.json into net.minecraft.world.level.BaseSpawner
+[30wrz2026 15:02:26.603] [main/INFO] [mixin/]: Mixing TemptingSensorMixin from quark.mixins.json into net.minecraft.world.entity.ai.sensing.TemptingSensor
+[30wrz2026 15:02:26.603] [main/INFO] [mixin/]: Mixing accessor.AccessorTemptingSensor from quark.mixins.json into net.minecraft.world.entity.ai.sensing.TemptingSensor
+[30wrz2026 15:02:26.625] [main/INFO] [mixin/]: Mixing accessor.AccessorChunkAccess from quark.mixins.json into net.minecraft.world.level.chunk.ChunkAccess
+[30wrz2026 15:02:26.718] [main/INFO] [mixin/]: Mixing VillagerMixin from quark.mixins.json into net.minecraft.world.entity.npc.Villager
+[30wrz2026 15:02:26.735] [main/INFO] [mixin/]: Mixing AbstractVillagerMixin from quark.mixins.json into net.minecraft.world.entity.npc.AbstractVillager
+[30wrz2026 15:02:26.751] [main/INFO] [mixin/]: Mixing MerchantMenuMixin from quark.mixins.json into net.minecraft.world.inventory.MerchantMenu
+[30wrz2026 15:02:26.779] [main/INFO] [mixin/]: Mixing IngredientMixin from zeta_forge.mixins.json into net.minecraft.world.item.crafting.Ingredient
+[30wrz2026 15:02:26.791] [main/INFO] [mixin/]: Mixing GlobalMixin from emi.mixins.json into dev.emi.emi.platform.EmiClient
+[30wrz2026 15:02:26.794] [main/INFO] [mixin/]: Mixing GlobalMixin from emi.mixins.json into dev.emi.emi.network.EmiPacket
+[30wrz2026 15:02:26.811] [main/INFO] [mixin/]: Mixing accessor.AccessorServerGamePacketListener from quark.mixins.json into net.minecraft.server.network.ServerGamePacketListenerImpl
+[30wrz2026 15:02:26.828] [main/INFO] [mixin/]: Mixing AccessorPotionBrewing from zeta_forge.mixins.json into net.minecraft.world.item.alchemy.PotionBrewing
+[30wrz2026 15:02:26.828] [main/INFO] [mixin/]: Renaming @Accessor method zeta$getPotionMixes()Ljava/util/List; to zeta$getPotionMixes_$md$a6011d$0 in zeta_forge.mixins.json:AccessorPotionBrewing
+[30wrz2026 15:02:26.830] [main/INFO] [mixin/]: Mixing PotionRecipeMixin from ars_nouveau.mixins.json into net.minecraft.world.item.alchemy.PotionBrewing
+[30wrz2026 15:02:26.830] [main/INFO] [mixin/]: Renaming @Accessor method mixList()Ljava/util/List; to mixList_$md$a6011d$1 in ars_nouveau.mixins.json:PotionRecipeMixin
+[30wrz2026 15:02:26.887] [main/INFO] [mixin/]: Mixing ProtectionEnchantmentMixin from botania_xplat.mixins.json into net.minecraft.world.item.enchantment.ProtectionEnchantment
+[30wrz2026 15:02:26.893] [main/INFO] [mixin/]: Mixing DamageEnchantmentMixin from quark.mixins.json into net.minecraft.world.item.enchantment.DamageEnchantment
+[30wrz2026 15:02:26.900] [main/INFO] [mixin/]: Mixing ArrowPiercingEnchantmentMixin from quark.mixins.json into net.minecraft.world.item.enchantment.ArrowPiercingEnchantment
+[30wrz2026 15:02:26.923] [main/INFO] [mixin/]: Mixing structure.StructureProcessorAccessor from ars_nouveau.mixins.json into net.minecraft.world.level.levelgen.structure.templatesystem.StructureProcessor
+[30wrz2026 15:02:26.937] [main/INFO] [mixin/]: Mixing StatsAccessor from botania_xplat.mixins.json into net.minecraft.stats.Stats
+[30wrz2026 15:02:26.937] [main/INFO] [mixin/]: Renaming @Invoker method botania_callRegisterCustom(Ljava/lang/String;Lnet/minecraft/stats/StatFormatter;)Lnet/minecraft/resources/ResourceLocation; to botania_callRegisterCustom_$md$a6011d$0 in botania_xplat.mixins.json:StatsAccessor
+[30wrz2026 15:02:26.967] [main/INFO] [mixin/]: Mixing MixinInventory from curios.mixins.json into net.minecraft.world.entity.player.Inventory
+[30wrz2026 15:02:26.968] [main/INFO] [mixin/]: Mixing InventoryAccessor from botania_xplat.mixins.json into net.minecraft.world.entity.player.Inventory
+[30wrz2026 15:02:26.970] [main/INFO] [mixin/]: Mixing InventoryMixin from botania_xplat.mixins.json into net.minecraft.world.entity.player.Inventory
+[30wrz2026 15:02:26.999] [main/INFO] [mixin/]: Mixing accessor.CraftingResultSlotAccessor from emi.mixins.json into net.minecraft.world.inventory.ResultSlot
+[30wrz2026 15:02:27.001] [main/INFO] [mixin/]: Mixing CraftingResultSlotMixin from emi.mixins.json into net.minecraft.world.inventory.ResultSlot
+[30wrz2026 15:02:27.010] [main/INFO] [mixin/]: Mixing LoomMenuPatternSlotMixin from botania_xplat.mixins.json into net.minecraft.world.inventory.LoomMenu$5
+[30wrz2026 15:02:27.035] [main/INFO] [mixin/]: Mixing BannerDuplicateRecipeMixin from quark.mixins.json into net.minecraft.world.item.crafting.BannerDuplicateRecipe
+[30wrz2026 15:02:27.111] [main/INFO] [mixin/]: Mixing EnchantRandomlyFunctionMixin from quark.mixins.json into net.minecraft.world.level.storage.loot.functions.EnchantRandomlyFunction
+[30wrz2026 15:02:27.116] [main/WARN] [mixin/]: @At("STORE" implicit List) has invalid IMPLICIT discriminator for opcode 5 in net/minecraft/world/level/storage/loot/functions/EnchantRandomlyFunction::run(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/storage/loot/LootContext;)Lnet/minecraft/world/item/ItemStack;: Found 0 candidate variables but exactly 1 is required.
+[30wrz2026 15:02:27.125] [main/INFO] [mixin/]: Mixing MixinApplyBonusCount from curios.mixins.json into net.minecraft.world.level.storage.loot.functions.ApplyBonusCount
+[30wrz2026 15:02:27.188] [main/INFO] [mixin/]: Mixing SpringFeatureMixin from quark.mixins.json into net.minecraft.world.level.levelgen.feature.SpringFeature
+[30wrz2026 15:02:27.195] [main/INFO] [mixin/]: Mixing HugeRedMushroomFeatureMixin from quark.mixins.json into net.minecraft.world.level.levelgen.feature.HugeRedMushroomFeature
+[30wrz2026 15:02:27.204] [main/INFO] [mixin/]: Mixing HugeBrownMushroomFeatureMixin from quark.mixins.json into net.minecraft.world.level.levelgen.feature.HugeBrownMushroomFeature
+[30wrz2026 15:02:27.287] [main/INFO] [mixin/]: Mixing StructurePieceMixin from zeta.mixins.json into net.minecraft.world.level.levelgen.structure.StructurePiece
+[30wrz2026 15:02:27.306] [main/INFO] [mixin/]: Mixing NetherFortressPiecesMixin$CastleEntranceMixin from quark.mixins.json into net.minecraft.world.level.levelgen.structure.structures.NetherFortressPieces$CastleEntrance
+[30wrz2026 15:02:27.388] [main/INFO] [mixin/]: Mixing PlacementContextMixin from botania_xplat.mixins.json into net.minecraft.world.level.levelgen.placement.PlacementContext
+[30wrz2026 15:02:27.422] [main/INFO] [mixin/]: Mixing BiomeAccessor from botania_xplat.mixins.json into net.minecraft.world.level.biome.Biome
+[30wrz2026 15:02:27.423] [main/INFO] [mixin/]: Mixing client.BiomeMixin from quark.mixins.json into net.minecraft.world.level.biome.Biome
+[30wrz2026 15:02:27.453] [main/INFO] [mixin/]: Mixing ClimateParameterPointMixin from quark.mixins.json into net.minecraft.world.level.biome.Climate$ParameterPoint
+[30wrz2026 15:02:27.476] [main/INFO] [mixin/]: Mixing NoiseChunkGeneratorMixin from mixins.irons_spellbooks.json into net.minecraft.world.level.levelgen.NoiseBasedChunkGenerator
+[30wrz2026 15:02:27.476] [main/INFO] [mixin/]: Renaming synthetic method lambda$irons_spellbooks$detectAquifers$2(I)[Lnet/minecraft/world/level/levelgen/structure/BoundingBox; to mda6011d$lambda$irons_spellbooks$detectAquifers$2$0 in mixins.irons_spellbooks.json:NoiseChunkGeneratorMixin
+[30wrz2026 15:02:27.476] [main/INFO] [mixin/]: Renaming synthetic method lambda$irons_spellbooks$detectAquifers$1(Lnet/minecraft/world/level/levelgen/structure/StructureStart;)Ljava/util/stream/Stream; to mda6011d$lambda$irons_spellbooks$detectAquifers$1$1 in mixins.irons_spellbooks.json:NoiseChunkGeneratorMixin
+[30wrz2026 15:02:27.477] [main/INFO] [mixin/]: Renaming synthetic method lambda$irons_spellbooks$detectAquifers$0(Lnet/minecraft/world/level/StructureManager;Lnet/minecraft/world/level/levelgen/structure/Structure;)Z to mda6011d$lambda$irons_spellbooks$detectAquifers$0$2 in mixins.irons_spellbooks.json:NoiseChunkGeneratorMixin
+[30wrz2026 15:02:27.530] [main/INFO] [mixin/]: Mixing accessor.AccessorSinglePoolElement from quark.mixins.json into net.minecraft.world.level.levelgen.structure.pools.SinglePoolElement
+[30wrz2026 15:02:27.743] [main/INFO] [mixin/]: Mixing GlobalMixin from emi.mixins.json into dev.emi.emi.platform.forge.EmiForge
+[30wrz2026 15:02:27.767] [modloading-worker-0/INFO] [mixin/]: Mixing GlobalMixin from emi.mixins.json into dev.emi.emi.platform.EmiMain
+[30wrz2026 15:02:27.769] [modloading-worker-0/INFO] [mixin/]: Mixing GlobalMixin from emi.mixins.json into dev.emi.emi.platform.forge.EmiPacketHandler
+[30wrz2026 15:02:27.784] [modloading-worker-0/INFO] [mixin/]: Mixing GlobalMixin from emi.mixins.json into dev.emi.emi.network.FillRecipeC2SPacket
+[30wrz2026 15:02:27.795] [modloading-worker-0/INFO] [mixin/]: Mixing GlobalMixin from emi.mixins.json into dev.emi.emi.network.CreateItemC2SPacket
+[30wrz2026 15:02:27.797] [modloading-worker-0/INFO] [mixin/]: Mixing IZetaItemExtensionsMixin from quark.mixins.json into org.violetmoon.zeta.item.ext.IZetaItemExtensions
+[30wrz2026 15:02:27.802] [modloading-worker-0/INFO] [mixin/]: Mixing GlobalMixin from emi.mixins.json into dev.emi.emi.network.EmiChessPacket$C2S
+[30wrz2026 15:02:27.803] [modloading-worker-0/INFO] [mixin/]: Mixing GlobalMixin from emi.mixins.json into dev.emi.emi.network.EmiChessPacket
+[30wrz2026 15:02:27.806] [modloading-worker-0/INFO] [mixin/]: Mixing GlobalMixin from emi.mixins.json into dev.emi.emi.jemi.JemiPlugin
+[30wrz2026 15:02:27.810] [modloading-worker-0/INFO] [mixin/]: Mixing MinecraftClientMixin from emi.mixins.json into net.minecraft.client.Minecraft
+[30wrz2026 15:02:27.810] [modloading-worker-0/INFO] [mixin/]: Renaming synthetic method lambda$reloadResources$0()V to mda6011d$lambda$reloadResources$0$0 in emi.mixins.json:MinecraftClientMixin
+[30wrz2026 15:02:27.817] [modloading-worker-0/INFO] [mixin/]: Mixing MinecraftMixin from mixins.irons_spellbooks.json into net.minecraft.client.Minecraft
+[30wrz2026 15:02:27.818] [modloading-worker-0/INFO] [mixin/]: Mixing client.MinecraftAccessor from botania_xplat.mixins.json into net.minecraft.client.Minecraft
+[30wrz2026 15:02:27.820] [modloading-worker-0/INFO] [mixin/]: Mixing light.ClientMixin from ars_nouveau.mixins.json into net.minecraft.client.Minecraft
+[30wrz2026 15:02:27.820] [modloading-worker-0/INFO] [mixin/]: Mixing client.MinecraftMixin from quark.mixins.json into net.minecraft.client.Minecraft
+[30wrz2026 15:02:27.821] [modloading-worker-0/INFO] [mixin/]: Mixing camera.MinecraftMixin from ars_nouveau.mixins.json into net.minecraft.client.Minecraft
+[30wrz2026 15:02:27.867] [modloading-worker-0/INFO] [mixin/]: Mixing GlobalMixin from emi.mixins.json into dev.emi.emi.network.PingS2CPacket
+[30wrz2026 15:02:27.870] [modloading-worker-0/INFO] [mixin/]: Mixing elytra.ClientElytraMixin from ars_nouveau.mixins.json into net.minecraft.client.player.LocalPlayer
+[30wrz2026 15:02:27.880] [modloading-worker-0/INFO] [mixin/]: Mixing GlobalMixin from emi.mixins.json into dev.emi.emi.network.CommandS2CPacket
+[30wrz2026 15:02:27.883] [modloading-worker-0/INFO] [mixin/]: Mixing GlobalMixin from emi.mixins.json into dev.emi.emi.api.stack.EmiIngredient
+[30wrz2026 15:02:27.889] [modloading-worker-0/INFO] [mixin/]: Mixing GlobalMixin from emi.mixins.json into dev.emi.emi.api.render.EmiRenderable
+[30wrz2026 15:02:27.892] [modloading-worker-0/INFO] [mixin/]: Mixing GlobalMixin from emi.mixins.json into dev.emi.emi.api.EmiPlugin
+[30wrz2026 15:02:27.893] [modloading-worker-0/INFO] [mixin/]: Mixing GlobalMixin from emi.mixins.json into dev.emi.emi.network.EmiChessPacket$S2C
+[30wrz2026 15:02:27.894] [modloading-worker-0/INFO] [mixin/]: Mixing ScreenMixin from emi.mixins.json into net.minecraft.client.gui.screens.Screen
+[30wrz2026 15:02:27.894] [modloading-worker-0/INFO] [mixin/]: Mixing client.ScreenMixin from quark.mixins.json into net.minecraft.client.gui.screens.Screen
+[30wrz2026 15:02:27.895] [modloading-worker-0/INFO] [mixin/]: Mixing client.AccessorScreen from patchouli_xplat.mixins.json into net.minecraft.client.gui.screens.Screen
+[30wrz2026 15:02:27.913] [modloading-worker-0/INFO] [mixin/]: Mixing self.IZetaItemMixin_FAKE from zeta_forge.mixins.json into org.violetmoon.zeta.item.ZetaBlockItem
+[30wrz2026 15:02:27.918] [modloading-worker-0/INFO] [mixin/]: Mixing GlobalMixin from emi.mixins.json into dev.emi.emi.network.EmiNetwork
+[30wrz2026 15:02:27.924] [modloading-worker-0/INFO] [mixin/]: Mixing GlobalMixin from emi.mixins.json into dev.emi.emi.platform.forge.EmiClientForge
+[30wrz2026 15:02:27.925] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.4.10, for MC 1.20.1 with MCP 20230612.114412
+[30wrz2026 15:02:27.926] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.4.10 Initialized
+[30wrz2026 15:02:27.935] [modloading-worker-0/INFO] [mixin/]: Mixing accessor.HandledScreenAccessor from emi.mixins.json into net.minecraft.client.gui.screens.inventory.AbstractContainerScreen
+[30wrz2026 15:02:27.945] [modloading-worker-0/INFO] [mixin/]: Mixing HandledScreenMixin from emi.mixins.json into net.minecraft.client.gui.screens.inventory.AbstractContainerScreen
+[30wrz2026 15:02:27.948] [modloading-worker-0/INFO] [mixin/]: Mixing client.AbstractContainerScreenAccessor from botania_xplat.mixins.json into net.minecraft.client.gui.screens.inventory.AbstractContainerScreen
+[30wrz2026 15:02:27.950] [modloading-worker-0/INFO] [mixin/]: Mixing client.ContainerScreenMixin from quark.mixins.json into net.minecraft.client.gui.screens.inventory.AbstractContainerScreen
+[30wrz2026 15:02:27.975] [modloading-worker-0/INFO] [mixin/]: Mixing GlobalMixin from emi.mixins.json into dev.emi.emi.screen.ConfigScreen
+[30wrz2026 15:02:27.985] [modloading-worker-0/INFO] [mixin/]: Mixing MultiPlayerGameModeMixin from mixins.cofhcore.json into net.minecraft.client.multiplayer.MultiPlayerGameMode
+[30wrz2026 15:02:27.985] [modloading-worker-0/WARN] [mixin/]: @Shadow target mixins.cofhcore.json:MultiPlayerGameModeMixin::minecraft is final but shadow is not decorated with @Final
+[30wrz2026 15:02:27.985] [modloading-worker-0/INFO] [mixin/]: Mixing client.accessor.AccessorMultiPlayerGameMode from quark.mixins.json into net.minecraft.client.multiplayer.MultiPlayerGameMode
+[30wrz2026 15:02:28.027] [modloading-worker-0/INFO] [mixin/]: Mixing client.ModelBakeryForgeAccessor from botania_forge.mixins.json into net.minecraft.client.resources.model.ModelBakery
+[30wrz2026 15:02:28.035] [modloading-worker-0/INFO] [mixin/]: Mixing GuiMixin from mixins.irons_spellbooks.json into net.minecraft.client.gui.Gui
+[30wrz2026 15:02:28.036] [modloading-worker-0/INFO] [mixin/]: Mixing client.GuiMixin from quark.mixins.json into net.minecraft.client.gui.Gui
+[30wrz2026 15:02:28.051] [modloading-worker-0/INFO] [mixin/]: Mixing EntityRendererMixin from mixins.irons_spellbooks.json into net.minecraft.client.renderer.entity.EntityRenderer
+[30wrz2026 15:02:28.051] [modloading-worker-0/INFO] [mixin/]: Mixing light.EntityRendererMixin from ars_nouveau.mixins.json into net.minecraft.client.renderer.entity.EntityRenderer
+[30wrz2026 15:02:28.062] [modloading-worker-0/INFO] [mixin/]: Mixing client.ForgeGuiMixin from quark.mixins.json into net.minecraftforge.client.gui.overlay.ForgeGui
+[30wrz2026 15:02:28.068] [modloading-worker-0/INFO] [mixin/]: Mixing firstPerson.LivingEntityRendererMixin from playerAnimator-common.mixins.json into net.minecraft.client.renderer.entity.LivingEntityRenderer
+[30wrz2026 15:02:28.068] [modloading-worker-0/INFO] [mixin/]: Renaming synthetic method lambda$filterLayers$0(Ljava/lang/Object;)Z to mda6011d$lambda$filterLayers$0$0 in playerAnimator-common.mixins.json:firstPerson.LivingEntityRendererMixin
+[30wrz2026 15:02:28.079] [modloading-worker-0/INFO] [mixin/]: Mixing GlobalMixin from emi.mixins.json into dev.emi.emi.input.EmiBind
+[30wrz2026 15:02:28.081] [modloading-worker-0/INFO] [mixin/]: Mixing DamageSourceMixin from ars_nouveau.mixins.json into net.minecraft.world.damagesource.DamageSource
+[30wrz2026 15:02:28.081] [modloading-worker-0/INFO] [mixin/]: Renaming synthetic method lambda$spellDeathMessage$0(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/network/chat/Style;)Lnet/minecraft/network/chat/Style; to mda6011d$lambda$spellDeathMessage$0$0 in ars_nouveau.mixins.json:DamageSourceMixin
+[30wrz2026 15:02:28.097] [modloading-worker-0/INFO] [mixin/]: Mixing FeatureRendererMixin from playerAnimator-common.mixins.json into net.minecraft.client.renderer.entity.layers.RenderLayer
+[30wrz2026 15:02:28.113] [modloading-worker-0/INFO] [mixin/]: Mixing accessor.DrawContextAccessor from emi.mixins.json into net.minecraft.client.gui.GuiGraphics
+[30wrz2026 15:02:28.116] [modloading-worker-0/INFO] [mixin/]: Mixing DrawContextMixin from emi.mixins.json into net.minecraft.client.gui.GuiGraphics
+[30wrz2026 15:02:28.116] [modloading-worker-0/INFO] [mixin/]: Mixing GuiGraphicsMixin from irons_lib.mixins.json into net.minecraft.client.gui.GuiGraphics
+[30wrz2026 15:02:28.157] [modloading-worker-0/INFO] [mixin/]: Mixing client.MixinInventoryScreen from patchouli_xplat.mixins.json into net.minecraft.client.gui.screens.inventory.InventoryScreen
+[30wrz2026 15:02:28.177] [modloading-worker-0/INFO] [mixin/]: Mixing client.AccessorKeyMapping from patchouli_xplat.mixins.json into net.minecraft.client.KeyMapping
+[30wrz2026 15:02:28.177] [modloading-worker-0/INFO] [mixin/]: Renaming @Accessor method getAllKeyMappings()Ljava/util/Map; to getAllKeyMappings_$md$a6011d$0 in patchouli_xplat.mixins.json:client.AccessorKeyMapping
+[30wrz2026 15:02:28.181] [modloading-worker-0/INFO] [mixin/]: Mixing AbstractInventoryScreenMixin from emi.mixins.json into net.minecraft.client.gui.screens.inventory.EffectRenderingInventoryScreen
+[30wrz2026 15:02:28.256] [modloading-worker-0/WARN] [software.bernie.geckolib.GeckoLib/]: Minecraft.getInstance() was null, could not register reload listeners
+[30wrz2026 15:02:28.295] [modloading-worker-0/INFO] [mixin/]: Mixing client.AccessorItemColors from zeta_forge.mixins.json into net.minecraft.client.color.item.ItemColors
+[30wrz2026 15:02:28.305] [modloading-worker-0/WARN] [patchouli/]: Could not locate JEI keybindings, lookups in books may not work
+[30wrz2026 15:02:28.306] [modloading-worker-0/INFO] [mixin/]: Mixing client.AccessorBlockColors from zeta_forge.mixins.json into net.minecraft.client.color.block.BlockColors
+[30wrz2026 15:02:28.310] [modloading-worker-0/INFO] [mixin/]: Mixing GlobalMixin from emi.mixins.json into dev.emi.emi.jemi.JemiUtil
+[30wrz2026 15:02:28.310] [modloading-worker-0/INFO] [mixin/]: Mixing JemiUtilMixin from toomanyrecipeviewers.mixins.json into dev.emi.emi.jemi.JemiUtil
+[30wrz2026 15:02:28.310] [modloading-worker-0/INFO] [mixin/]: Renaming synthetic method lambda$tmrv$getTyped$HEAD$1(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V to mda6011d$lambda$tmrv$getTyped$HEAD$1$0 in toomanyrecipeviewers.mixins.json:JemiUtilMixin
+[30wrz2026 15:02:28.310] [modloading-worker-0/INFO] [mixin/]: Renaming synthetic method lambda$tmrv$getTyped$HEAD$0(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;Ldev/emi/emi/api/stack/EmiStack;Ldev/nolij/toomanyrecipeviewers/impl/jei/api/runtime/IngredientManager;)V to mda6011d$lambda$tmrv$getTyped$HEAD$0$1 in toomanyrecipeviewers.mixins.json:JemiUtilMixin
+[30wrz2026 15:02:28.310] [modloading-worker-0/INFO] [mixin/]: Renaming synthetic method lambda$tmrv$getStack_type_ingredient$HEAD$1(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V to mda6011d$lambda$tmrv$getStack_type_ingredient$HEAD$1$2 in toomanyrecipeviewers.mixins.json:JemiUtilMixin
+[30wrz2026 15:02:28.310] [modloading-worker-0/INFO] [mixin/]: Renaming synthetic method lambda$tmrv$getStack_type_ingredient$HEAD$0(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;Lmezz/jei/api/ingredients/IIngredientType;Ljava/lang/Object;Ldev/nolij/toomanyrecipeviewers/impl/jei/api/runtime/IngredientManager;)V to mda6011d$lambda$tmrv$getStack_type_ingredient$HEAD$0$3 in toomanyrecipeviewers.mixins.json:JemiUtilMixin
+[30wrz2026 15:02:28.310] [modloading-worker-0/INFO] [mixin/]: Renaming synthetic method lambda$tmrv$getStack_typedingredient$HEAD$1(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;)V to mda6011d$lambda$tmrv$getStack_typedingredient$HEAD$1$4 in toomanyrecipeviewers.mixins.json:JemiUtilMixin
+[30wrz2026 15:02:28.310] [modloading-worker-0/INFO] [mixin/]: Renaming synthetic method lambda$tmrv$getStack_typedingredient$HEAD$0(Lorg/spongepowered/asm/mixin/injection/callback/CallbackInfoReturnable;Lmezz/jei/api/ingredients/ITypedIngredient;Ldev/nolij/toomanyrecipeviewers/impl/jei/api/runtime/IngredientManager;)V to mda6011d$lambda$tmrv$getStack_typedingredient$HEAD$0$5 in toomanyrecipeviewers.mixins.json:JemiUtilMixin
+[30wrz2026 15:02:28.321] [modloading-worker-0/INFO] [mixin/]: Mixing GlobalMixin from emi.mixins.json into dev.emi.emi.api.stack.EmiStack
+[30wrz2026 15:02:28.325] [modloading-worker-0/INFO] [mixin/]: Mixing GlobalMixin from emi.mixins.json into dev.emi.emi.jemi.JemiStack
+[30wrz2026 15:02:28.328] [modloading-worker-0/INFO] [mixin/]: Mixing GlobalMixin from emi.mixins.json into dev.emi.emi.platform.EmiAgnos
+[30wrz2026 15:02:28.328] [modloading-worker-0/INFO] [mixin/]: Mixing EmiAgnosMixin from toomanyrecipeviewers.mixins.json into dev.emi.emi.platform.EmiAgnos
+[30wrz2026 15:02:28.351] [modloading-worker-0/INFO] [mixin/]: Mixing GlobalMixin from emi.mixins.json into dev.emi.emi.platform.forge.EmiAgnosForge
+[30wrz2026 15:02:28.360] [modloading-worker-0/INFO] [mixin/]: Mixing GlobalMixin from emi.mixins.json into dev.emi.emi.api.recipe.EmiRecipe
+[30wrz2026 15:02:28.364] [modloading-worker-0/INFO] [mixin/]: Mixing GlobalMixin from emi.mixins.json into dev.emi.emi.api.EmiEntrypoint
+[30wrz2026 15:02:28.395] [modloading-worker-0/INFO] [mixin/]: Mixing GlobalMixin from emi.mixins.json into dev.emi.emi.api.EmiDragDropHandler
+[30wrz2026 15:02:28.397] [modloading-worker-0/INFO] [mixin/]: Mixing GlobalMixin from emi.mixins.json into dev.emi.emi.api.stack.serializer.EmiIngredientSerializer
+[30wrz2026 15:02:28.399] [modloading-worker-0/INFO] [mixin/]: Mixing GlobalMixin from emi.mixins.json into dev.emi.emi.api.recipe.EmiRecipeCategory
+[30wrz2026 15:02:28.403] [modloading-worker-0/INFO] [mixin/]: Mixing GlobalMixin from emi.mixins.json into dev.emi.emi.jemi.JemiCategory
+[30wrz2026 15:02:28.407] [modloading-worker-0/INFO] [mixin/]: Mixing GlobalMixin from emi.mixins.json into dev.emi.emi.api.recipe.EmiCraftingRecipe
+[30wrz2026 15:02:28.411] [modloading-worker-0/INFO] [mixin/]: Mixing GlobalMixin from emi.mixins.json into dev.emi.emi.jemi.JemiPlugin$1
+[30wrz2026 15:02:28.412] [modloading-worker-0/INFO] [mixin/]: Mixing GlobalMixin from emi.mixins.json into dev.emi.emi.api.recipe.EmiPatternCraftingRecipe
+[30wrz2026 15:02:28.439] [modloading-worker-0/INFO] [mixin/]: Mixing BotaniaGrassBlockForgeMixin from botania_forge.mixins.json into vazkii.botania.common.block.BotaniaGrassBlock
+[30wrz2026 15:02:28.496] [modloading-worker-0/INFO] [mixin/]: Mixing client.RenderTypeAccessor from botania_xplat.mixins.json into net.minecraft.client.renderer.RenderType
+[30wrz2026 15:02:28.498] [modloading-worker-0/INFO] [mixin/]: Renaming @Invoker method create(Ljava/lang/String;Lcom/mojang/blaze3d/vertex/VertexFormat;Lcom/mojang/blaze3d/vertex/VertexFormat$Mode;IZZLnet/minecraft/client/renderer/RenderType$CompositeState;)Lnet/minecraft/client/renderer/RenderType$CompositeRenderType; to create_$md$a6011d$0 in botania_xplat.mixins.json:client.RenderTypeAccessor
+[30wrz2026 15:02:28.523] [modloading-worker-0/INFO] [mixin/]: Mixing client.GameRenderMixin from zeta_forge.mixins.json into net.minecraft.client.renderer.GameRenderer
+[30wrz2026 15:02:28.525] [modloading-worker-0/INFO] [mixin/]: Mixing GameRendererMixin from mixins.cofhcore.json into net.minecraft.client.renderer.GameRenderer
+[30wrz2026 15:02:28.527] [modloading-worker-0/INFO] [mixin/]: Mixing GameRendererMixin from ars_nouveau.mixins.json into net.minecraft.client.renderer.GameRenderer
+[30wrz2026 15:02:28.600] [modloading-worker-0/INFO] [mixin/]: Mixing client.ItemManasteelArmorForgeMixin from botania_forge.mixins.json into vazkii.botania.common.item.equipment.armor.manasteel.ManasteelArmorItem
+[30wrz2026 15:02:28.685] [modloading-worker-0/INFO] [mixin/]: Mixing client.LevelRendererMixin from botania_xplat.mixins.json into net.minecraft.client.renderer.LevelRenderer
+[30wrz2026 15:02:28.694] [modloading-worker-0/INFO] [mixin/]: Mixing firstPerson.LevelRendererMixin from playerAnimator-common.mixins.json into net.minecraft.client.renderer.LevelRenderer
+[30wrz2026 15:02:28.695] [modloading-worker-0/INFO] [mixin/]: Mixing client.LevelRendererAccessor from botania_xplat.mixins.json into net.minecraft.client.renderer.LevelRenderer
+[30wrz2026 15:02:28.695] [modloading-worker-0/INFO] [mixin/]: Renaming @Invoker method renderShape(Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;Lnet/minecraft/world/phys/shapes/VoxelShape;DDDFFFF)V to renderShape_$md$a6011d$0 in botania_xplat.mixins.json:client.LevelRendererAccessor
+[30wrz2026 15:02:28.698] [modloading-worker-0/INFO] [mixin/]: Mixing LevelRendererMixin from mixins.cofhcore.json into net.minecraft.client.renderer.LevelRenderer
+[30wrz2026 15:02:28.700] [modloading-worker-0/INFO] [mixin/]: Mixing light.LevelRendererMixin from ars_nouveau.mixins.json into net.minecraft.client.renderer.LevelRenderer
+[30wrz2026 15:02:28.701] [modloading-worker-0/INFO] [mixin/]: Mixing client.LevelRendererMixin from quark.mixins.json into net.minecraft.client.renderer.LevelRenderer
+[30wrz2026 15:02:28.701] [modloading-worker-0/INFO] [mixin/]: Mixing client.MixinLevelRenderer from patchouli_xplat.mixins.json into net.minecraft.client.renderer.LevelRenderer
+[30wrz2026 15:02:28.701] [modloading-worker-0/INFO] [mixin/]: Mixing camera.LevelRendererMixin from ars_nouveau.mixins.json into net.minecraft.client.renderer.LevelRenderer
+[30wrz2026 15:02:28.801] [modloading-worker-0/INFO] [mixin/]: Mixing firstPerson.CameraAccessor from playerAnimator-common.mixins.json into net.minecraft.client.Camera
+[30wrz2026 15:02:28.829] [modloading-worker-0/INFO] [mixin/]: Mixing CriteriaTriggersAccessor from botania_xplat.mixins.json into net.minecraft.advancements.CriteriaTriggers
+[30wrz2026 15:02:28.909] [modloading-worker-0/INFO] [mixin/]: Mixing ServerAdvancementManagerMixin from quark.mixins.json into net.minecraft.server.ServerAdvancementManager
+[30wrz2026 15:02:28.949] [modloading-worker-0/INFO] [mixin/]: Mixing BipedEntityModelMixin from playerAnimator-common.mixins.json into net.minecraft.client.model.HumanoidModel
+[30wrz2026 15:02:28.950] [modloading-worker-0/INFO] [mixin/]: Renaming synthetic method lambda$renderToBuffer$3(Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;IIFFFFLnet/minecraft/client/model/geom/ModelPart;)V to mda6011d$lambda$renderToBuffer$3$0 in playerAnimator-common.mixins.json:BipedEntityModelMixin
+[30wrz2026 15:02:28.950] [modloading-worker-0/INFO] [mixin/]: Renaming synthetic method lambda$renderToBuffer$2(Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;IIFFFFLnet/minecraft/client/model/geom/ModelPart;)V to mda6011d$lambda$renderToBuffer$2$1 in playerAnimator-common.mixins.json:BipedEntityModelMixin
+[30wrz2026 15:02:28.950] [modloading-worker-0/INFO] [mixin/]: Renaming synthetic method lambda$renderToBuffer$1(Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;IIFFFFLnet/minecraft/client/model/geom/ModelPart;)V to mda6011d$lambda$renderToBuffer$1$2 in playerAnimator-common.mixins.json:BipedEntityModelMixin
+[30wrz2026 15:02:28.950] [modloading-worker-0/INFO] [mixin/]: Renaming synthetic method lambda$renderToBuffer$0(Lcom/mojang/blaze3d/vertex/PoseStack;Lcom/mojang/blaze3d/vertex/VertexConsumer;IIFFFFLnet/minecraft/client/model/geom/ModelPart;)V to mda6011d$lambda$renderToBuffer$0$3 in playerAnimator-common.mixins.json:BipedEntityModelMixin
+[30wrz2026 15:02:28.952] [modloading-worker-0/INFO] [mixin/]: Mixing client.HumanoidModelMixin from quark.mixins.json into net.minecraft.client.model.HumanoidModel
+[30wrz2026 15:02:28.997] [modloading-worker-0/INFO] [mixin/]: Mixing PlayerRendererMixin from playerAnimator-common.mixins.json into net.minecraft.client.renderer.entity.player.PlayerRenderer
+[30wrz2026 15:02:29.049] [modloading-worker-0/INFO] [mixin/]: Mixing self.IZetaBlockMixin_FAKE from zeta_forge.mixins.json into org.violetmoon.zeta.block.ZetaPillarBlock
+[30wrz2026 15:02:29.057] [modloading-worker-0/INFO] [mixin/]: Mixing self.IZetaBlockMixin_FAKE from zeta_forge.mixins.json into org.violetmoon.zeta.block.ZetaBlock
+[30wrz2026 15:02:29.062] [modloading-worker-0/INFO] [mixin/]: Mixing self.IZetaBlockMixin_FAKE from zeta_forge.mixins.json into org.violetmoon.zeta.block.ZetaFenceBlock
+[30wrz2026 15:02:29.065] [modloading-worker-0/INFO] [zeta/]: Doing super early config setup for zeta
+[30wrz2026 15:02:29.067] [modloading-worker-0/INFO] [mixin/]: Mixing self.IZetaBlockMixin_FAKE from zeta_forge.mixins.json into org.violetmoon.zeta.block.ZetaDoorBlock
+[30wrz2026 15:02:29.073] [modloading-worker-0/INFO] [mixin/]: Mixing self.IZetaBlockMixin_FAKE from zeta_forge.mixins.json into org.violetmoon.zeta.block.ZetaTrapdoorBlock
+[30wrz2026 15:02:29.079] [modloading-worker-0/INFO] [mixin/]: Mixing self.IZetaBlockMixin_FAKE from zeta_forge.mixins.json into org.violetmoon.zeta.block.ZetaPressurePlateBlock
+[30wrz2026 15:02:29.086] [modloading-worker-0/INFO] [mixin/]: Mixing self.IZetaBlockMixin_FAKE from zeta_forge.mixins.json into org.violetmoon.zeta.block.ZetaButtonBlock
+[30wrz2026 15:02:29.092] [modloading-worker-0/INFO] [mixin/]: Mixing self.IZetaBlockMixin_FAKE from zeta_forge.mixins.json into org.violetmoon.zeta.block.ZetaStandingSignBlock
+[30wrz2026 15:02:29.096] [modloading-worker-0/INFO] [mixin/]: Mixing self.IZetaBlockMixin_FAKE from zeta_forge.mixins.json into org.violetmoon.zeta.block.ZetaWallSignBlock
+[30wrz2026 15:02:29.100] [modloading-worker-0/INFO] [mixin/]: Mixing self.IZetaBlockMixin_FAKE from zeta_forge.mixins.json into org.violetmoon.zeta.block.ZetaCeilingHangingSignBlock
+[30wrz2026 15:02:29.104] [modloading-worker-0/INFO] [mixin/]: Mixing self.IZetaBlockMixin_FAKE from zeta_forge.mixins.json into org.violetmoon.zeta.block.ZetaWallHangingSignBlock
+[30wrz2026 15:02:29.109] [modloading-worker-0/INFO] [mixin/]: Mixing self.IZetaBlockMixin_FAKE from quark.mixins.json into org.violetmoon.quark.content.building.block.VariantLadderBlock
+[30wrz2026 15:02:29.115] [modloading-worker-0/INFO] [mixin/]: Mixing self.IZetaItemMixin_FAKE from zeta_forge.mixins.json into org.violetmoon.zeta.item.ZetaItem
+[30wrz2026 15:02:29.136] [modloading-worker-0/INFO] [mixin/]: Mixing RecipeManagerAccessor from botania_xplat.mixins.json into net.minecraft.world.item.crafting.RecipeManager
+[30wrz2026 15:02:29.301] [modloading-worker-0/INFO] [mixin/]: Mixing camera.PlayerListMixin from ars_nouveau.mixins.json into net.minecraft.server.players.PlayerList
+[30wrz2026 15:02:29.421] [modloading-worker-0/INFO] [mixin/]: Mixing ParticleAccessor from mixins.irons_spellbooks.json into net.minecraft.client.particle.Particle
+[30wrz2026 15:02:29.437] [modloading-worker-0/INFO] [mixin/]: Mixing ParticleMixin from mixins.irons_spellbooks.json into net.minecraft.client.particle.Particle
+[30wrz2026 15:02:29.454] [modloading-worker-0/INFO] [quark-zeta/]: Discovered 164 modules to load.
+[30wrz2026 15:02:29.455] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Abacus...
+[30wrz2026 15:02:29.464] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Adjustable Chat...
+[30wrz2026 15:02:29.465] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Ambient Discs...
+[30wrz2026 15:02:29.467] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Ancient Tomes...
+[30wrz2026 15:02:29.473] [modloading-worker-0/INFO] [mixin/]: Mixing MerchantOfferMixin from quark.mixins.json into net.minecraft.world.item.trading.MerchantOffer
+[30wrz2026 15:02:29.473] [modloading-worker-0/INFO] [mixin/]: Mixing accessor.AccessorMerchantOffer from quark.mixins.json into net.minecraft.world.item.trading.MerchantOffer
+[30wrz2026 15:02:29.494] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Ancient Wood...
+[30wrz2026 15:02:29.494] [modloading-worker-0/INFO] [mixin/]: Mixing self.IZetaBlockMixin_FAKE from zeta_forge.mixins.json into org.violetmoon.zeta.block.ZetaLeavesBlock
+[30wrz2026 15:02:29.500] [modloading-worker-0/INFO] [mixin/]: Mixing self.IZetaBlockMixin_FAKE from zeta_forge.mixins.json into org.violetmoon.zeta.block.ZetaSaplingBlock
+[30wrz2026 15:02:29.504] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Armed Armor Stands...
+[30wrz2026 15:02:29.505] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Auto Walk Keybind...
+[30wrz2026 15:02:29.505] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Automatic Recipe Unlock...
+[30wrz2026 15:02:29.507] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Automatic Tool Restock...
+[30wrz2026 15:02:29.514] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Azalea Wood...
+[30wrz2026 15:02:29.515] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Back Button Keybind...
+[30wrz2026 15:02:29.517] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Backpack...
+[30wrz2026 15:02:29.517] [modloading-worker-0/INFO] [mixin/]: Mixing self.IZetaItemMixin_FAKE from quark.mixins.json into org.violetmoon.quark.addons.oddities.item.BackpackItem
+[30wrz2026 15:02:29.525] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Beacon Redirection...
+[30wrz2026 15:02:29.526] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Better Elytra Rocket...
+[30wrz2026 15:02:29.527] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Big Stone Clusters...
+[30wrz2026 15:02:29.535] [modloading-worker-0/INFO] [mixin/]: Mixing DamageSourcesMixin from quark.mixins.json into net.minecraft.world.damagesource.DamageSources
+[30wrz2026 15:02:29.549] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Blossom Trees...
+[30wrz2026 15:02:29.552] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Bottled Cloud...
+[30wrz2026 15:02:29.555] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Buckets Show Inhabitants...
+[30wrz2026 15:02:29.556] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Camera...
+[30wrz2026 15:02:29.558] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Campfires Boost Elytra...
+[30wrz2026 15:02:29.559] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Celebratory Lamps...
+[30wrz2026 15:02:29.559] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Chains Connect Blocks...
+[30wrz2026 15:02:29.560] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Chest Searching...
+[30wrz2026 15:02:29.582] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Chorus Vegetation...
+[30wrz2026 15:02:29.585] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Chute...
+[30wrz2026 15:02:29.586] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Climate Control Remover...
+[30wrz2026 15:02:29.587] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Color Runes...
+[30wrz2026 15:02:29.589] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Compasses Work Everywhere...
+[30wrz2026 15:02:29.591] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Compressed Blocks...
+[30wrz2026 15:02:29.592] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Coral On Cactus...
+[30wrz2026 15:02:29.592] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Corundum...
+[30wrz2026 15:02:29.626] [modloading-worker-0/INFO] [mixin/]: Mixing accessor.ItemRendererAccessor from emi.mixins.json into net.minecraft.client.renderer.entity.ItemRenderer
+[30wrz2026 15:02:29.629] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Crabs...
+[30wrz2026 15:02:29.630] [modloading-worker-0/INFO] [mixin/]: Mixing client.ItemRendererAccessor from botania_xplat.mixins.json into net.minecraft.client.renderer.entity.ItemRenderer
+[30wrz2026 15:02:29.634] [modloading-worker-0/INFO] [mixin/]: Mixing client.ItemRendererMixin from quark.mixins.json into net.minecraft.client.renderer.entity.ItemRenderer
+[30wrz2026 15:02:29.685] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Crafter...
+[30wrz2026 15:02:29.687] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Crate...
+[30wrz2026 15:02:29.689] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Diamond Repair...
+[30wrz2026 15:02:29.690] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Dispensers Place Blocks...
+[30wrz2026 15:02:29.691] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Double Door Opening...
+[30wrz2026 15:02:29.692] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Dragon Scales...
+[30wrz2026 15:02:29.692] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Duskbound Blocks...
+[30wrz2026 15:02:29.692] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Dyeable Item Frames...
+[30wrz2026 15:02:29.693] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Easy Transfering...
+[30wrz2026 15:02:29.693] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Elytra Indicator...
+[30wrz2026 15:02:29.693] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Emotes...
+[30wrz2026 15:02:29.698] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Enchantment Predicates...
+[30wrz2026 15:02:29.698] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Enchantments Begone...
+[30wrz2026 15:02:29.699] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Ender Watcher...
+[30wrz2026 15:02:29.700] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Endermosh Music Disc...
+[30wrz2026 15:02:29.701] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Enhanced Ladders...
+[30wrz2026 15:02:29.701] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Expanded Item Interactions...
+[30wrz2026 15:02:29.702] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Fairy Rings...
+[30wrz2026 15:02:29.703] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Fallen Logs...
+[30wrz2026 15:02:29.704] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Feeding Trough...
+[30wrz2026 15:02:29.705] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Forgotten...
+[30wrz2026 15:02:29.706] [modloading-worker-0/INFO] [mixin/]: Mixing self.IZetaItemMixin_FAKE from zeta_forge.mixins.json into org.violetmoon.zeta.item.ZetaArmorItem
+[30wrz2026 15:02:29.710] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Foxhound...
+[30wrz2026 15:02:29.711] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Framed Glass...
+[30wrz2026 15:02:29.711] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Game Nerfs...
+[30wrz2026 15:02:29.712] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Glass Item Frame...
+[30wrz2026 15:02:29.713] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Glass Shard...
+[30wrz2026 15:02:29.713] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Glimmering Weald...
+[30wrz2026 15:02:29.713] [modloading-worker-0/INFO] [mixin/]: Mixing self.IZetaBlockMixin_FAKE from quark.mixins.json into org.violetmoon.quark.content.world.block.HugeGlowShroomBlock
+[30wrz2026 15:02:29.718] [modloading-worker-0/INFO] [mixin/]: Mixing self.IZetaBlockMixin_FAKE from zeta_forge.mixins.json into org.violetmoon.zeta.block.ZetaBushBlock
+[30wrz2026 15:02:29.723] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Gold Bars...
+[30wrz2026 15:02:29.724] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Gold Tools Have Fortune...
+[30wrz2026 15:02:29.725] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Grab Chickens...
+[30wrz2026 15:02:29.725] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Grate...
+[30wrz2026 15:02:29.727] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Gravisand...
+[30wrz2026 15:02:29.728] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Greener Grass...
+[30wrz2026 15:02:29.730] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Hedges...
+[30wrz2026 15:02:29.731] [modloading-worker-0/INFO] [mixin/]: Mixing self.IZetaBlockMixin_FAKE from quark.mixins.json into org.violetmoon.quark.content.building.block.HedgeBlock
+[30wrz2026 15:02:29.736] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Hoe Harvesting...
+[30wrz2026 15:02:29.737] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Hollow Logs...
+[30wrz2026 15:02:29.737] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Horses Swim...
+[30wrz2026 15:02:29.738] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Hotbar Changer...
+[30wrz2026 15:02:29.738] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Improved Sponges...
+[30wrz2026 15:02:29.739] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Improved Tooltips...
+[30wrz2026 15:02:29.739] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Industrial Palette...
+[30wrz2026 15:02:29.742] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Inventory Sorting...
+[30wrz2026 15:02:29.743] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Iron Rod...
+[30wrz2026 15:02:29.744] [modloading-worker-0/INFO] [mixin/]: Mixing self.IZetaBlockMixin_FAKE from quark.mixins.json into org.violetmoon.quark.content.automation.block.IronRodBlock
+[30wrz2026 15:02:29.751] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Item Sharing...
+[30wrz2026 15:02:29.752] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Japanese Palette...
+[30wrz2026 15:02:29.753] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Leaf Carpet...
+[30wrz2026 15:02:29.755] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Lock Rotation...
+[30wrz2026 15:02:29.756] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Long Range Pick Block...
+[30wrz2026 15:02:29.757] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Magma Keeps Concrete Powder...
+[30wrz2026 15:02:29.757] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Magnets...
+[30wrz2026 15:02:29.760] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Map Washing...
+[30wrz2026 15:02:29.762] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Matrix Enchanting...
+[30wrz2026 15:02:29.762] [modloading-worker-0/INFO] [mixin/]: Mixing self.IZetaBlockMixin_FAKE from quark.mixins.json into org.violetmoon.quark.addons.oddities.block.MatrixEnchantingTableBlock
+[30wrz2026 15:02:29.772] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Metal Buttons...
+[30wrz2026 15:02:29.774] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Microcrafting Helper...
+[30wrz2026 15:02:29.776] [modloading-worker-0/INFO] [mixin/]: Mixing RecipeBookWidgetMixin from emi.mixins.json into net.minecraft.client.gui.screens.recipebook.RecipeBookComponent
+[30wrz2026 15:02:29.777] [modloading-worker-0/INFO] [mixin/]: Mixing client.RecipeBookComponentAccessor from botania_xplat.mixins.json into net.minecraft.client.gui.screens.recipebook.RecipeBookComponent
+[30wrz2026 15:02:29.780] [modloading-worker-0/INFO] [mixin/]: Mixing client.RecipeBookComponentMixin from botania_xplat.mixins.json into net.minecraft.client.gui.screens.recipebook.RecipeBookComponent
+[30wrz2026 15:02:29.798] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Midori...
+[30wrz2026 15:02:29.799] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Monster Box...
+[30wrz2026 15:02:29.801] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module More Banner Layers...
+[30wrz2026 15:02:29.801] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module More Brick Types...
+[30wrz2026 15:02:29.801] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module More Mud Blocks...
+[30wrz2026 15:02:29.802] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module More Note Block Sounds...
+[30wrz2026 15:02:29.802] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module More Potted Plants...
+[30wrz2026 15:02:29.803] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module More Villagers...
+[30wrz2026 15:02:29.803] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Narrator Readout...
+[30wrz2026 15:02:29.803] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Nether Brick Fence Gate...
+[30wrz2026 15:02:29.805] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Nether Obsidian Spikes...
+[30wrz2026 15:02:29.806] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module New Stone Types...
+[30wrz2026 15:02:29.809] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module No Durability On Cosmetics...
+[30wrz2026 15:02:29.810] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module No More Lava Pockets...
+[30wrz2026 15:02:29.810] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Obsidian Plate...
+[30wrz2026 15:02:29.811] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Overlay Shader...
+[30wrz2026 15:02:29.811] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Parrot Eggs...
+[30wrz2026 15:02:29.814] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Pat The Dogs...
+[30wrz2026 15:02:29.818] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Pathfinder Maps...
+[30wrz2026 15:02:29.824] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Permafrost...
+[30wrz2026 15:02:29.825] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Petals On Water...
+[30wrz2026 15:02:29.827] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Pickarang...
+[30wrz2026 15:02:29.838] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Pig Litters...
+[30wrz2026 15:02:29.839] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Pipes...
+[30wrz2026 15:02:29.843] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Pistons Move Tile Entities...
+[30wrz2026 15:02:29.844] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Poison Potato Usage...
+[30wrz2026 15:02:29.845] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Quick Armor Swapping...
+[30wrz2026 15:02:29.845] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Rainbow Lamps...
+[30wrz2026 15:02:29.845] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Raw Metal Bricks...
+[30wrz2026 15:02:29.846] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Reacharound Placing...
+[30wrz2026 15:02:29.848] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Redstone Randomizer...
+[30wrz2026 15:02:29.849] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Renewable Spore Blossoms...
+[30wrz2026 15:02:29.850] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Replace Scaffolding...
+[30wrz2026 15:02:29.850] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Rope...
+[30wrz2026 15:02:29.851] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Safer Creatures...
+[30wrz2026 15:02:29.852] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Seed Pouch...
+[30wrz2026 15:02:29.858] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Shear Vines...
+[30wrz2026 15:02:29.858] [modloading-worker-0/INFO] [mixin/]: Mixing self.IZetaBlockMixin_FAKE from zeta_forge.mixins.json into org.violetmoon.zeta.block.ZetaVineBlock
+[30wrz2026 15:02:29.871] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Shiba...
+[30wrz2026 15:02:29.875] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Shingles...
+[30wrz2026 15:02:29.875] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Shulker Packing...
+[30wrz2026 15:02:29.876] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Simple Harvest...
+[30wrz2026 15:02:29.880] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Skull Pikes...
+[30wrz2026 15:02:29.882] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Slabs To Blocks...
+[30wrz2026 15:02:29.884] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Slime In A Bucket...
+[30wrz2026 15:02:29.885] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Slimes To Magma Cubes...
+[30wrz2026 15:02:29.886] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Snow Golem Player Heads...
+[30wrz2026 15:02:29.887] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Soul Candles...
+[30wrz2026 15:02:29.887] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Soul Sandstone...
+[30wrz2026 15:02:29.887] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Spawner Replacer...
+[30wrz2026 15:02:29.888] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Spiral Spires...
+[30wrz2026 15:02:29.890] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Stonelings...
+[30wrz2026 15:02:29.897] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Stools...
+[30wrz2026 15:02:29.899] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Sturdy Stone...
+[30wrz2026 15:02:29.900] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Thatch...
+[30wrz2026 15:02:29.902] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Tiny Potato...
+[30wrz2026 15:02:29.903] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Torch Arrow...
+[30wrz2026 15:02:29.905] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Toretoise...
+[30wrz2026 15:02:29.911] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Totem Of Holding...
+[30wrz2026 15:02:29.912] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Trowel...
+[30wrz2026 15:02:29.914] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Usage Ticker...
+[30wrz2026 15:02:29.915] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Uses For Curses...
+[30wrz2026 15:02:29.916] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Utility Recipes...
+[30wrz2026 15:02:29.917] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Variant Animal Textures...
+[30wrz2026 15:02:29.919] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Variant Bookshelves...
+[30wrz2026 15:02:29.919] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Variant Chests...
+[30wrz2026 15:02:29.920] [modloading-worker-0/INFO] [mixin/]: Mixing self.IZetaBlockMixin_FAKE from quark.mixins.json into org.violetmoon.quark.content.building.block.VariantTrappedChestBlock
+[30wrz2026 15:02:29.926] [modloading-worker-0/INFO] [mixin/]: Mixing self.IZetaBlockMixin_FAKE from quark.mixins.json into org.violetmoon.quark.content.building.block.VariantChestBlock
+[30wrz2026 15:02:29.931] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Variant Furnaces...
+[30wrz2026 15:02:29.932] [modloading-worker-0/INFO] [mixin/]: Mixing self.IZetaBlockMixin_FAKE from quark.mixins.json into org.violetmoon.quark.content.building.block.VariantFurnaceBlock
+[30wrz2026 15:02:29.937] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Variant Ladders...
+[30wrz2026 15:02:29.937] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Variant Selector...
+[30wrz2026 15:02:29.943] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Vertical Planks...
+[30wrz2026 15:02:29.944] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Vertical Slabs...
+[30wrz2026 15:02:29.944] [modloading-worker-0/INFO] [mixin/]: Mixing self.IZetaBlockMixin_FAKE from quark.mixins.json into org.violetmoon.quark.content.building.block.QuarkVerticalSlabBlock
+[30wrz2026 15:02:29.948] [modloading-worker-0/INFO] [mixin/]: Mixing self.IZetaBlockMixin_FAKE from quark.mixins.json into org.violetmoon.quark.content.building.block.VerticalSlabBlock
+[30wrz2026 15:02:29.957] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Vexes Die With Their Masters...
+[30wrz2026 15:02:29.957] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Villager Rerolling Rework...
+[30wrz2026 15:02:29.958] [modloading-worker-0/INFO] [mixin/]: Mixing MerchantOffersMixin from quark.mixins.json into net.minecraft.world.item.trading.MerchantOffers
+[30wrz2026 15:02:29.963] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Villagers Follow Emeralds...
+[30wrz2026 15:02:29.963] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Wooden Posts...
+[30wrz2026 15:02:29.965] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Wool Shuts Up Minecarts...
+[30wrz2026 15:02:29.965] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Wraith...
+[30wrz2026 15:02:29.972] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module Zombie Villagers On Normal...
+[30wrz2026 15:02:29.972] [modloading-worker-0/INFO] [quark-zeta/]: Constructing module More Stone Variants...
+[30wrz2026 15:02:29.973] [modloading-worker-0/INFO] [quark-zeta/]: Constructed 164 modules.
+[30wrz2026 15:02:30.032] [modloading-worker-0/INFO] [quark-zeta/]: Doing super early config setup for quark
+[30wrz2026 15:02:30.049] [modloading-worker-0/INFO] [mixin/]: Mixing LootTableMixin from botania_xplat.mixins.json into net.minecraft.world.level.storage.loot.LootTable
+[30wrz2026 15:02:30.049] [modloading-worker-0/INFO] [mixin/]: Renaming synthetic method lambda$filterDisposables$0(Lnet/minecraft/world/level/storage/loot/LootContext;Ljava/util/function/Consumer;Lnet/minecraft/world/item/ItemStack;)V to mda6011d$lambda$filterDisposables$0$0 in botania_xplat.mixins.json:LootTableMixin
+[30wrz2026 15:02:30.052] [modloading-worker-0/INFO] [mixin/]: Mixing AccessorLootTable from zeta.mixins.json into net.minecraft.world.level.storage.loot.LootTable
+[30wrz2026 15:02:30.076] [modloading-worker-0/WARN] [quark/]: Skipping dev-env mixin audit check. Pass -Dquark.auditMixins=true to enable
+[30wrz2026 15:02:30.118] [main/INFO] [mixin/]: Mixing RegistryDataLoaderMixin from zeta.mixins.json into net.minecraft.resources.RegistryDataLoader
+[30wrz2026 15:02:30.232] [main/INFO] [mixin/]: Mixing self.IZetaBlockMixin_FAKE from zeta_forge.mixins.json into org.violetmoon.zeta.block.ZetaSlabBlock
+[30wrz2026 15:02:30.240] [main/INFO] [mixin/]: Mixing self.IZetaBlockMixin_FAKE from zeta_forge.mixins.json into org.violetmoon.zeta.block.ZetaStairsBlock
+[30wrz2026 15:02:30.248] [main/INFO] [mixin/]: Mixing self.IZetaBlockMixin_FAKE from zeta_forge.mixins.json into org.violetmoon.zeta.block.ZetaFenceGateBlock
+[30wrz2026 15:02:30.582] [main/INFO] [mixin/]: Mixing accessor.SmithingTrimRecipeAccessor from emi.mixins.json into net.minecraft.world.item.crafting.SmithingTrimRecipe
+[30wrz2026 15:02:30.588] [main/INFO] [mixin/]: Mixing AccessorSmithingTrimRecipe from patchouli_xplat.mixins.json into net.minecraft.world.item.crafting.SmithingTrimRecipe
+[30wrz2026 15:02:30.602] [main/INFO] [mixin/]: Mixing self.IZetaBlockMixin_FAKE from zeta_forge.mixins.json into org.violetmoon.zeta.block.ZetaInheritedPaneBlock
+[30wrz2026 15:02:30.605] [main/INFO] [mixin/]: Mixing self.IZetaBlockMixin_FAKE from zeta_forge.mixins.json into org.violetmoon.zeta.block.ZetaPaneBlock
+[30wrz2026 15:02:30.615] [main/INFO] [mixin/]: Mixing SpawnPlacementsMixin from botania_xplat.mixins.json into net.minecraft.world.entity.SpawnPlacements
+[30wrz2026 15:02:30.746] [main/INFO] [mixin/]: Mixing self.IZetaBlockMixin_FAKE from zeta_forge.mixins.json into org.violetmoon.zeta.block.ZetaWallBlock
+[30wrz2026 15:02:31.956] [main/INFO] [mixin/]: Mixing self.IZetaBlockMixin_FAKE from zeta_forge.mixins.json into org.violetmoon.zeta.block.ZetaBlockWrapper
+[30wrz2026 15:02:32.075] [main/INFO] [mixin/]: Mixing VaultServerDataAccessor from mixins.irons_spellbooks.json into io.redspace.ironsspellbooks.api.backwards_compat.blocks.vault.data.VaultServerData
+[30wrz2026 15:02:32.236] [main/INFO] [mixin/]: Mixing botania.RunicAltar.RunicAltarBlockEntityMixin from mixin.druidic_quest_core.json into vazkii.botania.common.block.block_entity.RunicAltarBlockEntity
+[30wrz2026 15:02:32.248] [main/INFO] [mixin/]: Mixing botania.TerrestrialAgglomerationPlateBlockEntityMixin from mixin.druidic_quest_core.json into vazkii.botania.common.block.block_entity.TerrestrialAgglomerationPlateBlockEntity
+[30wrz2026 15:02:32.248] [main/INFO] [mixin/]: Renaming synthetic method lambda$replaceMultiblock$0()Lvazkii/patchouli/api/IMultiblock; to mda6011d$lambda$replaceMultiblock$0$0 in mixin.druidic_quest_core.json:botania.TerrestrialAgglomerationPlateBlockEntityMixin
+[30wrz2026 15:02:32.251] [main/WARN] [mixin/]: Write access to @Mutable @Final field MULTIBLOCK:Ljava/util/function/Supplier; in mixin.druidic_quest_core.json:botania.TerrestrialAgglomerationPlateBlockEntityMixin::handler$zzb000$replaceMultiblock
+[30wrz2026 15:02:32.812] [main/INFO] [mixin/]: Mixing client.ItemBlockWithSpecialRendererForgeMixin from botania_forge.mixins.json into vazkii.botania.common.item.block.BlockItemWithSpecialRenderer
+[30wrz2026 15:02:32.942] [main/INFO] [mixin/]: Mixing botania.PlayerMoverEntityMixin from mixin.druidic_quest_core.json into vazkii.botania.common.block.block_entity.LuminizerBlockEntity$PlayerMoverEntity
+[30wrz2026 15:02:32.986] [main/INFO] [mixin/]: Mixing botania.RunicAltar.RunicAltarRecipeSerializerMixin from mixin.druidic_quest_core.json into vazkii.botania.common.crafting.RunicAltarRecipe$Serializer
+[30wrz2026 15:02:33.049] [main/INFO] [mixin/]: Mixing PotionUtilsMixin from quark.mixins.json into net.minecraft.world.item.alchemy.PotionUtils
+[30wrz2026 15:02:33.222] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Admin/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[30wrz2026 15:02:33.223] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Admin/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.4.10_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[30wrz2026 15:02:33.228] [Worker-Main-1/INFO] [mixin/]: Mixing RegistrySetBuilderHackMixin from quark.mixins.json into net.minecraft.core.RegistrySetBuilder$BuildState
+[30wrz2026 15:02:33.269] [main/INFO] [mixin/]: Mixing RecipeProviderAccessor from botania_xplat.mixins.json into net.minecraft.data.recipes.RecipeProvider
+[30wrz2026 15:02:33.269] [main/INFO] [mixin/]: Renaming @Invoker method botania_condition([Lnet/minecraft/advancements/critereon/ItemPredicate;)Lnet/minecraft/advancements/critereon/InventoryChangeTrigger$TriggerInstance; to botania_condition_$md$a6011d$0 in botania_xplat.mixins.json:RecipeProviderAccessor
+[30wrz2026 15:02:33.300] [Worker-Main-1/INFO] [mixin/]: Mixing OverworldBiomeBuilderMixin from quark.mixins.json into net.minecraft.world.level.biome.OverworldBiomeBuilder
+[30wrz2026 15:02:33.445] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[30wrz2026 15:02:33.454] [main/INFO] [mixin/]: Mixing MixinNbtPredicate from curios.mixins.json into net.minecraft.advancements.critereon.NbtPredicate
+[30wrz2026 15:02:33.486] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 39 ms
+[30wrz2026 15:02:33.487] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[30wrz2026 15:02:33.515] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 29 ms
+[30wrz2026 15:02:33.515] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: druidic_quest_core
+[30wrz2026 15:02:33.603] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: druidic_quest_core finished after 86 ms
+[30wrz2026 15:02:33.603] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: druidic_quest_core
+[30wrz2026 15:02:33.627] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: druidic_quest_core finished after 24 ms
+[30wrz2026 15:02:33.627] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id druidic_quest_core
+[30wrz2026 15:02:33.641] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id druidic_quest_core finished after 13 ms
+[30wrz2026 15:02:33.641] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id druidic_quest_core
+[30wrz2026 15:02:33.645] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id druidic_quest_core finished after 4 ms
+[30wrz2026 15:02:33.645] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 199 ms
+[30wrz2026 15:02:33.657] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 252, old count: 252, new count: 253, removed stale: 0, written: 2

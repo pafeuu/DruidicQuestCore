@@ -23,7 +23,7 @@ public class CreativeTabRegistry {
     public static final RegistryObject<CreativeModeTab> DRUIDIC_QUEST_TAB = CREATIVE_MODE_TAB.register("druidic_quest_tab",
             ()-> CreativeModeTab.builder().icon(()-> new ItemStack(ItemRegistry.NATURE_ESSENCE.get()))
                     .title(Component.translatable("creativetab.druidic_quest"))
-                    .displayItems((pParametersm,pOutput)->{
+                    .displayItems((pParameters,pOutput)->{
                         pOutput.accept(ItemRegistry.ARCANIST_HAMMER.get());
                         pOutput.accept(ItemRegistry.NATURE_ESSENCE.get());
                         pOutput.accept(ItemRegistry.ARCANE_BRICK.get());
@@ -33,6 +33,12 @@ public class CreativeTabRegistry {
                         pOutput.accept(ItemRegistry.LIVINGWOOD_PLATE.get());
                         pOutput.accept(ItemRegistry.LIVINGWOOD_GEAR.get());
                         //pOutput.accept(ItemRegistry.TREATED_STICK.get());
+                        pOutput.accept(ItemRegistry.TERRASTEEL_GEAR.get());
+                        pOutput.accept(ItemRegistry.TERRASTEEL_ROD.get());
+                        pOutput.accept(ItemRegistry.TERRASTEEL_PLATE.get());
+                        pOutput.accept(ItemRegistry.MANASTEEL_GEAR.get());
+                        pOutput.accept(ItemRegistry.MANASTEEL_ROD.get());
+                        pOutput.accept(ItemRegistry.MANASTEEL_PLATE.get());
                         pOutput.accept(ItemRegistry.PHOENIX_BRUSH.get());
                         pOutput.accept(ItemRegistry.STEEL_BRUSH.get());
                         pOutput.accept(ItemRegistry.STEEL_INGOT.get());
@@ -73,6 +79,12 @@ public class CreativeTabRegistry {
                         pOutput.accept(ItemRegistry.GOLDEN_FLOWER_STAFF.get());
                         pOutput.accept(ItemRegistry.PURE_FLOWER_STAFF.get());
                         pOutput.accept(ItemRegistry.PRIMITIVE_SHIELD.get());
+                        pOutput.accept(ItemRegistry.IMPROVED_COBALT_FLOWER_STAFF.get());
+                        pOutput.accept(ItemRegistry.IMPROVED_EBONY_FLOWER_STAFF.get());
+                        pOutput.accept(ItemRegistry.IMPROVED_CRIMSON_FLOWER_STAFF.get());
+                        pOutput.accept(ItemRegistry.IMPROVED_LUSH_FLOWER_STAFF.get());
+                        pOutput.accept(ItemRegistry.IMPROVED_GOLDEN_FLOWER_STAFF.get());
+                        pOutput.accept(ItemRegistry.IMPROVED_PURE_FLOWER_STAFF.get());
 
                         pOutput.accept(BlockRegistry.PRIMITIVE_MACHINE.get());
                         pOutput.accept(BlockRegistry.ALLOY_BRICKS.get());
