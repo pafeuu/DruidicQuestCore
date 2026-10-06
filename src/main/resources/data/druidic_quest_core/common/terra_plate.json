@@ -4,9 +4,9 @@
   "layout": {
     "0": {
       "0": "_____",
-      "1": "__X__",
-      "2": "_XPX_",
-      "3": "__X__",
+      "1": "_____",
+      "2": "__P__",
+      "3": "_____",
       "4": "_____"
     },
     "1": {
@@ -19,8 +19,8 @@
   },
   "symbol_map": {
     "P": "botania:terra_plate",
-    "X": "botania:livingrock",
-    "0": "minecraft:dirt",
-    "L": "minecraft:stone"
+    "X": "#druidic_quest_core:terra_plate_base_alt",
+    "0": "#botania:terra_plate_base",
+    "L": "#botania:terra_plate_base"
   }
 }
