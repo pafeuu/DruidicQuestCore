@@ -8,7 +8,6 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.pafeuu.DruidicQuestMod.config.CommonConfig;
-import net.pafeuu.DruidicQuestMod.data.ReloadListener;
 import net.pafeuu.DruidicQuestMod.registries.*;
 import org.slf4j.Logger;
 
@@ -32,7 +31,6 @@ public class DruidicQuestMod
         modEventBus.addListener(this::registerDispenserBehaviors);
 
         MinecraftForge.EVENT_BUS.register(this);
-        MinecraftForge.EVENT_BUS.addListener(this::onReload);
 
         modEventBus.addListener(CreativeTabRegistry::addCreative);
 
@@ -44,7 +42,4 @@ public class DruidicQuestMod
         //event.enqueueWork(DispenserBehaviourRegistry::registerDispenserBehaviour);
     }
 
-    private void onReload(AddReloadListenerEvent event) {
-        event.addListener(new ReloadListener());
-    }
 }

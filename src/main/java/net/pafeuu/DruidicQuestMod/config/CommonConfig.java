@@ -11,17 +11,12 @@ public class CommonConfig {
     private static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
     public static final ForgeConfigSpec SPEC;
 
-    // Luminizer
-    public static final ForgeConfigSpec.DoubleValue LUMINIZER_ITEM_SPEED;
+    // Jars
     public static final ForgeConfigSpec.IntValue BIG_JAR_CAPACITY;
     public static final ForgeConfigSpec.IntValue HUGE_JAR_CAPACITY;
 
     static {
-        BUILDER.comment("Config for Luminizer from Botania").push("Luminizer");
-        LUMINIZER_ITEM_SPEED = BUILDER
-                .comment("Speed of items ejected by luminizer in blocks per tick. (Default: 0.5)")
-                .defineInRange("luminizerItemSpeed", 0.5D, 0D, Double.MAX_VALUE);
-        BUILDER.pop();
+
 
         BUILDER.comment("Config for Big Source Jars").push("SourceJars");
         BIG_JAR_CAPACITY = BUILDER
