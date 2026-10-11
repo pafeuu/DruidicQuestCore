@@ -28,13 +28,21 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
         String [] materialTypes = {"steel","platinum","uranium"};
         String [] toolTypes = {"sword","shovel","hoe","axe","pickaxe"};
-        String [] toolMaterials = {"steel"};
+        String [] armorTypes = {"helmet","chestplate","legging","boot"};
+        String [] toolMaterials = {"steel","platinum"};
+        String [] armorMaterials = {"steel"};
         String [] botaniaMaterialTypes = {"manasteel","terrasteel"};
 
         for(String tool : toolTypes)    {
             for(String material : toolMaterials)
             {
                 addToolTag(tool,material);
+            }
+        }
+        for(String armor :  armorTypes) {
+            for(String material : armorMaterials)
+            {
+                addArmorTag(armor,material);
             }
         }
         for(String material : botaniaMaterialTypes) {
@@ -94,6 +102,12 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("minecraft", toolType+"s"))).add(id);
         tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", toolType+"s"))).add(id);
         tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", toolType+"s"))).add(id);
+    }
+    protected void addArmorTag(String armorType, String materialType){
+        Item id = ForgeRegistries.ITEMS.getValue(ResourceLocation.fromNamespaceAndPath(DruidicQuestMod.MODID,materialType+"_"+armorType));
+        tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("minecraft", "armor"))).add(id);
+        tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", armorType+"s"))).add(id);
+        tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("minecraft", "trimmable_armor"))).add(id);
     }
 
     protected void storageBlocksTag(String materialType){
