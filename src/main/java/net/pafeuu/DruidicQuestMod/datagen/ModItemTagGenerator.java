@@ -27,8 +27,16 @@ public class ModItemTagGenerator extends ItemTagsProvider {
     protected void addTags(HolderLookup.@NotNull Provider pProvider) {
 
         String [] materialTypes = {"steel","platinum","uranium"};
+        String [] toolTypes = {"sword","shovel","hoe","axe","pickaxe"};
+        String [] toolMaterials = {"steel"};
         String [] botaniaMaterialTypes = {"manasteel","terrasteel"};
 
+        for(String tool : toolTypes)    {
+            for(String material : toolMaterials)
+            {
+                addToolTag(tool,material);
+            }
+        }
         for(String material : botaniaMaterialTypes) {
 
             addMaterialIngredientTag("plate",material);
@@ -79,6 +87,13 @@ public class ModItemTagGenerator extends ItemTagsProvider {
         Item id = ForgeRegistries.ITEMS.getValue(ResourceLocation.fromNamespaceAndPath(DruidicQuestMod.MODID,materialType+"_"+ingredientType));
         tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", ingredientType+"s/"+materialType))).add(id);
         tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", ingredientType+"s"))).add(id);
+    }
+
+    protected void addToolTag(String toolType, String materialType){
+        Item id = ForgeRegistries.ITEMS.getValue(ResourceLocation.fromNamespaceAndPath(DruidicQuestMod.MODID,materialType+"_"+toolType));
+        tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("minecraft", toolType+"s"))).add(id);
+        tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("forge", toolType+"s"))).add(id);
+        tag(ItemTags.create(ResourceLocation.fromNamespaceAndPath("c", toolType+"s"))).add(id);
     }
 
     protected void storageBlocksTag(String materialType){
