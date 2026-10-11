@@ -105,8 +105,6 @@ public class CreativeTabRegistry {
                         pOutput.accept(BlockRegistry.RAW_PLATINUM_BLOCK.get());
                         pOutput.accept(BlockRegistry.URANIUM_BLOCK.get());
                         pOutput.accept(BlockRegistry.RAW_URANIUM_BLOCK.get());
-                        pOutput.accept(BlockRegistry.BIG_SOURCE_JAR.get());
-                        pOutput.accept(BlockRegistry.HUGE_SOURCE_JAR.get());
                         /*pOutput.accept(BlockRegistry.TREATED_LOG.get());
                         pOutput.accept(BlockRegistry.STRIPPED_TREATED_LOG.get());
                         pOutput.accept(BlockRegistry.TREATED_PLANKS.get());
@@ -158,8 +156,6 @@ public class CreativeTabRegistry {
             event.accept(BlockRegistry.SUSPICIOUS_SNOW);
             event.accept(BlockRegistry.SUSPICIOUS_MUD);
             event.accept(BlockRegistry.SUSPICIOUS_CLAY);
-            event.accept((Supplier<? extends ItemLike>) BlockRegistry.BIG_SOURCE_JAR);
-            event.accept((Supplier<? extends ItemLike>) BlockRegistry.HUGE_SOURCE_JAR);
         }
 
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {

@@ -58,8 +58,6 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(BlockRegistry.STRIPPED_TREATED_LOG.get());
         this.dropSelf(BlockRegistry.STRIPPED_TREATED_WOOD.get());*/
 
-        add(BlockRegistry.BIG_SOURCE_JAR.get(), createManaMachineTable(BlockRegistry.BIG_SOURCE_JAR.get(),BlockRegistry.BIG_SOURCE_JAR_TILE.get()));
-        add(BlockRegistry.HUGE_SOURCE_JAR.get(), createManaMachineTable(BlockRegistry.HUGE_SOURCE_JAR.get(),BlockRegistry.HUGE_SOURCE_JAR_TILE.get()));
         this.add(BlockRegistry.PLATINUM_ORE.get(),
                 block -> createOreDrop(BlockRegistry.PLATINUM_ORE.get(),ItemRegistry.RAW_PLATINUM.get()));
 

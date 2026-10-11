@@ -31,9 +31,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(BlockRegistry.ARCANE_BRICKS.get());
 
         this.tag(BlockTags.NEEDS_STONE_TOOL)
-                .add(BlockRegistry.PRIMITIVE_MACHINE.get(),
-                BlockRegistry.BIG_SOURCE_JAR.get(),
-                BlockRegistry.HUGE_SOURCE_JAR.get()
+                .add(BlockRegistry.PRIMITIVE_MACHINE.get()
                 );
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
@@ -75,8 +73,6 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(BlockRegistry.PRIMITIVE_MACHINE.get(),
                         BlockRegistry.STURDY_DEEPSLATE.get(),
-                        BlockRegistry.BIG_SOURCE_JAR.get(),
-                        BlockRegistry.HUGE_SOURCE_JAR.get(),
                         BlockRegistry.ALLOY_BRICKS.get(),
                         BlockRegistry.ARCANE_BRICKS.get(),
                         BlockRegistry.STEEL_BLOCK.get(),
