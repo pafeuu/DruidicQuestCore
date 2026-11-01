@@ -7,7 +7,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.pafeuu.DruidicQuestMod.config.CommonConfig;
+//import net.pafeuu.DruidicQuestMod.config.CommonConfig;
 import net.pafeuu.DruidicQuestMod.registries.*;
 import org.slf4j.Logger;
 
@@ -34,7 +34,7 @@ public class DruidicQuestMod
 
         modEventBus.addListener(CreativeTabRegistry::addCreative);
 
-        context.registerConfig(ModConfig.Type.COMMON, CommonConfig.SPEC,  DruidicQuestMod.MODID + "/common_config.toml");
+        //context.registerConfig(ModConfig.Type.COMMON, CommonConfig.SPEC,  DruidicQuestMod.MODID + "/common_config.toml");
     }
 
     //pafeu why is this here
