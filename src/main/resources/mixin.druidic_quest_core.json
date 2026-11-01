@@ -3,9 +3,11 @@
   "minVersion": "0.8",
   "package": "net.pafeuu.DruidicQuestMod.mixin",
   "compatibilityLevel": "JAVA_17",
+  "plugin": "net.pafeuu.DruidicQuestMod.mixin.DruidicQuestModMixinPlugin",
   "refmap": "mixins.druidic_quest_core.refmap.json",
   "mixins": [
-    "quark.AttributeTooltipsMixin"
+    "quark.AttributeTooltipsMixin",
+    "sophisticated.GateDepositOrExtractMixin"
   ],
   "client": [],
   "server": []

@@ -102,5 +102,7 @@
   "block.druidic_quest_core.ivy_block": "Ivy Block",
 
   "block.druidic_quest_core.big_source_jar": "Big Source Jar",
-  "block.druidic_quest_core.huge_source_jar": "Huge Source Jar"
+  "block.druidic_quest_core.huge_source_jar": "Huge Source Jar",
+
+  "info.druidic_quest_core.not_qualified_for_soph_action": "You do not meet the requirements to perform this action!"
 }

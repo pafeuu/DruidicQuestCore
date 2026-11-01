@@ -113,6 +113,10 @@ dependencies {
     implementation fg.deobf("curse.maven:zeta-968868:7335229")
     implementation fg.deobf("curse.maven:quark-243121:6427817")
     implementation fg.deobf("curse.maven:ars-nouveau-401955:6688854")
+    implementation fg.deobf("curse.maven:sophisticated-item-actions-1419142:9373894")
+    implementation fg.deobf("curse.maven:sophisticated-core-618298:9385244")
+    implementation fg.deobf("curse.maven:emi-580555:8081375")
+    implementation fg.deobf("curse.maven:tmrv-updated-1727144:9231392")
 
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
     compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:0.5.4")) //this may be stupid, but it works for me
