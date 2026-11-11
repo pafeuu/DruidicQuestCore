@@ -52,7 +52,7 @@ minecraft {
             property 'forge.enabledGameTestNamespaces', mod_id
             property 'mixin.env.remapRefMap', 'true'
             property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
-            setJvmArgs(["-Xmx3G", "-Xms3G"])
+            setJvmArgs(["-Xmx6G", "-Xms2G"])
         }
 
         server {
@@ -117,6 +117,10 @@ dependencies {
     implementation fg.deobf("curse.maven:sophisticated-core-618298:9385244")
     implementation fg.deobf("curse.maven:emi-580555:8081375")
     implementation fg.deobf("curse.maven:tmrv-updated-1727144:9231392")
+    implementation fg.deobf("curse.maven:enigmatic-legacy-336184:5600004")
+    implementation fg.deobf("curse.maven:caelus-308989:5281700")
+    implementation fg.deobf("curse.maven:vanillabackport-417430:9318528")
+    implementation fg.deobf("curse.maven:platform-997634:9318515")
 
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
     compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:0.5.4")) //this may be stupid, but it works for me

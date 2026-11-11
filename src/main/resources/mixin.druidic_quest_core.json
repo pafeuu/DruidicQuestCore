@@ -6,6 +6,7 @@
   "plugin": "net.pafeuu.DruidicQuestMod.mixin.DruidicQuestModMixinPlugin",
   "refmap": "mixins.druidic_quest_core.refmap.json",
   "mixins": [
+    "enigmatic.ItemBaseCurioMixin",
     "quark.AttributeTooltipsMixin",
     "sophisticated.GateDepositOrExtractMixin"
   ],
