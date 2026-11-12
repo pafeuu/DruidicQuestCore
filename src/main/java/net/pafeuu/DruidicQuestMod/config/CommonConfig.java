@@ -12,16 +12,24 @@ public class CommonConfig {
     public static final ForgeConfigSpec SPEC;
     
     //Sophisticated Item Actions
-    public static final ForgeConfigSpec.BooleanValue ENABLE_SOPH_ACTION_GATING;
-    public static final ForgeConfigSpec.ConfigValue<String> ADV_ID_FOR_SOPH_GATE;
+    public static final ForgeConfigSpec.BooleanValue ENABLE_SOPH_ACTION_GATING_RESTOCK;
+    public static final ForgeConfigSpec.BooleanValue ENABLE_SOPH_ACTION_GATING_DEPOSIT;
+    public static final ForgeConfigSpec.ConfigValue<String> ADV_ID_FOR_SOPH_GATE_RESTOCK;
+    public static final ForgeConfigSpec.ConfigValue<String> ADV_ID_FOR_SOPH_GATE_DEPOSIT;
 
     static {
         BUILDER.comment("Config for Sophisticated Item Actions").push("SophisticatedItemActions");
-        ENABLE_SOPH_ACTION_GATING = BUILDER
-                .comment("Whether to make Sophisticated Item Actions (Restock and Deposit) be gated behind an advancement. (Default: false)")
+        ENABLE_SOPH_ACTION_GATING_RESTOCK = BUILDER
+                .comment("Whether to make Sophisticated Item Actions (Restock) be gated behind an advancement. (Default: false)")
                 .define("enableSophActionGating", false);
-        ADV_ID_FOR_SOPH_GATE = BUILDER
-                .comment("The advancement id for the advancement-gating for Sophisticated Item Actions' features. (Ex: \"minecraft:adventure/kill_a_mob\"")
+        ADV_ID_FOR_SOPH_GATE_RESTOCK = BUILDER
+                .comment("The advancement id for the advancement-gating for Sophisticated Item Actions' restock. (Ex: \"minecraft:adventure/kill_a_mob\"")
+                .define("advIdForSophAction", "");
+        ENABLE_SOPH_ACTION_GATING_DEPOSIT = BUILDER
+                .comment("Whether to make Sophisticated Item Actions (Deposit) be gated behind an advancement. (Default: false)")
+                .define("enableSophActionGating", false);
+        ADV_ID_FOR_SOPH_GATE_DEPOSIT = BUILDER
+                .comment("The advancement id for the advancement-gating for Sophisticated Item Actions' deposit. (Ex: \"minecraft:adventure/kill_a_mob\"")
                 .define("advIdForSophAction", "");
         BUILDER.pop();
 

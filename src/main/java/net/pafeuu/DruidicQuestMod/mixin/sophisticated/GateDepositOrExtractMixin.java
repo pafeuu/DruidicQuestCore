@@ -19,7 +19,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import java.util.List;
 import java.util.Map;
 
-import static net.pafeuu.DruidicQuestMod.config.CommonConfig.ENABLE_SOPH_ACTION_GATING;
+import static net.pafeuu.DruidicQuestMod.config.CommonConfig.*;
 
 @Mixin(value = ItemTransferHandler.class, remap = false)
 public abstract class GateDepositOrExtractMixin {
@@ -33,15 +33,14 @@ public abstract class GateDepositOrExtractMixin {
     private static void druidic_quest_core$gateDepositActionBehindAdvancement(
             Player player, int minSlot, int maxSlot, Map<ResourceLocation, List<BlockPos>> storagePositions,
             Map<ResourceLocation, List<Integer>> entities, boolean onlyMatching, CallbackInfo ci) {
-        if (ENABLE_SOPH_ACTION_GATING.get() == false)
+        if (ENABLE_SOPH_ACTION_GATING_DEPOSIT.get() == false)
             return;
         if (player == null)
             return;
         MinecraftServer server = player.getServer();
         if (server == null)
             return;
-        Advancement advancement = server.getAdvancements().getAdvancement(
-                ResourceLocation.fromNamespaceAndPath("minecraft","adventure/kill_a_mob"));
+        Advancement advancement = server.getAdvancements().getAdvancement(ResourceLocation.parse(ADV_ID_FOR_SOPH_GATE_DEPOSIT.get()));
         if (advancement == null)
             return;
         if (((ServerPlayer) player).getAdvancements().getOrStartProgress(advancement).isDone())
@@ -61,15 +60,14 @@ public abstract class GateDepositOrExtractMixin {
     )
     private static void druidic_quest_core$gateRestockActionBehindAdvancement(
             Player player, ItemStack filter, int minSlot, int maxSlot, boolean fillEmpty, boolean refillSingle, CallbackInfo ci) {
-        if (ENABLE_SOPH_ACTION_GATING.get() == false)
+        if (ENABLE_SOPH_ACTION_GATING_RESTOCK.get() == false)
             return;
         if (player == null)
             return;
         MinecraftServer server = player.getServer();
         if (server == null)
             return;
-        Advancement advancement = server.getAdvancements().getAdvancement(
-                ResourceLocation.fromNamespaceAndPath("minecraft","adventure/kill_a_mob"));
+        Advancement advancement = server.getAdvancements().getAdvancement(ResourceLocation.parse(ADV_ID_FOR_SOPH_GATE_RESTOCK.get()));
         if (advancement == null)
             return;
         if (((ServerPlayer) player).getAdvancements().getOrStartProgress(advancement).isDone())
