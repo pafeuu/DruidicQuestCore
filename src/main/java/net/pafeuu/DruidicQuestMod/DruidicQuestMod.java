@@ -26,6 +26,9 @@ public class DruidicQuestMod
         BlockRegistry.register(modEventBus);
         EntityRegistry.register(modEventBus);
         SpellRegistry.register(modEventBus);
+        FluidRegistry.register(modEventBus);
+
+
 
         modEventBus.addListener(this::registerDispenserBehaviors);
 
@@ -36,9 +39,8 @@ public class DruidicQuestMod
         context.registerConfig(ModConfig.Type.COMMON, CommonConfig.SPEC,  DruidicQuestMod.MODID + "/common_config.toml");
     }
 
-    //pafeu why is this here
     private void registerDispenserBehaviors(final FMLCommonSetupEvent event) {
-        //event.enqueueWork(DispenserBehaviourRegistry::registerDispenserBehaviour);
+        event.enqueueWork(DispenserBehaviourRegistry::registerDispenserBehaviour);
     }
 
 }
