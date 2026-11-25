@@ -103,6 +103,7 @@
   "block.druidic_quest_core.ivy_block": "Ivy Block",
 
   "block.druidic_quest_core.liquid_coal_essence": "Liquid Coal Essence",
+  "fluid_type.druidic_quest_core.liquid_coal_essence": "Liquid Coal Essence",
 
 
   "info.druidic_quest_core.not_qualified_for_soph_action": "You haven't yet unlocked this action!"

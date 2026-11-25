@@ -1,9 +1,7 @@
-// 1.20.1	2026-09-30T13:29:41.5798463	Loot Tables
+// 1.20.1	2026-11-25T19:11:01.4052749	Loot Tables
 4a98c5b652970a21ee7079a2a8d078b852f65e13 data/druidic_quest_core/loot_tables/blocks/alloy_bricks.json
 92b873358abd89aae9ac35ff68a7e37fc0b16a07 data/druidic_quest_core/loot_tables/blocks/arcane_bricks.json
-a73ee2f8243f3f32af6f52d0c32007e86bf987c5 data/druidic_quest_core/loot_tables/blocks/big_source_jar.json
 071d460bb4721fd0af874003fd26f9fba41e4356 data/druidic_quest_core/loot_tables/blocks/gold_leaf_block.json
-fe25549596c7a5a1209e4ab7e3689e1d95d249f1 data/druidic_quest_core/loot_tables/blocks/huge_source_jar.json
 2d494e30b28099f267c9cf8bb034292c21a4d9bc data/druidic_quest_core/loot_tables/blocks/ivy_block.json
 ba56372e338953b02a0c97e26fa4e1dca125e315 data/druidic_quest_core/loot_tables/blocks/packed_planks.json
 4d595d3f37bf039f56e170fddbd80f2f3bd122ea data/druidic_quest_core/loot_tables/blocks/platinum_block.json

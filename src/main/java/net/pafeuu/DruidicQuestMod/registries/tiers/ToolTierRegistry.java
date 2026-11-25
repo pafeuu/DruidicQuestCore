@@ -14,20 +14,17 @@ import java.util.List;
 
 public class ToolTierRegistry {
 
-    public static final Tier STEEL = TierSortingRegistry.registerTier(
-            new ForgeTier(2, -1,5f,0,25, BlockTags.NEEDS_IRON_TOOL,
-                    ()-> Ingredient.of(ItemRegistry.STEEL_INGOT.get())),
-            ResourceLocation.fromNamespaceAndPath(DruidicQuestMod.MODID,"steel"),
-            List.of(Tiers.IRON),
-            List.of()
+    public static final Tier STEEL = new ForgeTier(
+            2, -1, 5f, 0, 25,
+            BlockTags.NEEDS_IRON_TOOL,
+            () -> Ingredient.of(ItemRegistry.STEEL_INGOT.get())
     );
 
-    public static final Tier PLATINUM = TierSortingRegistry.registerTier(
-            new ForgeTier(4, 16384,12f,6,25, BlockTags.NEEDS_DIAMOND_TOOL,
-                    ()-> Ingredient.of(ItemRegistry.PLATINUM_INGOT.get())),
-            ResourceLocation.fromNamespaceAndPath(DruidicQuestMod.MODID,"platinum"),
-            List.of(Tiers.NETHERITE),
-            List.of()
+
+    public static final Tier PLATINUM = new ForgeTier(
+            4, 16384, 12f, 6, 25,
+            BlockTags.NEEDS_DIAMOND_TOOL,
+            () -> Ingredient.of(ItemRegistry.PLATINUM_INGOT.get())
     );
 
 }

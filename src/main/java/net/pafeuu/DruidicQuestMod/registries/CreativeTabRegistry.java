@@ -170,6 +170,7 @@ public class CreativeTabRegistry {
             event.accept(ItemRegistry.PLATINUM_PICKAXE);
             event.accept(ItemRegistry.PLATINUM_HOE);
             event.accept(ItemRegistry.PLATINUM_AXE);
+            event.accept(FluidRegistry.LIQUID_COAL_ESSENCE_BUCKET);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
