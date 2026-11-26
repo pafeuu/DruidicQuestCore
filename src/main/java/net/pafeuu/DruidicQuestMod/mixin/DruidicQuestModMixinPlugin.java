@@ -21,7 +21,7 @@ public class DruidicQuestModMixinPlugin implements IMixinConfigPlugin {
         this.isQuarkLoaded = LoadingModList.get().getModFileById("quark") != null;
         this.isEnigmaticLegacyLoaded = LoadingModList.get().getModFileById("enigmaticlegacy") != null;
         this.isArsNouveauLoaded = LoadingModList.get().getModFileById("ars_nouveau") != null;
-        this.isEnchantmentLimiterLoaded = LoadingModList.get().getModFileById("enchantment_limiter") != null;
+        this.isEnchantmentLimiterLoaded = LoadingModList.get().getModFileById("enchantlimiter") != null;
     }
 
     @Override
