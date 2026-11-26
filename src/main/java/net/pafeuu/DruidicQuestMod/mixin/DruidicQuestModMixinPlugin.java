@@ -10,16 +10,30 @@ import java.util.Set;
 
 public class DruidicQuestModMixinPlugin implements IMixinConfigPlugin {
     private boolean isSophisticatedItemActionsLoaded = false;
+    private boolean isQuarkLoaded = false;
+    private boolean isEnigmaticLegacyLoaded = false;
+    private boolean isArsNouveauLoaded = false;
+    private boolean isEnchantmentLimiterLoaded = false;
 
     @Override
     public void onLoad(String s) {
         this.isSophisticatedItemActionsLoaded = LoadingModList.get().getModFileById("sophisticateditemactions") != null;
+        this.isQuarkLoaded = LoadingModList.get().getModFileById("quark") != null;
+        this.isEnigmaticLegacyLoaded = LoadingModList.get().getModFileById("enigmaticlegacy") != null;
+        this.isArsNouveauLoaded = LoadingModList.get().getModFileById("ars_nouveau") != null;
+        this.isEnchantmentLimiterLoaded = LoadingModList.get().getModFileById("enchantment_limiter") != null;
     }
 
     @Override
     public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
         if (mixinClassName.contains("GateDepositOrExtractMixin"))
             return isSophisticatedItemActionsLoaded;
+        if (mixinClassName.contains("ItemBaseCurioMixin"))
+            return isEnigmaticLegacyLoaded;
+        if (mixinClassName.contains("AttributeTooltipsMixin"))
+            return isQuarkLoaded;
+        if (mixinClassName.contains("EnchantingApparatusTileMixin"))
+            return isEnchantmentLimiterLoaded && isArsNouveauLoaded;
         return true;
     }
 

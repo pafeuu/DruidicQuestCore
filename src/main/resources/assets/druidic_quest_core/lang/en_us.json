@@ -105,6 +105,6 @@
   "block.druidic_quest_core.liquid_coal_essence": "Liquid Coal Essence",
   "fluid_type.druidic_quest_core.liquid_coal_essence": "Liquid Coal Essence",
 
-
+  "info.druidic_quest_core.ench_limit_reached": "This item is unable to be enchanted further due to its capacity!",
   "info.druidic_quest_core.not_qualified_for_soph_action": "You haven't yet unlocked this action!"
 }

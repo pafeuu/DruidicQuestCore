@@ -121,6 +121,7 @@ dependencies {
     implementation fg.deobf("curse.maven:caelus-308989:5281700")
     implementation fg.deobf("curse.maven:vanillabackport-417430:9318528")
     implementation fg.deobf("curse.maven:platform-997634:9318515")
+    implementation fg.deobf("curse.maven:enchantment-limiter-550462:4794091")
 
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
     compileOnly(annotationProcessor("io.github.llamalad7:mixinextras-common:0.5.4")) //this may be stupid, but it works for me
